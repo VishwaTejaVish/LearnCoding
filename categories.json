@@ -17,7 +17,7 @@
     {
       "id": 4,
       "title":"React JS",
-      "img": "require("../assets/react.png")"
+      "img": "../assets/react.png"
     },
     {
       "id": 5,
