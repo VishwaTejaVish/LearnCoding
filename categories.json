@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title":"HTML",
-      ""img"": "require("../assets/html.png")"
+      "img": "require('../assets/html.png')"
     },
     {
       "id": 2,
