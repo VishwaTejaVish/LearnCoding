@@ -7,31 +7,31 @@
     {
       "id": 2,
       "title":"CSS",
-      "img": "require("../assets/css.png")"
+      "img": "require('../assets/css.png')"
     },
     {
       "id": 3,
       "title":"Javascript",
-      "img": "require("../assets/js.png")"
+      "img": "require('../assets/js.png')"
     },
     {
       "id": 4,
       "title":"React JS",
-      "img": "require("../assets/react.png")"
+      "img": "require('../assets/react.png')"
     },
     {
       "id": 5,
       "title":"Python",
-      "img": "require("../assets/python.png")"
+      "img": "require('../assets/python.png')"
     },
     {
       "id": 6,
       "title":"Java",
-      "img": "require("../assets/java.png")"
+      "img": "require('../assets/java.png')"
     },
     {
       "id": 7,
       "title":"Git",
-      "img": "require("../assets/git.png")"
+      "img": "require('../assets/git.png')"
     }
 ]
