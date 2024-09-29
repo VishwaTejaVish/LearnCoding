@@ -2,22 +2,7 @@
     {
         "id": 1,
         "title": "What is React",
-        "description": "React.js (often referred to simply as React) is an open-source JavaScript library developed by Facebook, primarily used for building user interfaces (UIs), especially for single-page applications (SPAs). It enables developers to create large web applications that can update and render efficiently in response to data changes without reloading the entire page.
-  Key Features of React:
-Component-Based Architecture:
-React applications are built using components. Each component represents a part of the user interface and can be reused across different parts of the app, making development more modular and maintainable.
-Virtual DOM:
-React uses a virtual DOM (a lightweight copy of the real DOM) to optimize rendering. When the state of an object changes, React updates the virtual DOM first, and then compares it with the actual DOM. Only the differences are updated in the real DOM, which improves performance.
-JSX (JavaScript XML):
-React introduces JSX, a syntax that looks like HTML but is written within JavaScript. JSX makes it easier to write and visualize the structure of the UI by combining JavaScript logic and HTML-like markup.
-One-Way Data Binding:
-React follows a one-way data flow, meaning that data flows from parent components to child components. This makes it easier to debug and manage large applications by keeping track of data changes.
-Declarative UI:
-React allows developers to describe how the UI should look based on the current state of the application. React automatically updates and re-renders the components when the state changes, abstracting away the DOM manipulation.
-React Hooks:
-Introduced in React 16.8, hooks allow developers to use state and other React features in functional components, making code simpler and more readable.
-Ecosystem:
-React has a vast ecosystem with libraries for state management (e.g., Redux, Context API), routing (e.g., React Router), and more. It also supports server-side rendering (SSR) through frameworks like Next.js."
+        "description":"React.js (often referred to simply as React) is an open-source JavaScript library developed by Facebook, primarily used for building user interfaces (UIs), especially for single-page applications (SPAs). \nIt enables developers to create large web applications that can update and render efficiently in response to data changes without reloading the entire page. \nHere are some key features: \nKey Features of React: \nComponent-Based Architecture: \nReact applications are built using components. Each component represents a part of the user interface and can be reused across different parts of the app, making development more modular and maintainable. \nVirtual DOM: \nReact uses a virtual DOM (a lightweight copy of the real DOM) to optimize rendering. When the state of an object changes, React updates the virtual DOM first, and then compares it with the actual DOM. Only the differences are updated in the real DOM, which improves performance. \nJSX (JavaScript XML): \nReact introduces JSX, a syntax that looks like HTML but is written within JavaScript. JSX makes it easier to write and visualize the structure of the UI by combining JavaScript logic and HTML-like markup. \nOne-Way Data Binding: \nReact follows a one-way data flow, meaning that data flows from parent components to child components. This makes it easier to debug and manage large applications by keeping track of data changes. \nDeclarative UI: React allows developers to describe how the UI should look based on the current state of the application. React automatically updates and re-renders the components when the state changes, abstracting away the DOM manipulation. \nReact Hooks: \nIntroduced in React 16.8, hooks allow developers to use state and other React features in functional components, making code simpler and more readable. \nEcosystem: \nReact has a vast ecosystem with libraries for state management (e.g., Redux, Context API), routing (e.g., React Router), and more. It also supports server-side rendering (SSR) through frameworks like Next.js."
     },
     {
         "id": 2,
