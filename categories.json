@@ -18,7 +18,7 @@
     {
       "id": 4,
       "title":"React JS",
-      "img": "../assets/react.png"
+      "img": "../assets/react.png",
       "topics": "reactTopics"
     },
     {
