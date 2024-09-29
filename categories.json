@@ -2,17 +2,17 @@
     {
       "id": 1,
       "title":"HTML",
-      "img": "require('../assets/html.png')"
+      "img": '../assets/html.png'
     },
     {
       "id": 2,
       "title":"CSS",
-      "img": "require('../assets/css.png')"
+      "img": '../assets/css.png'
     },
     {
       "id": 3,
       "title":"Javascript",
-      "img": "require('../assets/js.png')"
+      "img": '../assets/js.png'
     },
     {
       "id": 4,
@@ -22,16 +22,16 @@
     {
       "id": 5,
       "title":"Python",
-      "img": "require('../assets/python.png')"
+      "img": '../assets/python.png'
     },
     {
       "id": 6,
       "title":"Java",
-      "img": "require('../assets/java.png')"
+      "img": '../assets/java.png'
     },
     {
       "id": 7,
       "title":"Git",
-      "img": "require('../assets/git.png')"
+      "img": '../assets/git.png'
     }
 ]
