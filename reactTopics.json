@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "title": "What is React",
+        "title": "What is React"
     },
     {
         "id": 2,
-        "title": "Render HTML",
+        "title": "Render HTML"
     },
     {
         "id": 3,
-        "title": "JSX",
+        "title": "JSX"
     },
     {
         "id": 4,
-        "title": "Components",
+        "title": "Components"
     },
     {
         "id": 5,
-        "title": "Props",
+        "title": "Props"
     },
     {
         "id": 6,
-        "title": "Events",
+        "title": "Events"
     }
 ]
