@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "question": "What is the purpose of the virtual DOM in React?",
+    "options": ["To provide a direct interaction with the real DOM", "To improve performance by minimizing direct DOM manipulation", "To store data for React components", "To style React components"],
+    "answer": "To improve performance by minimizing direct DOM manipulation"
+  }
+]
