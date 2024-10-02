@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "title": "What is React"
+        "title": "What is Javacript",
+        "description": "JavaScript is a high-level, dynamic programming language primarily used for web development. \nIt allows developers to create interactive and dynamic content on websites, such as animations, form validations, games, and real-time updates. \nIt works alongside HTML (which structures a webpage) and CSS (which styles a webpage) to enhance user experiences. \n\nHere are some key features of JavaScript: \nClient-Side Scripting: \nJavaScript is mainly executed in the browser (client-side), allowing web pages to respond to user interactions without needing to reload the page. \n\nInteractivity: \nJavaScript can manipulate the HTML and CSS of a webpage, making it possible to update content, animate elements, handle user input, and create interactive features. \n\nEvent-Driven: \nJavaScript is designed to react to user actions (events) like clicks, form submissions, and keystrokes. \n\nVersatile: \nWhile traditionally used for web development, JavaScript can also be used on servers (with Node.js), in mobile applications, game development, and more. \n\nRich Ecosystem: \nIt has a large community, numerous libraries (e.g., React, Angular, Vue.js), and frameworks that extend its functionality, making it one of the most popular programming languages today."
     },
     {
         "id": 2,
