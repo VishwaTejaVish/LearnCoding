@@ -8,7 +8,7 @@
     {
       "id": 2,
       "title":"CSS",
-      "img": "../assets/css.png"
+      "topics": "cssTopics"
     },
     {
       "id": 3,
