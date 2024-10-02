@@ -14,8 +14,8 @@
   {
     "id": 3,
     "question": "What is the correct format to specify the background color of a webpage in HTML?",
-    "options": ["<background color="blue">", "<body bg="blue">", "<body bgcolor="blue">", "<body color="blue">"],
-    "answer": "<body bgcolor="blue">"
+    "options": ["<background color='blue'>", "<body bg='blue'>", "<body bgcolor='blue'>", "<body color='blue'>"],
+    "answer": "<body bgcolor='blue'>"
   },
   {
     "id": 4,
