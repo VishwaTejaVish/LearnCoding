@@ -1,26 +1,17 @@
 [
     {
         "id": 1,
-        "title": "What is React"
+        "title": "What is Python",
+        "description": "Python is a high-level, interpreted programming language known for its simplicity and readability. \nIt was created by Guido van Rossum and first released in 1991. \nPython emphasizes code readability and allows programmers to express concepts in fewer lines of code compared to languages like C++ or Java. \n\nKey features of Python include: \nEasy to Learn and Use: \nPython has a simple syntax that mimics natural language, making it accessible to beginners. \nInterpreted: \nPython code is executed line by line, which makes debugging easier and speeds up the development process. \nDynamically Typed: \nVariables in Python do not need explicit declaration; types are assigned during execution, based on the assigned value. \nHigh-Level Language: \nPython abstracts away much of the complexity involved in programming tasks such as memory management, making development faster. \nVersatile and Extensible: \nPython can be used for a variety of programming tasks, from web development (e.g., using Django, Flask) and data science (e.g., with pandas, NumPy) to automation, scripting, and even machine learning (with libraries like TensorFlow and PyTorch). \nCross-Platform: \nPython is platform-independent, meaning code written on one operating system can run on another with minimal modifications. \nRich Ecosystem: \nPython has a vast collection of libraries and frameworks, which can be used for almost every programming domain."
     },
     {
         "id": 2,
-        "title": "Render HTML"
+        "title": "Variables",
+        "description": "In Python, variables are used to store data values. \nUnlike many programming languages, Python variables do not require an explicit declaration to reserve memory space. \nThe declaration happens automatically when you assign a value to a variable. \nPython variables are dynamically typed, meaning you do not need to specify the type; Python infers the type based on the value assigned. \n\nKey Points About Variables in Python: \nNo Declaration Required: \nYou don’t need to declare variables with a specific type. The type is inferred based on the assigned value. \nDynamically Typed: \nVariables can change types dynamically based on their values. \nNaming Conventions: \nVariable names can contain letters, numbers, and underscores (_), but they must start with a letter or an underscore. \nVariable names are case-sensitive (myVariable and myvariable are different). \nDescriptive names are preferred to enhance code readability. \nAssignment: \nPython allows multiple assignments in one line. \nReassigning Variables: \nVariables can be reassigned different values, even of different types. \nGlobal vs Local Variables: \nVariables defined inside a function are local to that function, whereas variables defined outside all functions are global. \nType Checking: \nYou can check the type of a variable using the type() function."
     },
     {
         "id": 3,
-        "title": "JSX"
-    },
-    {
-        "id": 4,
-        "title": "Components"
-    },
-    {
-        "id": 5,
-        "title": "Props"
-    },
-    {
-        "id": 6,
-        "title": "Events"
+        "title": "Data Types",
+        "description": "Python has several built-in data types that categorize the different kinds of values a variable can hold. \nThese data types define what operations can be performed on the variables and how the data is stored in memory. \n\nHere are the common data types in Python: \n\n1. Numeric Types \nThese data types store numerical values. \nint (Integer): \nWhole numbers, both positive and negative, without a decimal point. \nfloat (Floating Point): \nNumbers with a decimal point. \ncomplex (Complex Numbers): \nNumbers in the form of a + bj, where a is the real part, and b is the imaginary part. \n\nSequence Types \nThese data types store sequences of items. \nstr (String): \nA sequence of characters enclosed in single, double, or triple quotes. \nlist: \nAn ordered, mutable collection of items. Lists can hold items of different types. \ntuple: \nSimilar to lists, but tuples are immutable (cannot be changed after creation). \nrange: \nRepresents a sequence of numbers, commonly used in loops. \n\nMapping Type \ndict (Dictionary): \nAn unordered, mutable collection of key-value pairs. Each key must be unique. \n\nSet Types \nThese data types store unordered collections of unique items. \nset: \nAn unordered collection of unique, immutable elements. \nfrozenset: \nSimilar to a set, but immutable (cannot be changed after creation). \n\nBoolean Type \nbool: \nRepresents two values: True or False \n\nBinary Types \nbytes: \nImmutable sequence of bytes. \nbytearray: \nMutable sequence of bytes. \nmemoryview: \nProvides memory access to the internal data of an object without copying. \n\nNone Type \nNone: \nRepresents the absence of a value or a null value."
     }
 ]
