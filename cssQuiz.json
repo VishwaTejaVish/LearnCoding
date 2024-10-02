@@ -46,7 +46,7 @@
     "id": 8,
     "question": "Which of the following property is used to align text to the center in CSS?",
     "options": ["text-center;", "text-align: center;", "align: center;", "align-text: center;"],
-    "answer": "length()"
+    "answer": "text-align: center;"
   },
   {
     "id": 9,
