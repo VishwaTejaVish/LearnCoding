@@ -6,22 +6,7 @@
     },
     {
         "id": 2,
-        "title": "Render HTML"
-    },
-    {
-        "id": 3,
-        "title": "JSX"
-    },
-    {
-        "id": 4,
-        "title": "Components"
-    },
-    {
-        "id": 5,
-        "title": "Props"
-    },
-    {
-        "id": 6,
-        "title": "Events"
+        "title": "How React Native works",
+        "description": "Unlike traditional mobile development (which uses languages like Java for Android or Swift for iOS), React Native enables developers to write code once and deploy it across multiple platforms (iOS, Android) with the same codebase. \nHere's how it works: \n\nCore Concept \nReact Native is built on the idea of React, where the UI is composed of reusable components. These components manage their own state and re-render when the state changes, ensuring a dynamic and responsive interface. \n\nJavaScript Bridge \nReact Native uses a bridge to communicate between JavaScript and native mobile code. When the JavaScript code runs, it sends messages to native platform-specific code (like Objective-C/Swift for iOS or Java/Kotlin for Android) through the bridge. This allows JavaScript to control native components. \nJavaScript Thread: \nRuns the JavaScript code and manages the logic of the app. \nNative Thread: \nRuns the native UI and handles platform-specific rendering and performance optimizations. \nBridge: \nPasses information between the JavaScript thread and the native thread. \n\nComponents and UI \nReact Native comes with a set of built-in native components that map to native UI elements. These components include elements like <View>, <Text>, <Image>, and more. When a developer uses these in their React Native code, they are eventually converted into the native UI elements for iOS or Android. For example, <View> in React Native is translated to a UIView on iOS and a View on Android. \n\nHot Reloading and Fast Refresh \nReact Native supports hot reloading, which allows developers to see the changes in real-time without rebuilding the entire app. \nWhen a developer updates a component's code, React Native reloads only that specific component instead of recompiling the entire app, making development faster. \n\nCross-Platform Development \nReact Native allows developers to write code that runs on both iOS and Android. However, there are instances where platform-specific features or UI may need to be handled differently. React Native provides ways to include platform-specific code while sharing a large portion of the codebase between platforms. \n\nNative Modules \nIn cases where the functionality needed is not available in React Native’s built-in components, developers can write native modules in platform-specific languages (like Swift for iOS or Java for Android) and call them from JavaScript. This allows React Native to integrate with any platform-specific features or third-party SDKs. \n\nPerformance \nReact Native aims for native performance by using the native rendering engine for the UI, rather than running in a WebView (as hybrid apps do). However, complex animations or heavy computations might require optimization, and in some cases, developers can write custom native code for better performance. \n\nReact Native Ecosystem \nThe framework has a large and growing ecosystem, with libraries and third-party packages that offer functionalities such as navigation, animation, testing, etc. Popular tools like Expo help simplify app development by bundling React Native with various useful services. \n\nBuild and Deploy \nReact Native allows developers to build the app for both platforms with a single command, simplifying the deployment process. It integrates with tools like Xcode (iOS) and Android Studio (Android) for building the app and publishing it to the App Store or Google Play Store."
     }
 ]
