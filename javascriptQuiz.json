@@ -1,1 +1,63 @@
 
+[
+  {
+    "id": 1,
+    "question": "Which of the following is correct about features of JavaScript?",
+    "options": ["JavaScript is a lightweight, interpreted programming language.", "JavaScript is designed for creating network-centric applications.", "JavaScript is complementary to and integrated with Java.", "All of the above."],
+    "answer": "All of the above."
+  },
+  {
+    "id": 2,
+    "question": "Which company developed JavaScript?",
+    "options": ["Microsoft", "Netscape", "Google", "Oracle"],
+    "answer": "Netscape"
+  },
+  {
+    "id": 3,
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "options": ["<js>", "<scripting>", "<script>", "<javascript>"],
+    "answer": "<script>"
+  },
+  {
+    "id": 4,
+    "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+    "options": ["<script href='script.js'>", "<script src='script.js'>", "<script ref='script.js'>", "<script name='script.js'>"],
+    "answer": "<script src='script.js'>"
+  },
+  {
+    "id": 5,
+    "question": "How do you create a function in JavaScript?",
+    "options": ["function = myFunction()", "function myFunction()", "function:myFunction()", "create myFunction()"],
+    "answer": "function myFunction()"
+  },
+  {
+    "id": 6,
+    "question": "How do you write 'Hello World' in an alert box?",
+    "options": ["msgBox('Hello World')", "alertBox('Hello World')", "msg(Hello World)", "alert('Hello World')"],
+    "answer": "alert('Hello World')"
+  },
+  {
+    "id": 7,
+    "question": "How can you add a comment in JavaScript?",
+    "options": ["<!-- This is a comment -->", "// This is a comment", "/* This is a comment */", "Both b and c"],
+    "answer": "Both b and c"
+  },
+  {
+    "id": 8,
+    "question": "Which built-in method returns the length of the string?",
+    "options": ["length()", "size()", "index()", "None of the above"],
+    "answer": "length()"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following function of String object returns the characters in a string between two indexes into the string?",
+    "options": ["slice()", "split()", "substring()", "substr()"],
+    "answer": "substring()"
+  },
+  {
+    "id": 10,
+    "question": "What is the type of a variable that is declared but not assigned a value?",
+    "options": ["null", "undefined", "NaN", "number"],
+    "answer": "undefined"
+  }
+]
