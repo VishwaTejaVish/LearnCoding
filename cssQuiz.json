@@ -1,0 +1,63 @@
+
+[
+  {
+    "id": 1,
+    "question": "What does CSS stand for?",
+    "options": ["Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets", "Computer Style Sheets"],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following CSS property is used to set the text color?",
+    "options": ["text-color", "color", "font-color", "background-color"],
+    "answer": "color"
+  },
+  {
+    "id": 3,
+    "question": "In CSS, which property controls the spacing between lines of text?",
+    "options": ["letter-spacing", "line-height", "text-spacing", "line-spacing"],
+    "answer": "line-height"
+  },
+  {
+    "id": 4,
+    "question": "How do you insert a comment in a CSS file?",
+    "options": ["// this is a comment //", "/* this is a comment */", "<!-- this is a comment -->", "# this is a comment #"],
+    "answer": "/* this is a comment */"
+  },
+  {
+    "id": 5,
+    "question": "Which property is used to change the background color in CSS?",
+    "options": ["bgcolor", "color", "background-color", "background"],
+    "answer": "background-color"
+  },
+  {
+    "id": 6,
+    "question": "How do you add a background image in CSS?",
+    "options": ["background-image: url(image.jpg);", "image-background: url(image.jpg);", "background: url(image.jpg);", "img-background: url(image.jpg);"],
+    "answer": "background-image: url(image.jpg);"
+  },
+  {
+    "id": 7,
+    "question": "How do you make each word in a text start with a capital letter in CSS?",
+    "options": ["text-transform: uppercase", "text-transform: capitalize;", "text-transform: lowercase", "transform: capitalize;"],
+    "answer": "text-transform: capitalize;"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following property is used to align text to the center in CSS?",
+    "options": ["text-center;", "text-align: center;", "align: center;", "align-text: center;"],
+    "answer": "length()"
+  },
+  {
+    "id": 9,
+    "question": "What is the correct CSS syntax to select an element with id "header"?",
+    "options": ["header { }", ".header { }", "#header { }", "*header { }"],
+    "answer": "#header { }"
+  },
+  {
+    "id": 10,
+    "question": "Which property is used to change the font of an element in CSS?",
+    "options": ["font", "font-style", "font-family", "font-weight"],
+    "answer": "font-family"
+  }
+]
