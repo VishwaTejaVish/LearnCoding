@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": ["Hyper Trainer Marking Language", "Hyper Text Marketing Language", "Hyper Text Markup Language", "Hyper Text Markup Level"],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is used to create a hyperlink in HTML?",
+    "options": ["<link>", "<a>", "<href>", "<hyperlink>"],
+    "answer": "<a>"
+  },
+  {
+    "id": 3,
+    "question": "What is the correct format to specify the background color of a webpage in HTML?",
+    "options": ["<background color="blue">", "<body bg="blue">", "<body bgcolor="blue">", "<body color="blue">"],
+    "answer": "<body bgcolor="blue">"
+  },
+  {
+    "id": 4,
+    "question": "Which tag is used to insert an image in HTML?",
+    "options": ["<img>", "<image>", "<pic>", "<picture>"],
+    "answer": "<img>"
+  },
+  {
+    "id": 5,
+    "question": "How can you make a list that lists items with bullets in HTML?",
+    "options": ["<ul>", "<ol>", "<dl>", "<list>"],
+    "answer": "<ul>"
+  },
+  {
+    "id": 6,
+    "question": "Which tag is used to create a table in HTML?",
+    "options": ["<table>", "<tab>", "<tr>", "<td>"],
+    "answer": "<table>"
+  },
+  {
+    "id": 7,
+    "question": "How can you make text bold in HTML?",
+    "options": ["<b>", "<bold>", "<strong>", "Both a and c"],
+    "answer": "Both a and c"
+  },
+  {
+    "id": 8,
+    "question": "Which tag is used to define an internal style sheet in HTML?",
+    "options": ["<style>", "<css>", "<script>", "<link>"],
+    "answer": "<style>"
+  },
+  {
+    "id": 9,
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": ["<lb>", "<break>", "<br>", "<newline>"],
+    "answer": "<br>"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is the correct way to add a comment in HTML?",
+    "options": ["// This is a comment", "<!-- This is a comment -->", "/* This is a comment */", "# This is a comment"],
+    "answer": "<!-- This is a comment -->"
+  }
+]
