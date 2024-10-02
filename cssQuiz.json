@@ -50,7 +50,7 @@
   },
   {
     "id": 9,
-    "question": "What is the correct CSS syntax to select an element with id "header"?",
+    "question": "What is the correct CSS syntax to select an element with id 'header'?",
     "options": ["header { }", ".header { }", "#header { }", "*header { }"],
     "answer": "#header { }"
   },
