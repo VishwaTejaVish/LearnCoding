@@ -1,26 +1,7 @@
 [
     {
         "id": 1,
-        "title": "What is React"
-    },
-    {
-        "id": 2,
-        "title": "Render HTML"
-    },
-    {
-        "id": 3,
-        "title": "JSX"
-    },
-    {
-        "id": 4,
-        "title": "Components"
-    },
-    {
-        "id": 5,
-        "title": "Props"
-    },
-    {
-        "id": 6,
-        "title": "Events"
+        "title": "What is Git",
+        "description": "Git is a distributed version control system used to track changes in source code during software development. \nIt allows multiple developers to collaborate on a project by keeping track of every modification made to files, ensuring that different versions of the project are maintained, and making it easy to revert to earlier versions if needed. \n\nHere are some key features of Git: \nVersion Control: \nGit records changes to files over time so you can recall specific versions later. \nDistributed: \nUnlike centralized version control systems, Git allows each developer to have a full copy of the repository, including the complete history. \nBranching: \nGit allows developers to create branches for experimentation, feature development, or bug fixes. These branches can later be merged into the main project. \nCollaboration: \nGit makes it easy for developers to work together, handle conflicts, and combine code changes from multiple sources. \nEfficiency: \nIt is designed to handle projects with large codebases quickly and efficiently. \n\nGit is often used alongside platforms like GitHub or GitLab for hosting repositories and facilitating collaboration."
     }
 ]
