@@ -56,7 +56,37 @@
   {
     "id": 10,
     "question": "Which of the following is true about props in React?",
-    "options": ["Props can only be passed from a child component to a parent component", " Props are mutable", "Props can be used to pass data from a parent to a child component", "Props are only used in functional components"],
+    "options": ["Props can only be passed from a child component to a parent component", "Props are mutable", "Props can be used to pass data from a parent to a child component", "Props are only used in functional components"],
     "answer": "Props can be used to pass data from a parent to a child component"
+  },
+  {
+    "id": 11,
+    "question": "What is React Fiber?",
+    "options": ["A new architecture introduced to make the virtual DOM faster", "A new syntax for defining React components", "A way to manage context in React", "A method for managing state in class components"],
+    "answer": "A new architecture introduced to make the virtual DOM faster"
+  },
+  {
+    "id": 12,
+    "question": "How do you handle events in React?",
+    "options": ["By using on attributes like onClick", "By using addEventListener directly", "By calling handleEvent() method", "By using eventHandling hooks"],
+    "answer": "By using on attributes like onClick"
+  },
+  {
+    "id": 13,
+    "question": "What is the role of PropTypes in React?",
+    "options": ["To manage component lifecycle", "To define types of props a component should receive", "To initialize state in a component", "To render lists of components"],
+    "answer": "To define types of props a component should receive"
+  },
+  {
+    "id": 14,
+    "question": "How can you pass default props to a component in React?",
+    "options": ["By using getDefaultProps()", "By using defaultProps", "By using static defaultProps", "By using this.props.default"],
+    "answer": "By using defaultProps"
+  },
+  {
+    "id": 15,
+    "question": "What is the correct way to conditionally render a component in React?",
+    "options": ["Using if/else inside the render() method", "Using the ternary operator in JSX", "Using switch statements in JSX", "React doesn’t support conditional rendering"],
+    "answer": "Using the ternary operator in JSX"
   }
 ]
