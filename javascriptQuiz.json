@@ -59,5 +59,65 @@
     "question": "What is the type of a variable that is declared but not assigned a value?",
     "options": ["null", "undefined", "NaN", "number"],
     "answer": "undefined"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is not a reserved word in JavaScript?",
+    "options": ["interface", "throws", "program", "short"],
+    "answer": "program"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is the correct syntax to print a page using JavaScript?",
+    "options": ["window.print()", "browser.print()", "navigator.print()", "document.print()"],
+    "answer": "window.print()"
+  },
+  {
+    "id": 13,
+    "question": "Which built-in method combines the text of two strings and returns a new string?",
+    "options": ["append()", "concat()", "attach()", "None of the above"],
+    "answer": "concat()"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following is not a valid JavaScript variable name?",
+    "options": ["_firstName", "2names", "first_name", "firstname"],
+    "answer": "2names"
+  },
+  {
+    "id": 15,
+    "question": "Which method removes the last element from an array and returns that element?",
+    "options": ["pop()", "push()", "join()", "map()"],
+    "answer": "pop()"
+  },
+  {
+    "id": 16,
+    "question": "What does the typeof operator return for an array?",
+    "options": ["object", "function", "array", "None of the above"],
+    "answer": "object"
+  },
+  {
+    "id": 17,
+    "question": "How do you define a JavaScript variable?",
+    "options": ["var carName", "variable carName", "v carName", "dim carName"],
+    "answer": "var carName"
+  },
+  {
+    "id": 18,
+    "question": "How do you call a function named myFunction in JavaScript?",
+    "options": ["call myFunction()", "myFunction()", "call function myFunction()", "None of the above"],
+    "answer": "myFunction()"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is a way to create an array in JavaScript?",
+    "options": ["var arr = '1, 2, 3'", "var arr = (1, 2, 3)", "var arr = [1, 2, 3]", "var arr = {1, 2, 3}"],
+    "answer": "var arr = [1, 2, 3]"
+  },
+  {
+    "id": 20,
+    "question": "Which operator is used to assign a value to a variable in JavaScript?",
+    "options": ["=", "==", "===", "=>"],
+    "answer": "="
   }
 ]
