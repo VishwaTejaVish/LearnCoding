@@ -72,12 +72,6 @@
     "answer": "<ol>"
   },
   {
-    "id": 12,
-    "question": "How can you make a list that lists items with bullets?",
-    "options": ["<ul>", "<nl>", "<ol>", "<list>"],
-    "answer": "<ul>"
-  },
-  {
     "id": 13,
     "question": "Which tag is used to create a drop-down list in HTML?",
     "options": ["<select>", "<option>", "<dropdown>", "<list>"],
