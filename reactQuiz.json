@@ -139,9 +139,9 @@
   },
   {
     "id": 24,
-    "question": "What does the useContext hook do in React?",
-    "options": ["It allows you to access props, are added, or are removed.", "It gives access to global state provided by a React context", "It provides an alternative to useState", "It manages component lifecycle methods"],
-    "answer": "It gives access to global state provided by a React context"
+    "question": "What does React.StrictMode do?",
+    "options": ["It ensures that the application is running in production mode", "It helps identify potential issues in an application", "It automatically manages component state", "It optimizes performance in production"],
+    "answer": "It helps identify potential issues in an application"
   },
   {
     "id": 25,
