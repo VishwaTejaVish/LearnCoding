@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "General",
+    "url": "/javascriptQuiz/general"
+  },
+  {
+    "id": 2,
+    "title": "Promises",
+    "url": "/javascriptQuiz/promises"
+  }
+]
