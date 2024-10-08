@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is correct about features of JavaScript?",
+    "options": ["JavaScript is a lightweight, interpreted programming language.", "JavaScript is designed for creating network-centric applications.", "JavaScript is complementary to and integrated with Java.", "All of the above."],
+    "answer": "All of the above."
+  },
+  {
+    "id": 2,
+    "question": "Which company developed JavaScript?",
+    "options": ["Microsoft", "Netscape", "Google", "Oracle"],
+    "answer": "Netscape"
+  },
+  {
+    "id": 3,
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "options": ["<js>", "<scripting>", "<script>", "<javascript>"],
+    "answer": "<script>"
+  },
+  {
+    "id": 4,
+    "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+    "options": ["<script href='script.js'>", "<script src='script.js'>", "<script ref='script.js'>", "<script name='script.js'>"],
+    "answer": "<script src='script.js'>"
+  },
+  {
+    "id": 5,
+    "question": "How do you create a function in JavaScript?",
+    "options": ["function = myFunction()", "function myFunction()", "function:myFunction()", "create myFunction()"],
+    "answer": "function myFunction()"
+  },
+  {
+    "id": 6,
+    "question": "How do you write 'Hello World' in an alert box?",
+    "options": ["msgBox('Hello World')", "alertBox('Hello World')", "msg(Hello World)", "alert('Hello World')"],
+    "answer": "alert('Hello World')"
+  },
+  {
+    "id": 7,
+    "question": "How can you add a comment in JavaScript?",
+    "options": ["<!-- This is a comment -->", "// This is a comment", "/* This is a comment */", "Both b and c"],
+    "answer": "Both b and c"
+  },
+  {
+    "id": 8,
+    "question": "Which built-in method returns the length of the string?",
+    "options": ["length()", "size()", "index()", "None of the above"],
+    "answer": "length()"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following function of String object returns the characters in a string between two indexes into the string?",
+    "options": ["slice()", "split()", "substring()", "substr()"],
+    "answer": "substring()"
+  },
+  {
+    "id": 10,
+    "question": "What is the type of a variable that is declared but not assigned a value?",
+    "options": ["null", "undefined", "NaN", "number"],
+    "answer": "undefined"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is not a reserved word in JavaScript?",
+    "options": ["interface", "throws", "program", "short"],
+    "answer": "program"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is the correct syntax to print a page using JavaScript?",
+    "options": ["window.print()", "browser.print()", "navigator.print()", "document.print()"],
+    "answer": "window.print()"
+  },
+  {
+    "id": 13,
+    "question": "Which built-in method combines the text of two strings and returns a new string?",
+    "options": ["append()", "concat()", "attach()", "None of the above"],
+    "answer": "concat()"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following is not a valid JavaScript variable name?",
+    "options": ["_firstName", "2names", "first_name", "firstname"],
+    "answer": "2names"
+  },
+  {
+    "id": 15,
+    "question": "Which method removes the last element from an array and returns that element?",
+    "options": ["pop()", "push()", "join()", "map()"],
+    "answer": "pop()"
+  },
+  {
+    "id": 16,
+    "question": "What does the typeof operator return for an array?",
+    "options": ["object", "function", "array", "None of the above"],
+    "answer": "object"
+  },
+  {
+    "id": 17,
+    "question": "How do you define a JavaScript variable?",
+    "options": ["var carName", "variable carName", "v carName", "dim carName"],
+    "answer": "var carName"
+  },
+  {
+    "id": 18,
+    "question": "How do you call a function named myFunction in JavaScript?",
+    "options": ["call myFunction()", "myFunction()", "call function myFunction()", "None of the above"],
+    "answer": "myFunction()"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is a way to create an array in JavaScript?",
+    "options": ["var arr = '1, 2, 3'", "var arr = (1, 2, 3)", "var arr = [1, 2, 3]", "var arr = {1, 2, 3}"],
+    "answer": "var arr = [1, 2, 3]"
+  },
+  {
+    "id": 20,
+    "question": "Which operator is used to assign a value to a variable in JavaScript?",
+    "options": ["=", "==", "===", "=>"],
+    "answer": "="
+  }
+]
