@@ -134,20 +134,21 @@
   {
     "id": 23,
     "question": "What will be logged to the console in the following code?",
-    "code": "Promise.resolve(1)\n  .then(x => x + 1)\n.  then(x => { throw new Error('Oops!'); })\n  .catch(err => console.log(err.message))",
-    "options": ["Provides state management", "Returns multiple elements without adding extra nodes to the DOM", "Binds event listeners to child components", "Handles routing between pages"],
-    "answer": "Returns multiple elements without adding extra nodes to the DOM"
+    "code": "Promise.resolve(1)\n  .then(x => x + 1)\n  .then(x => { throw new Error('Oops!'); })\n  .catch(err => console.log(err.message))",
+    "options": ["1", "2", "Oops!", "undefined"],
+    "answer": "Oops!"
   },
   {
     "id": 24,
-    "question": "What does React.StrictMode do?",
-    "options": ["It ensures that the application is running in production mode", "It helps identify potential issues in an application", "It automatically manages component state", "It optimizes performance in production"],
-    "answer": "It helps identify potential issues in an application"
+    "question": "What is the output of the following code?",
+    "code": "let promise = new Promise((resolve, reject) => {\n  resolve("Success!")\n}) \npromise.then(result => {\n  console.log(result)\n})"
+    "options": ["undefined", "Promise", "Success!", "Error!"],
+    "answer": "Success!"
   },
   {
     "id": 25,
-    "question": "How do you access props in a functional component?",
-    "options": ["this.props", "props (as an argument)", "componentProps", "getProps()"],
-    "answer": "props (as an argument)"
+    "question": "In promise terminology, what do we call the function that's passed to the Promise() constructor as an argument?",
+    "options": ["Executor", "Generator", "Promise maker", "None of the above"],
+    "answer": "Executor"
   }
 ]
