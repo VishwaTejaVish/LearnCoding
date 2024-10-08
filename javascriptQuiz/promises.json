@@ -74,7 +74,7 @@
   {
     "id": 13,
     "question": "Which of the following does NOT correctly describe a promise?",
-    "options": ["Promises can be chained", "Promises provide more readable code than callbacks", "Promises handle both asynchronous and synchronous operations equally", "Promises avoid "callback hell""],
+    "options": ["Promises can be chained", "Promises provide more readable code than callbacks", "Promises handle both asynchronous and synchronous operations equally", "Promises avoid callback hell"],
     "answer": "Promises handle both asynchronous and synchronous operations equally"
   },
   {
