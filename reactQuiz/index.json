@@ -1,1 +1,17 @@
-
+[
+  {
+    "id": 1,
+    "title": "General",
+    "url": "/reactQuiz/general"
+  },
+  {
+    "id": 2,
+    "title": "State Management",
+    "url": "/reactQuiz/stateManagement"
+  },
+  {
+    "id": 3,
+    "title": "Life Cycle Methods",
+    "url": "/reactQuiz/lifeCycle"
+  }
+]
