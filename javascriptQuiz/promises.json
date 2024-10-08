@@ -141,7 +141,7 @@
   {
     "id": 24,
     "question": "What is the output of the following code?",
-    "code": "let promise = new Promise((resolve, reject) => {\n  resolve("Success!")\n}) \npromise.then(result => {\n  console.log(result)\n})"
+    "code": "let promise = new Promise((resolve, reject) => {\n  resolve('Success!')\n}) \npromise.then(result => {\n  console.log(result)\n})",
     "options": ["undefined", "Promise", "Success!", "Error!"],
     "answer": "Success!"
   },
