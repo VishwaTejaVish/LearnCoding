@@ -44,7 +44,7 @@
   {
     "id": 8,
     "question": "Which of the following is used to create a drop-down list in a form?",
-    "options": ["<input type="select">", "<select>", "<dropdown>", "<option>"],
+    "options": ["<input type='select'>", "<select>", "<dropdown>", "<option>"],
     "answer": "<select>"
   },
   {
