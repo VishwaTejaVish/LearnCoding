@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Which HTML tag is used to create a form?",
+    "options": ["<form>", "<input>", "<textarea>", "<button>"],
+    "answer": "<form>"
+  },
+  {
+    "id": 2,
+    "question": "Which attribute is used to specify the URL of the script that processes the form submission?",
+    "options": ["method", "action", "target", "submit"],
+    "answer": "action"
+  },
+  {
+    "id": 3,
+    "question": "Which HTML form method sends form data in the URL?",
+    "options": ["POST", "GET", "SEND", "PUT"],
+    "answer": "GET"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is the correct input type for creating a password field?",
+    "options": ["<input type='text'>", "<input type='password'>", "<input type='secret'>", "<input type='hidden'>"],
+    "answer": "<input type='password'>"
+  },
+  {
+    "id": 5,
+    "question": "What is the correct syntax for creating a submit button in HTML?",
+    "options": ["<input type='button'>", "<input type='submit'>", "<button type='submit'>", "Both b and c"],
+    "answer": "Both b and c"
+  },
+  {
+    "id": 6,
+    "question": "Which HTML attribute is used to group multiple options in a drop-down list?",
+    "options": ["value", "multiple", "group", "optgroup"],
+    "answer": "optgroup"
+  },
+  {
+    "id": 7,
+    "question": "What does the method='post' attribute do in a form?",
+    "options": ["It sends form data as part of the URL", "It sends form data as an HTTP POST request", "It attaches form data to a file", "It prevents the form from being submitted"],
+    "answer": "It sends form data as an HTTP POST request"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following is used to create a drop-down list in a form?",
+    "options": ["<input type="select">", "<select>", "<dropdown>", "<option>"],
+    "answer": "<select>"
+  },
+  {
+    "id": 9,
+    "question": "Which attribute specifies that a form field must be filled out before submitting the form?",
+    "options": ["placeholder", "required", "validate", "mandatory"],
+    "answer": "required"
+  },
+  {
+    "id": 10,
+    "question": "What is the correct HTML tag to create a multi-line text input field?",
+    "options": ["<input type='text'>", "<textarea>", "<input type='textarea'>", "<multiline>"],
+    "answer": "<textarea>"
+  },
+  {
+    "id": 11,
+    "question": "Which attribute is used to specify the type of data the form field can accept?",
+    "options": ["type", "value", "accept", "placeholder"],
+    "answer": "type"
+  },
+  {
+    "id": 12,
+    "question": "Which tag is used to create a radio button in a form?",
+    "options": ["<input type='checkbox'>", "<input type='radio'>", "<radio>", "<button>"],
+    "answer": "<input type='radio'>"
+  },
+  {
+    "id": 13,
+    "question": "What attribute should be added to an input field to enable users to select multiple options?",
+    "options": ["multiselect", "multiple", "selectable", "choices"],
+    "answer": "multiple"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following is not a valid JavaScript variable name?",
+    "options": ["_firstName", "2names", "first_name", "firstname"],
+    "answer": "2names"
+  },
+  {
+    "id": 15,
+    "question": "Which method removes the last element from an array and returns that element?",
+    "options": ["pop()", "push()", "join()", "map()"],
+    "answer": "pop()"
+  },
+  {
+    "id": 16,
+    "question": "What does the typeof operator return for an array?",
+    "options": ["object", "function", "array", "None of the above"],
+    "answer": "object"
+  },
+  {
+    "id": 17,
+    "question": "How do you define a JavaScript variable?",
+    "options": ["var carName", "variable carName", "v carName", "dim carName"],
+    "answer": "var carName"
+  },
+  {
+    "id": 18,
+    "question": "How do you call a function named myFunction in JavaScript?",
+    "options": ["call myFunction()", "myFunction()", "call function myFunction()", "None of the above"],
+    "answer": "myFunction()"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is a way to create an array in JavaScript?",
+    "options": ["var arr = '1, 2, 3'", "var arr = (1, 2, 3)", "var arr = [1, 2, 3]", "var arr = {1, 2, 3}"],
+    "answer": "var arr = [1, 2, 3]"
+  },
+  {
+    "id": 20,
+    "question": "Which operator is used to assign a value to a variable in JavaScript?",
+    "options": ["=", "==", "===", "=>"],
+    "answer": "="
+  }
+]
