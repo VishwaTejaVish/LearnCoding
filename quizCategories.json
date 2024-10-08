@@ -1,7 +1,8 @@
  [
     {
       "id": 1,
-      "title":"HTML"
+      "title":"HTML",
+      "url": "/htmlQuiz/index"
     },
     {
       "id": 2,
