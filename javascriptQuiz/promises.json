@@ -133,7 +133,8 @@
   },
   {
     "id": 23,
-    "question": "What does the React.Fragment component do?",
+    "question": "What will be logged to the console in the following code?",
+    "code": "Promise.resolve(1)\n  .then(x => x + 1)\n.  then(x => { throw new Error('Oops!'); })\n  .catch(err => console.log(err.message))",
     "options": ["Provides state management", "Returns multiple elements without adding extra nodes to the DOM", "Binds event listeners to child components", "Handles routing between pages"],
     "answer": "Returns multiple elements without adding extra nodes to the DOM"
   },
