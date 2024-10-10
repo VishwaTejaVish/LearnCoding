@@ -79,44 +79,44 @@
   },
   {
     "id": 14,
-    "question": "Which of the following is not a valid JavaScript variable name?",
-    "options": ["_firstName", "2names", "first_name", "firstname"],
-    "answer": "2names"
+    "question": "Which attribute is used to associate a label with an input element?",
+    "options": ["name", "for", "id", "value"],
+    "answer": "for"
   },
   {
     "id": 15,
-    "question": "Which method removes the last element from an array and returns that element?",
-    "options": ["pop()", "push()", "join()", "map()"],
-    "answer": "pop()"
+    "question": "What is the purpose of the autocomplete attribute in HTML forms?",
+    "options": ["It suggests previously entered values.", "It clears form data after submission.", "It validates form data.", "It prevents automatic form submission."],
+    "answer": "It suggests previously entered values."
   },
   {
     "id": 16,
-    "question": "What does the typeof operator return for an array?",
-    "options": ["object", "function", "array", "None of the above"],
-    "answer": "object"
+    "question": "Which form element allows users to upload files?",
+    "options": ["<input type='file'>", "<input type='upload'>", "<fileinput>", "<button>"],
+    "answer": "<input type='file'>"
   },
   {
     "id": 17,
-    "question": "How do you define a JavaScript variable?",
-    "options": ["var carName", "variable carName", "v carName", "dim carName"],
-    "answer": "var carName"
+    "question": "Which HTML form attribute is used to define where to display the response after the form is submitted?",
+    "options": ["target", "method", "action", "display"],
+    "answer": "target"
   },
   {
     "id": 18,
-    "question": "How do you call a function named myFunction in JavaScript?",
-    "options": ["call myFunction()", "myFunction()", "call function myFunction()", "None of the above"],
-    "answer": "myFunction()"
+    "question": "Which attribute in a form input field specifies a brief hint to help the user?",
+    "options": ["title", "value", "hint", "placeholder"],
+    "answer": "placeholder"
   },
   {
     "id": 19,
-    "question": "Which of the following is a way to create an array in JavaScript?",
-    "options": ["var arr = '1, 2, 3'", "var arr = (1, 2, 3)", "var arr = [1, 2, 3]", "var arr = {1, 2, 3}"],
-    "answer": "var arr = [1, 2, 3]"
+    "question": "Which HTML form element defines a button for form submission?",
+    "options": ["<submit>", "<input type='button'>", "<input type='submit'>", "<button>"],
+    "answer": "<input type='submit'>"
   },
   {
     "id": 20,
-    "question": "Which operator is used to assign a value to a variable in JavaScript?",
-    "options": ["=", "==", "===", "=>"],
-    "answer": "="
+    "question": "Which of the following is the default value of the method attribute in a form?",
+    "options": ["GET", "POST", "SEND", "PUT"],
+    "answer": "GET"
   }
 ]
