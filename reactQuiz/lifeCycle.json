@@ -31,32 +31,92 @@
   },
   {
     "id": 6,
-    "question": "Which of the following best describes a React component's state?",
-    "options": ["An immutable object that determines how a component renders", "A mutable object that holds information about the component", " A persistent store that is shared across all components", " A feature only available in class components"],
-    "answer": "A mutable object that holds information about the component"
+    "question": "Which lifecycle method can be used to clean up subscriptions or event listeners?",
+    "options": ["componentDidUpdate", "componentDidMount", "shouldComponentUpdate", "componentWillUnmount"],
+    "answer": "componentWillUnmount"
   },
   {
     "id": 7,
-    "question": "What is the difference between props and state?",
-    "options": ["Props are mutable, and state is immutable", "Props are for passing data from parent to child components, while state is local to the component", "Props can only be used in functional components, while state can only be used in class components", "Props are used to manage component lifecycle, and state is for event handling"],
-    "answer": "Props are for passing data from parent to child components, while state is local to the component"
+    "question": "Which lifecycle method is invoked if the component’s state or props change and it has to re-render?",
+    "options": ["componentDidMount", "getDerivedStateFromProps", "componentDidUpdate", "shouldComponentUpdate"],
+    "answer": "componentDidUpdate"
   },
   {
     "id": 8,
-    "question": "What is the purpose of the useReducer hook in React?",
+    "question": "What is the primary purpose of the getDerivedStateFromProps lifecycle method?",
     "options": ["To manage simple component-level state", "To perform side effects", "To manage more complex state logic", "To optimize component performance"],
     "answer": "To manage more complex state logic"
   },
   {
     "id": 9,
-    "question": "Which of the following is true about React's state updates?",
-    "options": ["State updates are synchronous", "State updates are merged immediately", "State updates are batched and applied asynchronously", "State updates do not trigger re-renders"],
-    "answer": "State updates are batched and applied asynchronously"
+    "question": "What happens if you set state in componentDidMount?",
+    "options": ["The component will re-render after the state is updated", "The component will not re-render", "The state will not be updated", "It will cause an infinite loop"],
+    "answer": "The component will re-render after the state is updated"
   },
   {
     "id": 10,
-    "question": "Which hook can be used to provide state management across the whole app without prop drilling?",
-    "options": ["useEffect", "useState", "useContext", "useRef"],
-    "answer": "useContext"
+    "question": "Which lifecycle method is deprecated in React for preventing performance issues?",
+    "options": ["componentWillReceiveProps", "componentDidUpdate", "componentDidMount", "shouldComponentUpdate"],
+    "answer": "componentWillReceiveProps"
+  },
+  {
+    "id": 11,
+    "question": "Which lifecycle method is invoked before the DOM updates during the re-render phase?",
+    "options": ["componentWillUnmount", "getSnapshotBeforeUpdate", "componentDidMount", "componentDidUpdate"],
+    "answer": "getSnapshotBeforeUpdate"
+  },
+  {
+    "id": 12,
+    "question": "Which lifecycle method can be used to force a re-render when certain conditions are met?",
+    "options": ["shouldComponentUpdate", "forceUpdate", "getDerivedStateFromProps", "componentWillUnmount"],
+    "answer": "forceUpdate"
+  },
+  {
+    "id": 13,
+    "question": "In functional components, which hook simulates the behavior of componentDidMount in class components?",
+    "options": ["useState", "useEffect with an empty dependency array", "useReducer", "useContext"],
+    "answer": "useEffect with an empty dependency array"
+  },
+  {
+    "id": 14,
+    "question": "How do you ensure that a useEffect hook runs only when specific state or props change?",
+    "options": ["Pass an empty dependency array to useEffect", "Pass the state or prop variables in the dependency array", "Use the useMemo hook", "Call useState in the dependency array"],
+    "answer": "Pass the state or prop variables in the dependency array"
+  },
+  {
+    "id": 15,
+    "question": "Which hook in functional components mimics the behavior of componentWillUnmount?",
+    "options": ["useState", "useEffect with a cleanup function", "useContext", "useReducer"],
+    "answer": "useEffect with a cleanup function"
+  },
+  {
+    "id": 16,
+    "question": "How can you implement componentDidUpdate in a functional component using hooks?",
+    "options": ["Use useEffect with an empty dependency array", "Use useEffect with the dependencies that you want to monitor for changes", "Use useState inside the render function", "Use useMemo"],
+    "answer": "Use useEffect with the dependencies that you want to monitor for changes"
+  },
+  {
+    "id": 17,
+    "question": "How can you clean up subscriptions or event listeners in a functional component?",
+    "options": ["Use useState to store the subscriptions", "Return a cleanup function inside useEffect", "Use useReducer", "There is no way to clean up subscriptions"],
+    "answer": "Return a cleanup function inside useEffect"
+  },
+  {
+    "id": 18,
+    "question": "In functional components, when does the code inside useEffect run?",
+    "options": ["Before the component renders", "After every render", "Only when a state update happens", "Only when the component is unmounted"],
+    "answer": "After every render"
+  },
+  {
+    "id": 19,
+    "question": "How do you prevent unnecessary re-renders of a component in functional components?",
+    "options": ["Use useEffect with a dependency array", "Use useState with shouldComponentUpdate", "Use React.memo to memoize the component", "Use useEffect without any dependency"],
+    "answer": "Use React.memo to memoize the component"
+  },
+  {
+    "id": 20,
+    "question": "How can you mimic shouldComponentUpdate in a functional component?",
+    "options": ["Use useEffect with no dependencies", "Use React.memo to memoize the component", "Use useState to track updates", "Use useEffect with an empty array"],
+    "answer": "Use React.memo to memoize the component"
   }
 ]
