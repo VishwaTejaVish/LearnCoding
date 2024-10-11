@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "What is the purpose of state in a React component?",
+    "options": ["To store and update local component data", "To handle global application data", "To define the structure of JSX elements", "To manage routes in a React application"],
+    "answer": "To store and update local component data"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following hooks is used to manage state in a functional component?",
+    "options": ["useEffect", "useState", "useRef", "useContext"],
+    "answer": "useState"
+  },
+  {
+    "id": 3,
+    "question": "What happens when the state is updated in a React component?",
+    "options": ["The component is destroyed and recreated", "The component re-renders with the updated state", "The state is immediately updated in the DOM", "The component enters an infinite loop"],
+    "answer": "The component re-renders with the updated state"
+  },
+  {
+    "id": 4,
+    "question": "Which method is used to update state in a class-based component?",
+    "options": ["updateState()", "setState()", "changeState()", "modifyState()"],
+    "answer": "setState()"
+  },
+  {
+    "id": 5,
+    "question": "What is the initial value of a state variable when using the useState hook?",
+    "options": ["null", "undefined", "The value passed as an argument to useState", "false"],
+    "answer": "The value passed as an argument to useState"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following best describes a React component's state?",
+    "options": ["An immutable object that determines how a component renders", "A mutable object that holds information about the component", " A persistent store that is shared across all components", " A feature only available in class components"],
+    "answer": "A mutable object that holds information about the component"
+  },
+  {
+    "id": 7,
+    "question": "What is the difference between props and state?",
+    "options": ["Props are mutable, and state is immutable", "Props are for passing data from parent to child components, while state is local to the component", "Props can only be used in functional components, while state can only be used in class components", "Props are used to manage component lifecycle, and state is for event handling"],
+    "answer": "Props are for passing data from parent to child components, while state is local to the component"
+  },
+  {
+    "id": 8,
+    "question": "What is the purpose of the useReducer hook in React?",
+    "options": ["To manage simple component-level state", "To perform side effects", "To manage more complex state logic", "To optimize component performance"],
+    "answer": "To manage more complex state logic"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following is true about React's state updates?",
+    "options": ["State updates are synchronous", "State updates are merged immediately", "State updates are batched and applied asynchronously", "State updates do not trigger re-renders"],
+    "answer": "State updates are batched and applied asynchronously"
+  },
+  {
+    "id": 10,
+    "question": "Which hook can be used to provide state management across the whole app without prop drilling?",
+    "options": ["useEffect", "useState", "useContext", "useRef"],
+    "answer": "useContext"
+  }
+]
