@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Which method is called when a component is first rendered to the DOM in a class component?",
+    "options": ["componentDidUpdate", "componentDidMount", "componentWillUnmount", "shouldComponentUpdate"],
+    "answer": "componentDidMount"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following lifecycle methods is invoked immediately before a component is removed from the DOM?",
+    "options": ["componentDidMount", "componentWillUnmount", "componentDidUpdate", "shouldComponentUpdate"],
+    "answer": "componentWillUnmount"
+  },
+  {
+    "id": 3,
+    "question": "What is the purpose of the shouldComponentUpdate lifecycle method?",
+    "options": ["To determine whether the component should re-render", "To clean up side effects before unmounting", "To fetch data after the component mounts", "To execute code after the component updates"],
+    "answer": "To determine whether the component should re-render"
+  },
+  {
+    "id": 4,
+    "question": "Which method is called every time a component's state or props change?",
+    "options": ["componentDidUpdate", "componentDidMount", "componentWillUnmount", "shouldComponentUpdate"],
+    "answer": "componentDidUpdate"
+  },
+  {
+    "id": 5,
+    "question": "What lifecycle method is commonly used to make API calls after the component has rendered for the first time?",
+    "options": ["shouldComponentUpdate", "componentWillUnmount", "componentDidMount", "getDerivedStateFromProps"],
+    "answer": "componentDidMount"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following best describes a React component's state?",
+    "options": ["An immutable object that determines how a component renders", "A mutable object that holds information about the component", " A persistent store that is shared across all components", " A feature only available in class components"],
+    "answer": "A mutable object that holds information about the component"
+  },
+  {
+    "id": 7,
+    "question": "What is the difference between props and state?",
+    "options": ["Props are mutable, and state is immutable", "Props are for passing data from parent to child components, while state is local to the component", "Props can only be used in functional components, while state can only be used in class components", "Props are used to manage component lifecycle, and state is for event handling"],
+    "answer": "Props are for passing data from parent to child components, while state is local to the component"
+  },
+  {
+    "id": 8,
+    "question": "What is the purpose of the useReducer hook in React?",
+    "options": ["To manage simple component-level state", "To perform side effects", "To manage more complex state logic", "To optimize component performance"],
+    "answer": "To manage more complex state logic"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following is true about React's state updates?",
+    "options": ["State updates are synchronous", "State updates are merged immediately", "State updates are batched and applied asynchronously", "State updates do not trigger re-renders"],
+    "answer": "State updates are batched and applied asynchronously"
+  },
+  {
+    "id": 10,
+    "question": "Which hook can be used to provide state management across the whole app without prop drilling?",
+    "options": ["useEffect", "useState", "useContext", "useRef"],
+    "answer": "useContext"
+  }
+]
