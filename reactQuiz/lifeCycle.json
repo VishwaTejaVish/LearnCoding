@@ -44,8 +44,8 @@
   {
     "id": 8,
     "question": "What is the primary purpose of the getDerivedStateFromProps lifecycle method?",
-    "options": ["To manage simple component-level state", "To perform side effects", "To manage more complex state logic", "To optimize component performance"],
-    "answer": "To manage more complex state logic"
+    "options": ["To handle side effects before rendering", "To synchronize state with props before rendering", "To make asynchronous calls after rendering", "To determine whether a component should update"],
+    "answer": "To synchronize state with props before rendering"
   },
   {
     "id": 9,
