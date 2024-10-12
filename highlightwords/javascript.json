@@ -1,5 +1,5 @@
 [
   {
-    "highlightwords":["javascript","client-side scripting","interactivity","event-driven","versatile","rich ecosystem","ways to declare variables","let","const","var","variable naming rules","primitive data types","number","string","boolean","undefined","null","non-primitive","object","array","functions","type checking"]
+    "highlightwords":["javascript","client-side scripting:","interactivity:","event-driven:","versatile:","rich ecosystem:","here are some key features of javascript:","ways to declare variables:","let:","const:","var:","variable naming rules:","primitive data types:","number:","string:","boolean:","undefined:","null:","symbol (introduced in es6):","non-primitive (reference) data types:","object:","array:","functions:","type checking:"]
   }
 ]
