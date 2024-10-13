@@ -21,29 +21,5 @@
       "title":"React JS",
       "img": "../assets/react.png",
       "topics": "reactTopics"
-    },
-    {
-        "id": 5,
-        "title":"React Native",
-        "img": "../assets/react.png",
-        "topics": "reactNativeTopics"
-      },
-    {
-      "id": 6,
-      "title":"Python",
-      "img": "../assets/python.png",
-      "topics": "pythonTopics"
-    },
-    {
-      "id": 7,
-      "title":"Java",
-      "img": "../assets/java.png",
-      "topics": "javaTopics"
-    },
-    {
-      "id": 8,
-      "title":"Git",
-      "img": "../assets/git.png",
-      "topics": "gitTopics"
     }
 ]
