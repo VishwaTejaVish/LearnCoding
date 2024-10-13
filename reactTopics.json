@@ -1,33 +1,185 @@
 [
-    {
-        "id": 1,
-        "title": "What is React",
-        "description": "React.js (often referred to simply as React) is an open-source JavaScript library developed by Facebook, primarily used for building user interfaces (UIs), especially for single-page applications (SPAs). \n\nIt enables developers to create large web applications that can update and render efficiently in response to data changes without reloading the entire page. \n\nKey Features of React: \n\nComponent-Based Architecture: \nReact applications are built using components. Each component represents a part of the user interface and can be reused across different parts of the app, making development more modular and maintainable. \n\nVirtual DOM: \nReact uses a virtual DOM (a lightweight copy of the real DOM) to optimize rendering. When the state of an object changes, React updates the virtual DOM first, and then compares it with the actual DOM. Only the differences are updated in the real DOM, which improves performance. \n\nJSX (JavaScript XML): \nReact introduces JSX, a syntax that looks like HTML but is written within JavaScript. JSX makes it easier to write and visualize the structure of the UI by combining JavaScript logic and HTML-like markup. \n\nOne-Way Data Binding: \nReact follows a one-way data flow, meaning that data flows from parent components to child components. This makes it easier to debug and manage large applications by keeping track of data changes. \n\nDeclarative UI: React allows developers to describe how the UI should look based on the current state of the application. React automatically updates and re-renders the components when the state changes, abstracting away the DOM manipulation. \n\nReact Hooks: \nIntroduced in React 16.8, hooks allow developers to use state and other React features in functional components, making code simpler and more readable.\n\nEcosystem: \nReact has a vast ecosystem with libraries for state management (e.g., Redux, Context API), routing (e.g., React Router), and more. It also supports server-side rendering (SSR) through frameworks like Next.js."
-    },
-    {
-        "id": 2,
-        "title": "Life Cycle Methods",
-        "description": "React components go through a series of phases, collectively referred to as the React component lifecycle. These phases represent how a component is created, updated, and eventually removed from the DOM. In React, these lifecycle methods are particularly useful when building dynamic applications as they give developers hooks to execute specific code at each phase. \n\nReact components lifecycle can be broken down into three main stages: \nMounting (when the component is created and inserted into the DOM) \nUpdating (when the component is re-rendered as a result of state or prop changes) \nUnmounting (when the component is removed from the DOM) \n\n1. Mounting Mounting refers to the process of inserting a component into the DOM for the first time. The lifecycle methods related to mounting are: \n\nconstructor(props): \nThis is the first method called when a component is initiated. It is used to set the initial state and bind methods. \n\nstatic getDerivedStateFromProps(props, state): \nRarely used, this method allows a component to update its state in response to prop changes before the initial render. It returns an object to update the state, or null if no update is necessary. \n\nrender(): The only required method in a class component, render() returns the JSX that represents the component’s UI. \n\ncomponentDidMount(): \nThis method is called immediately after the component is mounted (inserted into the DOM). It’s commonly used for making API calls, setting up subscriptions, or initializing DOM nodes. \n\n2. Updating \nA component can update due to changes in its props or state. React provides the following lifecycle methods for the update phase: \n\nstatic getDerivedStateFromProps(props, state): \nAs in the mounting phase, this method can be used to update state based on changing props. It’s called both during mounting and updating. \n\nshouldComponentUpdate(nextProps, nextState): This method allows you to prevent unnecessary re-rendering by returning false if the update is not needed. This is useful for performance optimization. \n\nrender(): As in the mounting phase, render() is called during updates to return the JSX for the component. \n\ngetSnapshotBeforeUpdate(prevProps, prevState): Called right before the DOM is updated. It gives access to the DOM before the changes are applied and can be used to capture the current scroll position or dimensions. \n\ncomponentDidUpdate(prevProps, prevState, snapshot): Called immediately after the component is updated. This is a good place to interact with the updated DOM, perform additional data fetching, or trigger animations based on changes. \n\n3. Unmounting The final stage in the lifecycle is unmounting, which happens when a component is removed from the DOM. There is one lifecycle method associated with this phase: \n\ncomponentWillUnmount(): \nThis method is called right before a component is removed from the DOM. It is commonly used to clean up resources such as event listeners, timers, or network requests."
-    },
-    {
-        "id": 3,
-        "title": "JSX",
-        "description": "JSX (JavaScript XML) is a syntax extension for JavaScript that is used in React to describe what the UI should look like. It allows you to write HTML-like code inside your JavaScript, which React then transforms into React elements. \n\nJSX is a key feature of React because it allows developers to combine JavaScript logic and HTML-like markup in a more readable and expressive way. \n\nKey Features of JSX: \n\nLooks Like HTML but It's Not: \nJSX looks similar to HTML or XML, but it’s not the same. Each JSX element is converted to JavaScript, allowing developers to integrate React components easily within their UI. \n\nEmbedding JavaScript Expressions: \nYou can embed JavaScript expressions inside JSX by wrapping them in curly braces {}. This allows you to dynamically render values. \n\nJSX Attributes: \nJust like HTML attributes, JSX allows you to add attributes to elements. However, since JSX is essentially JavaScript, some attributes like class are written as className (to avoid conflicts with JavaScript keywords). \n\nJSX Must Return a Single Parent Element: \nJSX expressions must return a single parent element. If you need to return multiple elements, you must wrap them in a container element (like a <div>) or use React fragments (<>...</>). \n\nSelf-Closing Tags: \nJust like in HTML, some tags can be self-closing. In JSX, this is required for elements that don’t have children (e.g., <img />, <input />). \n\nConditional Rendering: \nYou can conditionally render elements using JavaScript logic within JSX. \n\nWhy JSX is Useful in React: \n\nSimplicity: \nJSX makes it easier to visualize the structure of the UI since the markup is embedded within the JavaScript code. \n\nIntegration with JavaScript: \nJSX allows seamless integration with JavaScript, enabling you to write logic and UI in the same place. This makes it easier to work with dynamic data and handle events. \n\nDeveloper Experience: \nJSX offers better error messages, auto-completion in IDEs, and easier debugging, which improves the overall developer experience. \n\nJSX Compilation: Since browsers do not understand JSX, a transpiler like Babel is used to transform JSX into regular JavaScript code."
-    },
-    {
-        "id": 4,
-        "title": "Virtual Dom",
-        "description": "The Virtual DOM in React is one of its core concepts, designed to enhance performance by optimizing how updates are made to the actual browser DOM. \nIt is a lightweight copy of the real DOM, allowing React to minimize direct manipulations of the DOM, which can be slow and inefficient. \n\nWhat is the Virtual DOM? \nThe Virtual DOM is essentially an in-memory representation of the real DOM elements. It is a JavaScript object that mirrors the structure of the actual DOM tree but is much more efficient to work with. \nReact uses the virtual DOM to figure out what changes need to be made to the real DOM, and it does so in a way that minimizes performance costs. \n\nHow Does the Virtual DOM Work? \n\nInitial Render: \nWhen a React component renders for the first time, React creates a virtual DOM representation of the UI. This is just a tree of JavaScript objects that describes what the UI should look like. \n\nState or Props Change: \nWhen the state or props of a component change, React doesn't immediately update the real DOM. Instead, it updates the virtual DOM, creating a new virtual DOM tree based on the new state or props. \n\nDiffing Algorithm: \nReact compares the new virtual DOM tree with the previous version of the virtual DOM. This process is called reconciliation or diffing. React identifies exactly which parts of the UI have changed. \n\nEfficient Updates: \nAfter determining what has changed, React updates only the specific parts of the real DOM that need to be changed. This avoids unnecessary manipulation of the entire DOM, improving performance. \n\nWhy is the Virtual DOM Faster? \nThe real DOM is inherently slow because updating the DOM requires recalculating styles, re-rendering layouts, and causing the browser to repaint the screen. \nBy contrast, the virtual DOM is a lightweight representation, and updates to it are performed quickly in memory. \n\nHere’s why using a virtual DOM speeds things up: \n\nBatching Updates: Instead of updating the real DOM on every small change, React batches updates and applies them all at once. This minimizes costly DOM manipulations. \n\nMinimized Repaints and Reflows: React ensures that only the parts of the real DOM that need to be updated are touched, avoiding unnecessary repaints and reflows in the browser. \n\nEfficient Diffing: React’s diffing algorithm efficiently detects changes between versions of the virtual DOM, ensuring that only the necessary updates are applied to the real DOM. \n\nVirtual DOM Process: \n\nRendering: When a component’s state or props change, React renders the new UI into the virtual DOM. \n\nComparison: React compares the new virtual DOM with the previous virtual DOM (diffing). \n\nMinimal Updates: React identifies what has changed and updates only the parts of the real DOM that have been modified. \n\nReal DOM Update: Finally, React applies the minimal changes to the real DOM. \n\nBenefits of the Virtual DOM: \n\nPerformance: The virtual DOM helps React update only the parts of the UI that actually changed, leading to more efficient updates and better performance compared to directly updating the real DOM. \n\nAbstraction: Developers don’t need to manually manipulate the DOM, as React handles the updates under the hood. \n\nDeclarative UI: The use of the virtual DOM allows React’s declarative style of building UIs. You simply declare what the UI should look like, and React ensures that the DOM reflects that. \n\nVirtual DOM and React Fiber: \nWith the introduction of React Fiber in React 16, the virtual DOM got even better. Fiber allows React to break down updates into smaller chunks and prioritize rendering based on importance, resulting in smoother and more responsive UIs, especially in large applications."
-    },
-    {
-        "id": 5,
-        "title": "Props",
-        "description": "In React, props (short for 'properties') are used to pass data from one component to another. \nProps allow components to be reusable and dynamic by enabling you to pass values or functions from a parent component to its child components. \n\nKey Concepts of Props in React: \n\nProps are Read-Only: \nProps are immutable, meaning the child component receiving them cannot change the values of props. They are passed down from the parent and should only be used for rendering or computation within the child component. \n\nProps as Function Parameters: \nProps are passed as arguments to components, and they can be accessed inside the component like function parameters. \n\nProps are Passed Down the Component Tree: \nData flows in one direction in React, from parent to child components. The parent component sends data as props to the child component."
-    },
-    {
-        "id": 6,
-        "title": "Components",
-        "description": ["React components are the building blocks of a React application. \nThey allow you to split the UI into independent, reusable pieces and think about each piece in isolation. \nComponents can be either functional or class-based. \n\n1. Functional Components\nFunctional components are simpler and typically used more in modern React development. They are JavaScript functions that accept props as an argument and return React elements (JSX). \n\nExample of a functional component:","import React from 'react'; \nfunction Greeting(props) { \n  return <h1>Hello, {props.name}!</h1>; \n} \nexport default Greeting;","\n2. Class Components \nClass components were the primary way to create components before React Hooks were introduced. These are ES6 classes that extend from React.Component. They have more features, such as lifecycle methods. \n\nExample of a class component:","import React, { Component } from 'react'; \nclass Greeting extends Component { \n  render() { \n    return <h1>Hello, {this.props.name}!</h1>; \n  } \n} \nexport default Greeting;","Key Concepts in Components:\nProps (Properties): Props are read-only attributes passed from a parent component to a child component. They allow data to flow between components.", "<Greeting name='John' />","The name='John' is a prop that gets passed to the Greeting component. \n\nState: State is an object that holds data or variables that may change over time. In class components, state is managed using this.state. In functional components, you can use the useState Hook. \n\nExample of state in a functional component:", "import React, { useState } from 'react'; \nfunction Counter() { \n  const [count, setCount] = useState(0); \n  return ( \n    <div> \n     <p>You clicked {count} times</p> \n     <button onClick={() => setCount(count + 1)}> \n      Click me \n     </button> \n    </div> \n ); \n} \nexport default Counter;"],
-        "indices": [1,3,5,7]
-    }
+  {
+    "id": 1,
+    "title": "What is React",
+    "description": "React.js (often referred to simply as React) is an open-source JavaScript library developed by Facebook, primarily used for building user interfaces (UIs), especially for single-page applications (SPAs). \n\nIt enables developers to create large web applications that can update and render efficiently in response to data changes without reloading the entire page. \n\nKey Features of React: \n\nComponent-Based Architecture: \nReact applications are built using components. Each component represents a part of the user interface and can be reused across different parts of the app, making development more modular and maintainable. \n\nVirtual DOM: \nReact uses a virtual DOM (a lightweight copy of the real DOM) to optimize rendering. When the state of an object changes, React updates the virtual DOM first, and then compares it with the actual DOM. Only the differences are updated in the real DOM, which improves performance. \n\nJSX (JavaScript XML): \nReact introduces JSX, a syntax that looks like HTML but is written within JavaScript. JSX makes it easier to write and visualize the structure of the UI by combining JavaScript logic and HTML-like markup. \n\nOne-Way Data Binding: \nReact follows a one-way data flow, meaning that data flows from parent components to child components. This makes it easier to debug and manage large applications by keeping track of data changes. \n\nDeclarative UI: React allows developers to describe how the UI should look based on the current state of the application. React automatically updates and re-renders the components when the state changes, abstracting away the DOM manipulation. \n\nReact Hooks: \nIntroduced in React 16.8, hooks allow developers to use state and other React features in functional components, making code simpler and more readable.\n\nEcosystem: \nReact has a vast ecosystem with libraries for state management (e.g., Redux, Context API), routing (e.g., React Router), and more. It also supports server-side rendering (SSR) through frameworks like Next.js.",
+    "highlightWords": [
+      "key features of react:",
+      "component-based architecture:",
+      "virtual dom:",
+      "jsx (javascript xml):",
+      "one-way data binding:",
+      "declarative ui:",
+      "react hooks:",
+      "ecosystem:"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Life Cycle Methods",
+    "description": "React components go through a series of phases, collectively referred to as the React component lifecycle. These phases represent how a component is created, updated, and eventually removed from the DOM. \nIn React, these lifecycle methods are particularly useful when building dynamic applications as they give developers hooks to execute specific code at each phase. \n\nReact components lifecycle can be broken down into three main stages: \n\n1. Mounting Mounting refers to the process of inserting a component into the DOM for the first time. The lifecycle methods related to mounting are: \n\nconstructor(props): \nThis is the first method called when a component is initiated. It is used to set the initial state and bind methods. \n\nstatic getDerivedStateFromProps(props, state): \nRarely used, this method allows a component to update its state in response to prop changes before the initial render. It returns an object to update the state, or null if no update is necessary. \n\nrender(): The only required method in a class component, render() returns the JSX that represents the component’s UI. \n\ncomponentDidMount(): \nThis method is called immediately after the component is mounted (inserted into the DOM). It’s commonly used for making API calls, setting up subscriptions, or initializing DOM nodes. \n\n2. Updating \nA component can update due to changes in its props or state. React provides the following lifecycle methods for the update phase: \n\nstatic getDerivedStateFromProps(props, state): \nAs in the mounting phase, this method can be used to update state based on changing props. It’s called both during mounting and updating. \n\nshouldComponentUpdate(nextProps, nextState): This method allows you to prevent unnecessary re-rendering by returning false if the update is not needed. This is useful for performance optimization. \n\nrender(): As in the mounting phase, render() is called during updates to return the JSX for the component. \n\ngetSnapshotBeforeUpdate(prevProps, prevState): Called right before the DOM is updated. It gives access to the DOM before the changes are applied and can be used to capture the current scroll position or dimensions. \n\ncomponentDidUpdate(prevProps, prevState, snapshot): Called immediately after the component is updated. This is a good place to interact with the updated DOM, perform additional data fetching, or trigger animations based on changes. \n\n3. Unmounting The final stage in the lifecycle is unmounting, which happens when a component is removed from the DOM. There is one lifecycle method associated with this phase: \n\ncomponentWillUnmount(): \nThis method is called right before a component is removed from the DOM. It is commonly used to clean up resources such as event listeners, timers, or network requests.",
+    "highlightWords": [
+      "react components lifecycle can be broken down into three main stages:",
+      "1. mounting",
+      "constructor(props):",
+      "static getderivedstatefromprops(props, state):",
+      "render():",
+      "componentdidmount():",
+      "2. updating",
+      "shouldcomponentupdate(nextprops, nextstate):",
+      "getsnapshotbeforeupdate(prevprops, prevstate):",
+      "componentdidupdate(prevprops, prevstate, snapshot):",
+      "3. unmounting",
+      "componentwillunmount():"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "JSX",
+    "description": "JSX (JavaScript XML) is a syntax extension for JavaScript that is used in React to describe what the UI should look like. It allows you to write HTML-like code inside your JavaScript, which React then transforms into React elements. \n\nJSX is a key feature of React because it allows developers to combine JavaScript logic and HTML-like markup in a more readable and expressive way. \n\nKey Features of JSX: \n\nLooks Like HTML but It's Not: \nJSX looks similar to HTML or XML, but it’s not the same. Each JSX element is converted to JavaScript, allowing developers to integrate React components easily within their UI. \n\nEmbedding JavaScript Expressions: \nYou can embed JavaScript expressions inside JSX by wrapping them in curly braces {}. This allows you to dynamically render values. \n\nJSX Attributes: \nJust like HTML attributes, JSX allows you to add attributes to elements. However, since JSX is essentially JavaScript, some attributes like class are written as className (to avoid conflicts with JavaScript keywords). \n\nJSX Must Return a Single Parent Element: \nJSX expressions must return a single parent element. If you need to return multiple elements, you must wrap them in a container element (like a <div>) or use React fragments (<>...</>). \n\nSelf-Closing Tags: \nJust like in HTML, some tags can be self-closing. In JSX, this is required for elements that don’t have children (e.g., <img />, <input />). \n\nConditional Rendering: \nYou can conditionally render elements using JavaScript logic within JSX. \n\nWhy JSX is Useful in React: \n\nSimplicity: \nJSX makes it easier to visualize the structure of the UI since the markup is embedded within the JavaScript code. \n\nIntegration with JavaScript: \nJSX allows seamless integration with JavaScript, enabling you to write logic and UI in the same place. This makes it easier to work with dynamic data and handle events. \n\nDeveloper Experience: \nJSX offers better error messages, auto-completion in IDEs, and easier debugging, which improves the overall developer experience. \n\nJSX Compilation: Since browsers do not understand JSX, a transpiler like Babel is used to transform JSX into regular JavaScript code.",
+    "highlightWords": [
+      "key features of jsx:",
+      "looks like html but it's not:",
+      "embedding javascript expressions:",
+      "jsx attributes:",
+      "jsx must return a single parent element:",
+      "self-closing tags:",
+      "conditional rendering:",
+      "jsx compilation:",
+      "developer experience:",
+      "integration with javascript:",
+      "simplicity:",
+      "why jsx is useful in react:"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Virtual Dom",
+    "description": "The Virtual DOM in React is one of its core concepts, designed to enhance performance by optimizing how updates are made to the actual browser DOM. \nIt is a lightweight copy of the real DOM, allowing React to minimize direct manipulations of the DOM, which can be slow and inefficient. \n\nWhat is the Virtual DOM? \nThe Virtual DOM is essentially an in-memory representation of the real DOM elements. It is a JavaScript object that mirrors the structure of the actual DOM tree but is much more efficient to work with. \nReact uses the virtual DOM to figure out what changes need to be made to the real DOM, and it does so in a way that minimizes performance costs. \n\nHow Does the Virtual DOM Work? \n\nInitial Render: \nWhen a React component renders for the first time, React creates a virtual DOM representation of the UI. This is just a tree of JavaScript objects that describes what the UI should look like. \n\nState or Props Change: \nWhen the state or props of a component change, React doesn't immediately update the real DOM. Instead, it updates the virtual DOM, creating a new virtual DOM tree based on the new state or props. \n\nDiffing Algorithm: \nReact compares the new virtual DOM tree with the previous version of the virtual DOM. This process is called reconciliation or diffing. React identifies exactly which parts of the UI have changed. \n\nEfficient Updates: \nAfter determining what has changed, React updates only the specific parts of the real DOM that need to be changed. This avoids unnecessary manipulation of the entire DOM, improving performance. \n\nWhy is the Virtual DOM Faster? \nThe real DOM is inherently slow because updating the DOM requires recalculating styles, re-rendering layouts, and causing the browser to repaint the screen. \nBy contrast, the virtual DOM is a lightweight representation, and updates to it are performed quickly in memory. \n\nHere’s why using a virtual DOM speeds things up: \n\nBatching Updates: Instead of updating the real DOM on every small change, React batches updates and applies them all at once. This minimizes costly DOM manipulations. \n\nMinimized Repaints and Reflows: React ensures that only the parts of the real DOM that need to be updated are touched, avoiding unnecessary repaints and reflows in the browser. \n\nEfficient Diffing: React’s diffing algorithm efficiently detects changes between versions of the virtual DOM, ensuring that only the necessary updates are applied to the real DOM. \n\nVirtual DOM Process: \n\nRendering: When a component’s state or props change, React renders the new UI into the virtual DOM. \n\nComparison: React compares the new virtual DOM with the previous virtual DOM (diffing). \n\nMinimal Updates: React identifies what has changed and updates only the parts of the real DOM that have been modified. \n\nReal DOM Update: Finally, React applies the minimal changes to the real DOM. \n\nBenefits of the Virtual DOM: \n\nPerformance: The virtual DOM helps React update only the parts of the UI that actually changed, leading to more efficient updates and better performance compared to directly updating the real DOM. \n\nAbstraction: Developers don’t need to manually manipulate the DOM, as React handles the updates under the hood. \n\nDeclarative UI: The use of the virtual DOM allows React’s declarative style of building UIs. You simply declare what the UI should look like, and React ensures that the DOM reflects that. \n\nVirtual DOM and React Fiber: \nWith the introduction of React Fiber in React 16, the virtual DOM got even better. Fiber allows React to break down updates into smaller chunks and prioritize rendering based on importance, resulting in smoother and more responsive UIs, especially in large applications.",
+    "highlightWords": [
+      "virtual dom and react fiber:",
+      "abstraction",
+      "performance:",
+      "benefits of the virtual dom:",
+      "real dom update:",
+      "minimal updates:",
+      "comparison:",
+      "rendering:",
+      "virtual dom process:",
+      "efficient diffing:",
+      "minimized repaints and reflows:",
+      "batching updates:",
+      "Here’s why using a virtual DOM speeds things up:",
+      "why is the virtual dom faster?",
+      "efficient updates:",
+      "diffing algorithm:",
+      "state or props change:",
+      "initial render:",
+      "how does the virtual dom work?",
+      "what is the virtual dom?",
+      "declarative ui:"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Props",
+    "description": "In React, props (short for 'properties') are used to pass data from one component to another. \nProps allow components to be reusable and dynamic by enabling you to pass values or functions from a parent component to its child components. \n\nKey Concepts of Props in React: \n\nProps are Read-Only: \nProps are immutable, meaning the child component receiving them cannot change the values of props. They are passed down from the parent and should only be used for rendering or computation within the child component. \n\nProps as Function Parameters: \nProps are passed as arguments to components, and they can be accessed inside the component like function parameters. \n\nProps are Passed Down the Component Tree: \nData flows in one direction in React, from parent to child components. The parent component sends data as props to the child component.",
+    "highlightWords": [
+      "props are passed down the component tree:",
+      "props as function parameters:",
+      "props are read-only:",
+      "key concepts of props in react:"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Components",
+    "description": [
+      "React components are the building blocks of a React application. \nThey allow you to split the UI into independent, reusable pieces and think about each piece in isolation. \nComponents can be either functional or class-based. \n\n1. Functional Components\nFunctional components are simpler and typically used more in modern React development. They are JavaScript functions that accept props as an argument and return React elements (JSX). \n\nExample of a functional component:",
+      "import React from 'react'; \nfunction Greeting(props) { \n  return <h1>Hello, {props.name}!</h1>; \n} \nexport default Greeting;",
+      "2. Class Components \nClass components were the primary way to create components before React Hooks were introduced. These are ES6 classes that extend from React.Component. They have more features, such as lifecycle methods. \n\nExample of a class component:",
+      "import React, { Component } from 'react'; \nclass Greeting extends Component { \n  render() { \n    return <h1>Hello, {this.props.name}!</h1>; \n  } \n} \nexport default Greeting;",
+      "Key Concepts in Components:\nProps (Properties): Props are read-only attributes passed from a parent component to a child component. They allow data to flow between components.",
+      "<Greeting name='John' />",
+      "The name='John' is a prop that gets passed to the Greeting component. \n\nState: State is an object that holds data or variables that may change over time. In class components, state is managed using this.state. In functional components, you can use the useState Hook. \n\nExample of state in a functional component:",
+      "import React, { useState } from 'react'; \nfunction Counter() { \n  const [count, setCount] = useState(0); \n  return ( \n    <div> \n     <p>You clicked {count} times</p> \n     <button onClick={() => setCount(count + 1)}> \n      Click me \n     </button> \n    </div> \n ); \n} \nexport default Counter;",
+      "Types of Components: \nPresentational Components: Focus on how things look (UI). They receive data via props and render UI accordingly. \nContainer Components: Focus on how things work (logic). They contain state, manage logic, and pass data to child components. \n\nComponent Composition: \nReact encourages you to build components that are small and composable. You can nest components within one another, allowing for modular and maintainable code.",
+      "function App() { \n return ( \n  <div> \n   <Greeting name='Alice'/> \n   <Greeting name='Bob'/> \n  </div> \n );\n}",
+      "In this example, the App component renders two Greeting components with different props."
+    ],
+    "indices": [1, 3, 5, 7, 9],
+    "highlightWords": [
+      "1. Functional Components",
+      "2. Class Components",
+      "example of a functional component:",
+      "example of a class component:",
+      "key concepts in components",
+      "state:",
+      "example of state in a functional component:",
+      "types of components:",
+      "component composition:"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Events",
+    "description": [
+      "In React, events are actions that occur as a result of user interaction or system-generated events, such as clicking a button, typing in an input field, or scrolling. \nReact events are named using camelCase (e.g., onClick, onChange). \nReact event handlers are written inside curly braces: onClick={handleClick}  instead of onclick='handleClick()' \n\nCommon React Events \n1. Mouse Events: \nonClick: Triggered when an element is clicked. \nonDoubleClick: Triggered when an element is double-clicked. \nonMouseEnter: Triggered when the mouse enters an element. \nonMouseLeave: Triggered when the mouse leaves an element. \nonMouseDown: Triggered when the mouse button is pressed. \nonMouseUp: Triggered when the mouse button is released. \n\n2. Keyboard Events: \nonKeyDown: Triggered when a key is pressed down. \nonKeyPress: Triggered when a key is pressed (deprecated in modern browsers, prefer onKeyDown). \nonKeyUp: Triggered when a key is released. \n\n3. Form Events: \nonChange: Triggered when the value of an input or textarea changes. \nonSubmit: Triggered when a form is submitted. \nonFocus: Triggered when an element gains focus. \nonBlur: Triggered when an element loses focus. \n\n4. Touch Events: \nonTouchStart: Triggered when a finger touches the screen. \nonTouchMove: Triggered when a finger moves on the screen. \nonTouchEnd: Triggered when a finger is lifted from the screen. \n\n5. Window Events: \nonScroll: Triggered when an element is scrolled. \nonResize: Triggered when the window is resized. \n\nExample: Handling a Click Event \nHere's how you handle a click event in React:",
+      "import React from 'react'; \nfunction ClickButton() { \n function handleClick() { \n   alert('Button clicked!'); \n } \n return (\n   <button onClick={handleClick}>Click me</button>; \n )\n} \nexport default ClickButton;",
+      "In this example: \nonClick={handleClick} binds the handleClick function to the button's click event. When the button is clicked, the handleClick function will be executed, showing an alert message. \n\nPreventing Default Behavior \nYou can prevent the default behavior of events (e.g., submitting a form) using the event.preventDefault() method:",
+      "function SubmitForm() { \n function handleSubmit(event) { \n  event.preventDefault(); // Prevents the form from being submitted \n  alert('Form submitted'); \n } \n return ( \n  <form onSubmit={handleSubmit}> \n   <button type='submit'>Submit</button> \n  </form> \n ); \n}"
+    ],
+    "indices": [1, 3],
+    "highlightWords": [
+      "common react events",
+      "1. Mouse events:",
+      "onclick:",
+      "ondoubleclick:",
+      "onmouseenter:",
+      "onmouseleave:",
+      "onmousedown:",
+      "onmouseup:",
+      "2. keyboard events",
+      "onkeydown:",
+      "onkeyup:",
+      "onkeypress:",
+      "3. form events:",
+      "onchange:",
+      "onsubmit:",
+      "onfocus:",
+      "onblur:",
+      "4. touch events:",
+      "ontouchstart:",
+      "ontouchmove:",
+      "ontouchend:",
+      "5. window events:",
+      "onscroll:",
+      "onresize:",
+      "example:",
+      "onclick={handleclick}",
+      "onclick='handleclick()'",
+      "preventing default behavior"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Conditional Rendering",
+    "description": [
+      "In React, conditional rendering allows you to render different components or elements based on specific conditions. It works similarly to JavaScript conditions using if, else, ternary operators, or logical operators, enabling dynamic and flexible UI updates. \n\nHere are some common techniques for conditional rendering in React: \n\n1. Using if Statements \nThe most straightforward way to conditionally render a component is using a JavaScript if statement within the render method or a functional component. \n\nExample:",
+      "function UserGreeting(props) { \n const isLoggedIn = props.isLoggedIn; \n if (isLoggedIn) { \n  return <h1>Welcome back!</h1>; \n } \n return <h1>Please sign up.</h1>; \n}",
+      "In this example: \nIf isLoggedIn is true, the message 'Welcome back!' is rendered. Otherwise, 'Please sign up.' is displayed. \n\n2. Ternary Operator \nA more concise way to achieve conditional rendering is to use the ternary operator (condition ? exprIfTrue : exprIfFalse). \n\nExample:",
+      "function UserGreeting(props) { \n return (\n  props.isLoggedIn ? \n   <h1>Welcome back!</h1> : \n   <h1>Please sign up.</h1>\n ); \n}",
+      "In this case, the ternary operator directly evaluates whether the user is logged in and renders the appropriate message. \n\n3. Logical && Operator \nYou can also use the logical AND (&&) operator to render a component only when a condition is true. If the condition is false, React skips the component. \n\nExample:",
+      "function Notifications(props) { \n const hasNotifications = props.hasNotifications; \n return ( \n  <div> \n   {hasNotifications && \n    <h2>You have new notifications!</h2>\n   } \n   <p>Other content...</p> \n  </div> \n ); \n}",
+      "In this example, if hasNotifications is true, the <h2> element will be rendered. If it's false, React will skip the <h2> element and continue rendering the rest of the component."
+    ],
+    "indices": [1, 3, 5],
+    "highlightWords": [
+      "Here are some common techniques for conditional rendering in React:",
+      "1. Using if Statements",
+      "Example:",
+      "2. Ternary Operator",
+      "3. Logical && Operator"
+    ]
+  }
 ]
