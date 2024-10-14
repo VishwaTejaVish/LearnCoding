@@ -42,5 +42,43 @@
       "functions:",
       "type checking:"
     ]
+  },
+  {
+    "id": 4,
+    "title": "Hoisting",
+    "description": [
+      "Hoisting in JavaScript is a behavior in which variable and function declarations are moved to the top of their containing scope (either the global scope or function scope) during the compile phase, before the code is executed. This means that you can use variables and functions before they are declared in the code, although how they behave can vary depending on whether they were declared with var, let, const, or as a function.\n\nKey Points About Hoisting: \n\n1. Variable Hoisting with var: \nVariables declared with var are hoisted to the top of their function or global scope. \nHowever, only the declaration is hoisted, not the initialization. So, if you try to use the variable before it is assigned a value, it will be undefined. \n\nExample:",
+      "console.log(x); // Output: undefined (because declaration is hoisted) \nvar x = 10; \nconsole.log(x); // Output: 10",
+      "Behind the scenes, this code is interpreted as:",
+      "var x; // Declaration is hoisted \nconsole.log(x); // undefined, as x is declared but not yet initialized \nx = 10; // Initialization happens later \nconsole.log(x); // 10",
+      "\n2. Variable Hoisting with let and const: \nVariables declared with let and const are also hoisted, but they are not initialized during hoisting. This leads to a temporal dead zone (TDZ), meaning you cannot use the variable until the actual line of code where it's defined is executed. \nAccessing the variable before it is initialized will result in a ReferenceError. \n\nExample with let:",
+      "console.log(y); // ReferenceError: Cannot access 'y' before initialization \nlet y = 20;",
+      "\nExample with const:",
+      "console.log(z); // ReferenceError: Cannot access 'z' before initialization \nconst z = 30;",
+      "\n3. Function Hoisting: \nFunction declarations are fully hoisted. This means both the declaration and the function body are hoisted to the top of the scope, so you can call the function before its declaration in the code. \n\nExample:",
+      "greet(); // Output: Hello! \n\nfunction greet() { \n console.log('Hello!'); \n}",
+      "Function expressions, whether declared with var, let, or const, are not hoisted in the same way. If a function is assigned to a variable, only the variable is hoisted (as with var), but the function itself is not initialized until the assignment line is reached. \n\nExample with function expression:",
+      "console.log(sayHello); // Output: undefined \nvar sayHello = function() { \n console.log('Hello!'); \n}; \nsayHello(); // Output: Hello!",
+      "If you try to use a function expression before the variable assignment, it will throw a TypeError if it's declared with let or const",
+      "Summary: \n• Variables declared with var are hoisted to the top, but their values are initialized as undefined until the assignment occurs. \n\n• Variables declared with let and const are hoisted but cannot be accessed before their declaration due to the temporal dead zone. \n\n• Function declarations are fully hoisted, so they can be called before their definition. \n\n• Function expressions (even if declared with var, let, or const) are not fully hoisted and behave like variable hoisting.\n\nHoisting Example:",
+      "function testHoisting() { \n console.log(a); // undefined (because of var hoisting) \n console.log(b); // ReferenceError (because let is hoisted but in TDZ) \n console.log(c); // ReferenceError (because const is hoisted but in TDZ) \n\n var a = 1; \n let b = 2; \n const c = 3; \n\n console.log(a); // 1 \n console.log(b); // 2 \n console.log(c); // 3 \n} \ntestHoisting();"
+    ],
+    "indices": [1, 3, 5, 7, 9, 11, 14],
+    "highlightWords": [
+      "•",
+      "Key Points About Hoisting:",
+      "1. Variable Hoisting with var:",
+      "Example:",
+      "2. Variable Hoisting with let and const:",
+      "temporal dead zone (TDZ)",
+      "Example with let:",
+      "Example with const:",
+      "3. Function Hoisting:",
+      "Summary:",
+      "Hoisting Example:",
+      "Example with function expression:",
+      "Example with let:",
+      "Example with const:"
+    ]
   }
 ]
