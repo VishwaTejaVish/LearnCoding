@@ -45,6 +45,37 @@
   },
   {
     "id": 4,
+    "title": "let and const",
+    "description": [
+      "In JavaScript, both let and const were introduced in ES6 (ECMAScript 2015) to provide better control over variable scoping and behavior compared to the older var keyword. Although they are similar in many ways, there are key differences between let and const that determine when and how to use them.",
+      "1. let Keyword: \n• let allows you to declare variables that are block-scoped. This means that they are only accessible within the block { } in which they are defined (e.g., inside a loop, if statement, or function). \n\n• Unlike var, variables declared with let are not hoisted in the same way. They are hoisted, but they are not initialized, and if you try to access them before their declaration, it will throw a ReferenceError due to the temporal dead zone (TDZ). \n\n• Variables declared with let can be updated, but they cannot be redeclared within the same scope. \n\nExample:",
+      "let x = 10; \nx = 20; // This is allowed (reassignment) \nconsole.log(x); // Output: 20 \n\nlet x = 30; // SyntaxError: Identifier 'x' has already been declared",
+      "\nBlock Scope Example:",
+      "let a = 10; \nif (true) { \n let a = 20; // This 'a' is scoped to this block \n console.log(a); // Output: 20 \n} \nconsole.log(a); // Output: 10",
+      "\n2. const Keyword: \n• const is used to declare variables that are also block-scoped, but with one important difference: the value of a variable declared with const cannot be reassigned after it is initialized. \n\n• Constant references must be initialized at the time of declaration and cannot be left undefined. Once a value is assigned to a const variable, it cannot be changed. \n\n• Like let, const variables are hoisted but are also subject to the temporal dead zone (TDZ), meaning they are not accessible until they are declared in the code. \n\n• Although a const variable itself cannot be reassigned, if the value is an object or array, the contents of the object or array can still be modified. This is because const only prevents reassigning the variable reference, not the data inside the object or array. \n\nExample:",
+      "const y = 10; \ny = 20; // TypeError: Assignment to constant variable",
+      "Object with const:",
+      "const person = { name: 'Alice' age: 25 }; \nperson.age = 30; // This is allowed (modifying properties of the object) \nconsole.log(person.age); // Output: 30 \n\n// However, you cannot reassign the `person` object itself: \nperson = { name: 'Bob', age: 40 }; // TypeError: Assignment to constant variable",
+      "\n3. When to Use let and const: \n• Use const by default for variables that will not change during the program’s execution. This makes your code easier to understand and maintain, as it indicates that the value is constant. \n\n• Use let when you expect the value of the variable to change, such as in loops, conditionals, or during reassignment.",
+      "\nSummary: \n• let allows you to declare variables with block scope that can be updated later. \n\n• const allows you to declare block-scoped constants that cannot be reassigned after they are initialized. \n\n• In modern JavaScript development, it is recommended to use const for values that should not change and let when the value will change, avoiding var entirely for better scoping control and predictability."
+    ],
+    "indices": [2, 4, 6, 8],
+    "highlightWords": [
+      "•",
+      "1. let Keyword:",
+      "block-scoped.",
+      "ReferenceError",
+      "temporal dead zone (TDZ)",
+      "Example:",
+      "Block Scope Example:",
+      "2. const Keyword:",
+      "3. When to Use let and const:",
+      "Summary:",
+      "Object with const:"
+    ]
+  },
+  {
+    "id": 5,
     "title": "Hoisting",
     "description": [
       "Hoisting in JavaScript is a behavior in which variable and function declarations are moved to the top of their containing scope (either the global scope or function scope) during the compile phase, before the code is executed. This means that you can use variables and functions before they are declared in the code, although how they behave can vary depending on whether they were declared with var, let, const, or as a function.\n\nKey Points About Hoisting: \n\n1. Variable Hoisting with var: \nVariables declared with var are hoisted to the top of their function or global scope. \nHowever, only the declaration is hoisted, not the initialization. So, if you try to use the variable before it is assigned a value, it will be undefined. \n\nExample:",
@@ -79,37 +110,6 @@
       "Example with function expression:",
       "Example with let:",
       "Example with const:"
-    ]
-  },
-  {
-    "id": 5,
-    "title": "let and const",
-    "description": [
-      "In JavaScript, both let and const were introduced in ES6 (ECMAScript 2015) to provide better control over variable scoping and behavior compared to the older var keyword. Although they are similar in many ways, there are key differences between let and const that determine when and how to use them.",
-      "1. let Keyword: \n• let allows you to declare variables that are block-scoped. This means that they are only accessible within the block { } in which they are defined (e.g., inside a loop, if statement, or function). \n\n• Unlike var, variables declared with let are not hoisted in the same way. They are hoisted, but they are not initialized, and if you try to access them before their declaration, it will throw a ReferenceError due to the temporal dead zone (TDZ). \n\n• Variables declared with let can be updated, but they cannot be redeclared within the same scope. \n\nExample:",
-      "let x = 10; \nx = 20; // This is allowed (reassignment) \nconsole.log(x); // Output: 20 \n\nlet x = 30; // SyntaxError: Identifier 'x' has already been declared",
-      "\nBlock Scope Example:",
-      "let a = 10; \nif (true) { \n let a = 20; // This 'a' is scoped to this block \n console.log(a); // Output: 20 \n} \nconsole.log(a); // Output: 10",
-      "\n2. const Keyword: \n• const is used to declare variables that are also block-scoped, but with one important difference: the value of a variable declared with const cannot be reassigned after it is initialized. \n\n• Constant references must be initialized at the time of declaration and cannot be left undefined. Once a value is assigned to a const variable, it cannot be changed. \n\n• Like let, const variables are hoisted but are also subject to the temporal dead zone (TDZ), meaning they are not accessible until they are declared in the code. \n\n• Although a const variable itself cannot be reassigned, if the value is an object or array, the contents of the object or array can still be modified. This is because const only prevents reassigning the variable reference, not the data inside the object or array. \n\nExample:",
-      "const y = 10; \ny = 20; // TypeError: Assignment to constant variable",
-      "Object with const:",
-      "const person = { name: 'Alice' age: 25 }; \nperson.age = 30; // This is allowed (modifying properties of the object) \nconsole.log(person.age); // Output: 30 \n\n// However, you cannot reassign the `person` object itself: \nperson = { name: 'Bob', age: 40 }; // TypeError: Assignment to constant variable",
-      "\n3. When to Use let and const: \n• Use const by default for variables that will not change during the program’s execution. This makes your code easier to understand and maintain, as it indicates that the value is constant. \n\n• Use let when you expect the value of the variable to change, such as in loops, conditionals, or during reassignment.",
-      "\nSummary: \n• let allows you to declare variables with block scope that can be updated later. \n\n• const allows you to declare block-scoped constants that cannot be reassigned after they are initialized. \n\n• In modern JavaScript development, it is recommended to use const for values that should not change and let when the value will change, avoiding var entirely for better scoping control and predictability."
-    ],
-    "indices": [2, 4, 6, 8],
-    "highlightWords": [
-      "•",
-      "1. let Keyword:",
-      "block-scoped.",
-      "ReferenceError",
-      "temporal dead zone (TDZ)",
-      "Example:",
-      "Block Scope Example:",
-      "2. const Keyword:",
-      "3. When to Use let and const:",
-      "Summary:",
-      "Object with const:"
     ]
   }
 ]
