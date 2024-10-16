@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "question": "What is hoisting in JavaScript?",
+    "options": [
+      "Moving function and variable declarations to the top of their scope before code execution",
+      "Delaying the execution of code",
+      "Preventing variable reassignment",
+      "A method of error handling"
+    ],
+    "answer": "Moving function and variable declarations to the top of their scope before code execution"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is true about JavaScript hoisting?",
+    "options": [
+      "Only variables declared with let are hoisted",
+      "Both variable and function declarations are hoisted",
+      "Only function expressions are hoisted",
+      "Variables declared with const are hoisted and initialized with undefined"
+    ],
+    "answer": "Both variable and function declarations are hoisted"
+  },
+  {
+    "id": 3,
+    "question": "What is the output of the following code?",
+    "code": "console.log(x); \nvar x = 5;",
+    "options": ["undefined", "5", "ReferenceError", "null"],
+    "answer": "undefined",
+    "explanation":"Due to hoisting, the declaration var x is hoisted but not the assignment, so x is undefined at the time of logging."
+  },
+  {
+    "id": 4,
+    "question": "What is the output of the following code?",
+    "code": "function test() { \n console.log(a); \n var a = 10; \n} \ntest();",
+    "options": ["10", "undefined", "null", "ReferenceError"],
+    "answer": "undefined",
+    "explanation":"The variable a is hoisted, but the initialization happens after the console.log(), so a is undefined when logged."
+  },
+  {
+    "id": 5,
+    "question": "Which of the following statements about let and const variables is correct regarding hoisting?",
+    "options": [
+      "They are hoisted and initialized with undefined",
+      "They are not hoisted at all",
+      "They are hoisted but not initialized until the code execution reaches their declaration",
+      "They are hoisted and initialized with null"
+    ],
+    "answer": "They are hoisted but not initialized until the code execution reaches their declaration",
+    "explanation":"let and const variables are hoisted, but they are in a 'temporal dead zone' until the declaration is encountered."
+  },
+  {
+    "id": 6,
+    "question": "What will be the output of the following code?",
+    "code": "console.log(x); \nlet x = 10;",
+    "options": [
+      "10",
+      "undefined",
+      "null",
+      "ReferenceError"
+    ],
+    "answer": "ReferenceError",
+    "explanation":"Variables declared with let are hoisted, but they remain in the temporal dead zone until initialized, causing a ReferenceError"
+  },
+  {
+    "id": 7,
+    "question": "What is the difference between function declarations and function expressions in terms of hoisting?",
+    "options": [
+      "Both are hoisted in the same way",
+      "Function declarations are hoisted, but function expressions are not",
+      "Function expressions are hoisted, but function declarations are not",
+      "Neither function declarations nor expressions are hoisted"
+    ],
+    "answer": "Function declarations are hoisted, but function expressions are not"
+  },
+  {
+    "id": 8,
+    "question": "What is the output of the following code?",
+    "code": "hoist(); \nfunction hoist() { \n console.log('Hoisted!'); \n}",
+    "options": ["Hoisted!", "undefined", "ReferenceError", "TypeError"],
+    "answer": "Hoisted!",
+    "explanation":"Function declarations are hoisted in their entirety, so hoist() is available before its definition."
+  },
+  {
+    "id": 9,
+    "question": "What will be the output of the following code?",
+    "code":"hoist(); \nvar hoist = function() { \n console.log('Hoisted?'); \n}",
+    "options": ["Hoisted!", "undefined", "ReferenceError", "TypeError"],
+    "answer": "TypeError",
+    "explanation":"The variable hoist is hoisted as undefined, but the function expression is not hoisted. Trying to invoke it as a function leads to a TypeError."
+  },
+  {
+    "id": 10,
+    "question": "Which of the following best describes the hoisting behavior of var, let, and const?",
+    "options": [
+      "Only var variables are hoisted",
+      "All variables are hoisted, but var is initialized with undefined, while let and const are not initialized",
+      "None of the variables are hoisted",
+      "Only let and const are hoisted"
+    ],
+    "answer": "All variables are hoisted, but var is initialized with undefined, while let and const are not initialized"
+  },
+  {
+    "id": 11,
+    "question": "What will be the output of the following code?",
+    "code": "console.log(foo); \nvar foo = function() { \n return 'Hello'; \n};",
+    "options": ["undefined", "Hello", "ReferenceError", "TypeError"],
+    "answer": "undefined",
+    "explanation":"The variable foo is hoisted as undefined, and the function expression is not hoisted, so the result is undefined."
+  },
+  {
+    "id": 12,
+    "question": "What will be the output of the following code?",
+    "code": "console.log(bar); \nconst bar = 10;",
+    "options": ["undefined", "10", "ReferenceError", "TypeError"],
+    "answer": "ReferenceError",
+    "explanation":"The variable bar is hoisted but remains in the temporal dead zone, causing a ReferenceError when accessed before initialization."
+  },
+  {
+    "id": 13,
+    "question": "Which of the following statements is true about hoisting and strict mode?",
+    "options": [
+      "Hoisting does not occur in strict mode",
+      "Hoisting only applies to var in strict mode",
+      "Hoisting works the same in both strict and non-strict mode",
+      "Hoisting is disabled for function declarations in strict mode"
+    ],
+    "answer": "Hoisting works the same in both strict and non-strict mode"
+  },
+  {
+    "id": 14,
+    "question": "What will be the output of the following code?",
+    "code": "function test() { \n console.log(a); \n let a = 5; \n} \ntest();",
+    "options": ["undefined", "5", "ReferenceError", "TypeError"],
+    "answer": "ReferenceError",
+    "explanation":"let is hoisted but remains in the temporal dead zone until initialized, causing a ReferenceError"
+  },
+  {
+    "id": 15,
+    "question": "What will be the output of the following code?",
+    "code":"console.log(foo); \nfoo = 5; \nvar foo;",
+    "options": ["undefined", "5", "ReferenceError", "TypeError"],
+    "answer": "undefined",
+    "explanation":"The declaration var foo is hoisted to the top and initialized as undefined, so undefined is logged."
+  }
+]
