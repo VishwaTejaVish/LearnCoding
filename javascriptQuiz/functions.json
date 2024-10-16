@@ -1,0 +1,133 @@
+[
+    {
+      "id": 1,
+      "question": "How do you create a function in JavaScript?",
+      "options": ["function = myFunction()", "function myFunction()", "function:myFunction()", "create myFunction()"],
+      "answer": "function myFunction()"
+    },
+    {
+      "id": 2,
+      "question": "How can you call a function in JavaScript?",
+      "options": ["call myFunction()", "myFunction()", "call function myFunction()", "execute myFunction()"],
+      "answer": "myFunction()"
+    },
+    {
+      "id": 3,
+      "question": "What is the output of the following code?",
+      "code": "function add(a, b) { \n return a + b; \n} \nconsole.log(add(5, 10));",
+      "options": ["undefined", "5", "510", "15"],
+      "answer": "15"
+    },
+    {
+      "id": 4,
+      "question": "What will the following code print?",
+      "code": "function myFunc() { \n console.log('Hello!'); \n} \nmyFunc();",
+      "options": ["undefined", "Hello!", "myFunc", "ReferenceError"],
+      "answer": "Hello!"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a correct way to define an anonymous function?",
+      "options": ["function() { return 'Hello!'; }", "function myFunc() { return 'Hello!'; }", "(function() { return 'Hello!'; })", "anonymous function() { return 'Hello!'; }"],
+      "answer": "function() { return 'Hello!'; }"
+    },
+    {
+      "id": 6,
+      "question": "What will be the output of the following code?",
+      "code": "function greet(name = 'Guest') { \n return 'Hello, '; + name; \n} \nconsole.log(greet());",
+      "options": ["Hello, Guest", "Hello, undefined", "undefined", "ReferenceError"],
+      "answer": "Hello, Guest"
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is true about JavaScript functions?",
+      "options": ["A function must always return a value", "Functions are objects in JavaScript", "Function declarations are not hoisted", "Functions cannot be passed as arguments to other functions"],
+      "answer": "Functions are objects in JavaScript"
+    },
+    {
+      "id": 8,
+      "question": "What is the output of the following code?",
+      "code": "function sayHi() { \n return 'Hi!'; \n} \nconsole.log(typeof sayHi);",
+      "options": ["function", "string", "object", "undefined"],
+      "answer": "function"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is NOT true about functions in JavaScript?",
+      "options": ["Functions can have default parameters", "Functions are hoisted to the top of their scope", "Functions can return multiple values directly", "Functions can be assigned to variables"],
+      "answer": "Functions can return multiple values directly"
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the return statement in a function?",
+      "options": ["To stop the execution of the function and return a value", "To call another function", "To print the result of the function", "To pause the execution of a function"],
+      "answer": "To stop the execution of the function and return a value"
+    },
+    {
+      "id": 11,
+      "question": "What will be the output of the following code?",
+      "code": "function multiply(x, y) { \n return x * y; \n} \nconsole.log(multiply(2));",
+      "options": ["NaN", "0", "2", "undefined"],
+      "answer": "NaN"
+    },
+    {
+      "id": 12,
+      "question": "What will be the output of the following code?",
+      "code": "var x = function(a, b) { \n  return a * b \n}; \nconsole.log(x(4, 3));",
+      "options": ["7", "12", "undefined", "TypeError"],
+      "answer": "12"
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is a higher-order function?",
+      "options": ["A function that takes another function as an argument or returns a function", "A function that runs before all other functions", "A function that has multiple return statements", "A function that is invoked before a script loads"],
+      "answer": "A function that takes another function as an argument or returns a function"
+    },
+    {
+      "id": 14,
+      "question": "What will be the output of the following code?",
+      "code": "function outer() { \n var a = 5; \n function inner() { \n return a; \n } \n return inner; \n} var result = outer(); console.log(result());",
+      "options": ["undefined", "5", "ReferenceError", "TypeError"],
+      "answer": "5"
+    },
+    {
+      "id": 15,
+      "question": "What is a pure function in JavaScript?",
+      "options": ["A function that always produces the same output given the same inputs", "A function that depends on external state", "A function that modifies its inputs", "A function that calls other functions"],
+      "answer": "A function that always produces the same output given the same inputs"
+    },
+    {
+      "id": 16,
+      "question": "What will be the output of the following code?",
+      "code": "function displayMessage() { \n console.log(message); \n var message = 'Hello!'; \n} \ndisplayMessage();",
+      "options": ["Hello!", "undefined", "ReferenceError", "null"],
+      "answer": "undefined",
+      "explanation":"Due to hoisting, the message variable is declared at the top of the function but not initialized until after the console.log, so it prints undefined."
+    },
+    {
+      "id": 17,
+      "question": "What is an Immediately Invoked Function Expression (IIFE) in JavaScript?",
+      "options": ["A function that is defined and immediately called", "A function that is called automatically after 1 second", "A function that takes no arguments", "A function that returns undefined"],
+      "answer": "A function that is defined and immediately called"
+    },
+    {
+      "id": 18,
+      "question": "What will be the output of the following IIFE?",
+      "code": "(function() { \n var a = 10; \n console.log(a); \n})();",
+      "options": ["undefined", "10", "ReferenceError", "null"],
+      "answer": "10"
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of a callback function in JavaScript?",
+      "options": ["To pass a function as an argument to another function", "To call a function before page load", "To execute code at regular intervals", "To log errors to the console"],
+      "answer": "To pass a function as an argument to another function"
+    },
+    {
+      "id": 20,
+      "question": "What is the output of the following code?",
+      "code": "function test() { \n console.log('Test function'); \n return function() { \n console.log('Returned function'); \n }; \n} \ntest()();",
+      "options": ["Test function", "Returned function", "Both Test function and Returned function", "undefined"],
+      "answer": "Both Test function and Returned function"
+    }
+  ]
