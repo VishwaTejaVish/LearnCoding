@@ -184,5 +184,57 @@
       "Example with let:",
       "Example with const:"
     ]
+  },
+  {
+    "id": 7,
+    "title": "Closure",
+    "description": [
+      "In JavaScript, a closure is a function that has access to its own scope, the scope of the outer function, and the global scope, even after the outer function has finished executing.",
+      "Closures allow inner functions to access variables and parameters of outer functions, even after the outer function has returned.",
+      "Key Concepts of Closures: \n\nFunction within a Function: A closure involves a function defined inside another function (the outer function). \n\nScope Chain: The inner function has access to variables from: \n• Its own local scope. \n• The outer function's scope. \n• The global scope. \n\nPersistence of Scope: Even when the outer function finishes execution, the inner function retains access to the variables in the outer function’s scope. \n\nExample of a Closure:",
+      "function outerFunction(outerVariable) { \n return function innerFunction(innerVariable) { \n  console.log('Outer Variable: ' + outerVariable); \n  console.log('Inner Variable: ' + innerVariable); \n }; \n} \nconst newFunction = outerFunction('outside'); \nnewFunction('inside'); \n// Output: \n// Outer Variable: outside \n// Inner Variable: inside",
+      "Explanation: \n• outerFunction takes one argument outerVariable and returns the innerFunction. \n• innerFunction can access both innerVariable (its own variable) and outerVariable (from the outer scope). \n• Even after outerFunction has finished execution, newFunction retains access to the outerVariable from outerFunction's scope.",
+      "How Closures Work: \nWhen the outerFunction is called, it returns the innerFunction. The returned function retains a reference to the variables declared in outerFunction, creating a closure. This means even after outerFunction finishes executing, the inner function still 'remembers' the variables from the outer scope.",
+      "Practical Use Cases of Closures: \n1. Data Privacy (Encapsulation): \nClosures can be used to create private variables and functions that are not accessible from outside the function. This is a common technique in JavaScript to simulate private members in classes. \n\nExample:",
+      "function counter() { \n let count = 0; \n return function() { \n count++; \n return count; \n }; \n} \nconst increment = counter(); \nconsole.log(increment()); // Output: 1 \nconsole.log(increment()); // Output: 2 \nconsole.log(increment()); // Output: 3",
+      "Explanation: \nThe variable count is private to the counter function and cannot be accessed directly from outside. \n• The inner function returned from counter forms a closure, allowing access to the count variable, which is preserved between function calls. \n\n2. Function Factories: \n• Closures allow you to create 'function factories' – functions that return other functions configured with specific data. \n\nExample:",
+      "function createMultiplier(multiplier) { \n return function(value) { \n return value * multiplier; \n }; \n} \nconst double = createMultiplier(2); \nconst triple = createMultiplier(3); \nconsole.log(double(5)); // Output: 10 \nconsole.log(triple(5)); // Output: 15",
+      "Explanation: \n• The createMultiplier function returns a new function that multiplies a given number by the multiplier passed to createMultiplier. \n• Each returned function remembers its own multiplier value thanks to closures. \n\n3. Event Handlers in Web Development: \nClosures are often used in JavaScript event handling to maintain access to the variables from an outer function, even after an event occurs. \n\nExample:",
+      "function setupClickHandler(message) { \n document.getElementById('myButton').addEventListener('click', function() { \n alert(message); \n }); \n} \nsetupClickHandler('Button clicked!');",
+      "Explanation: \n• The inner function (the event handler) can access the message variable from the outer setupClickHandler function even after setupClickHandler has executed. \n\n4. Callback Functions: \nClosures are frequently used in asynchronous programming, where a function (callback) is executed after some event, like a timeout or a data fetch. \n\nExample:",
+      "function delayedGreeting(name) { \n setTimeout(function() { \n console.log('Hello, ' + name); \n }, 2000); \n} \ndelayedGreeting('Alice'); // Output after 2 seconds: Hello, Alice",
+      "Explanation: \n• The anonymous function inside setTimeout forms a closure and retains access to the name parameter even after delayedGreeting has finished executing. \n\nCommon Pitfalls with Closures: \n1. Accidental Capture of Loop Variables: When closures are used inside loops, all closures might capture the same variable, leading to unexpected results. \n\nExample (Problem):",
+      "for (var i = 1; i <= 3; i++) { \n setTimeout(function() { \n console.log(i); \n }, 1000); \n} \n// Output: 1, 2, 3 (after 1 second)",
+      "Explanation: \n• The closure created by the anonymous function inside setTimeout captures the same i variable. By the time the setTimeout callback is executed, the loop has completed, and i is 4. \n\nSolution: Use let instead of var in the loop, since let has block scope.",
+      "for (let i = 1; i <= 3; i++) { \n setTimeout(function() { \n console.log(i); \n }, 1000); \n} \n// Output: 1, 2, 3 (after 1 second)",
+      "\nAdvantages of Closures: \n\nData Encapsulation: Closures allow you to hide implementation details and create private variables. \n\nState Persistence: Functions can remember and access variables from their containing scope, making closures perfect for stateful programming. \n\nFunctional Programming: Closures are a core concept in functional programming, enabling higher-order functions and function composition.",
+      "Summary: \nA closure is a powerful feature in JavaScript that allows a function to retain access to the variables of its outer scope, even after that outer function has finished executing. \nClosures enable data privacy, function factories, event handlers, and more, making them an essential tool in JavaScript programming."
+    ],
+    "highlightWords": [
+      "•",
+      "Key Concepts of Closures:",
+      "Function within a Function:",
+      "Scope Chain: ",
+      "Persistence of Scope:",
+      "Example of a Closure:",
+      "Explanation:",
+      "How Closures Work:",
+      "Practical Use Cases of Closures:",
+      "Data Privacy (Encapsulation):",
+      "Example:",
+      "Function Factories:",
+      "Event Handlers in Web Development:",
+      "Callback Functions:",
+      "Common Pitfalls with Closures:",
+      "Accidental Capture of Loop Variables:",
+      "Example (Problem):",
+      "Solution:",
+      "Advantages of Closures:",
+      "Data Encapsulation:",
+      "State Persistence:",
+      "Functional Programming:",
+      "Summary:"
+    ],
+    "indices": [3, 7, 9, 11, 13, 15, 17]
   }
 ]
