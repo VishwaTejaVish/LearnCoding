@@ -236,5 +236,58 @@
       "Summary:"
     ],
     "indices": [3, 7, 9, 11, 13, 15, 17]
+  },
+  {
+    "id": 8,
+    "title": "Promises",
+    "description": [
+      "In JavaScript, a Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises provide a more elegant way to handle asynchronous code compared to traditional callback functions, making the code easier to read, chain, and manage error handling. \n\nKey Concepts of Promises:",
+      "1. States of a Promise: \nPending: The initial state. The promise has not yet been fulfilled or rejected. \nFulfilled: The operation completed successfully, and the promise has a value (resolved). \nRejected: The operation failed, and the promise has a reason (error).",
+      "2. Methods to Handle Promises: \n.then(): Used to handle the fulfillment of a promise and access the result (value). \n.catch(): Used to handle errors or rejections of a promise. \n.finally(): Optional; used to execute code once a promise is settled (either fulfilled or rejected). \n\nBasic Example of a Promise:",
+      "const promise = new Promise((resolve, reject) => { \n const success = true; \n if (success) { \n  resolve('Operation was successful'); \n } else { \n  reject('Operation failed'); \n } \n}); \n\n// Handling the Promise result \npromise \n .then(result => console.log(result)) // Output: Operation was successful \n .catch(error => console.log(error)); // In case of failure (if success is false)",
+      "• The Promise constructor takes a function (executor function) with two arguments: resolve and reject. You call resolve() when the operation is successful, and reject() when the operation fails. \n• The .then() method is used to handle the result if the promise is fulfilled, while .catch() is used to handle the error if it is rejected.",
+      "Chaining Promises: \nPromises can be chained to perform a series of asynchronous operations in sequence, with each subsequent .then() receiving the result of the previous promise. \n\nExample:",
+      "const fetchData = new Promise((resolve, reject) => { \n setTimeout(() => resolve('Data fetched'), 1000); \n}); \nfetchData \n .then(result => { \n  console.log(result); // Output: Data fetched \n  return 'Processed Data'; \n }) \n .then(result => { \n  console.log(result); // Output: Processed Data \n  return 'More Processing'; \n }) \n .then(result => { \n  console.log(result); // Output: More Processing \n }) \n .catch(error => console.log(error));",
+      "The result of each .then() is passed to the next one, creating a chain of asynchronous operations.",
+      "Error Handling in Promises: \nWhen a promise is rejected, or an error occurs, you can handle it using .catch(). Errors are also propagated down the promise chain, so a single .catch() can handle multiple errors in a chain. \n\nExample:",
+      "const fetchData = new Promise((resolve, reject) => { \n setTimeout(() => reject('Failed to fetch data'), 1000); \n}); \nfetchData \n .then(result => console.log(result)) \n .catch(error => console.log('Error: ' + error)); // Output: Error: Failed to fetch data",
+      "If any part of the chain throws an error or is rejected, the .catch() block will handle it.",
+      "Promise.all(), Promise.race(), Promise.allSettled(), and Promise.any(): \n\n1. Promise.all(): \n• Waits for all promises in an array to be fulfilled. \n• If one promise is rejected, the entire Promise.all() call is rejected. \n\nExample:",
+      "const p1 = Promise.resolve('Promise 1'); \nconst p2 = Promise.resolve('Promise 2'); \nconst p3 = Promise.resolve('Promise 3'); \nPromise.all([p1, p2, p3]) \n .then(results => console.log(results)) // Output: [ 'Promise 1', 'Promise 2', 'Promise 3' ] \n .catch(error => console.log(error));",
+      "\n2. Promise.race(): \nReturns a promise that resolves or rejects as soon as one of the promises resolves or rejects. \n\nExample:",
+      "const p1 = new Promise(resolve => setTimeout(resolve, 100, 'First')); \nconst p2 = new Promise(resolve => setTimeout(resolve, 200, 'Second')); \nPromise.race([p1, p2]) \n .then(result => console.log(result)); // Output: First",
+      "\n3. Promise.allSettled(): \nWaits for all promises to settle (either fulfilled or rejected) and returns an array of objects representing the results. \n\nExample:",
+      "const p1 = Promise.resolve('Resolved'); const p2 = Promise.reject('Rejected'); Promise.allSettled([p1, p2]) \n .then(results => console.log(results)); \n// Output: \n// [ \n// { status: 'fulfilled', value: 'Resolved' }, \n// { status: 'rejected', reason: 'Rejected' } \n// ]",
+      "\n4. Promise.any(): \nResolves as soon as any of the promises in the array resolves. If all promises are rejected, it throws an aggregate error. \n\nExample:",
+      "const p1 = Promise.reject('Error 1'); \nconst p2 = Promise.reject('Error 2'); \nconst p3 = Promise.resolve('First success'); \nPromise.any([p1, p2, p3]) \n .then(result => console.log(result)) // Output: First success \n .catch(error => console.log(error));",
+      "\nAsync/Await (Built on Promises): \nasync and await provide a way to write asynchronous code that looks and behaves more like synchronous code, making it easier to understand. Behind the scenes, they work with Promises. \n\nExample with Async/Await:",
+      "function fetchData() { \n return new Promise((resolve, reject) => { \n  setTimeout(() => { \n   resolve('Data fetched'); \n  }, 2000); \n }); \n} \n\nasync function getData() { \n try { \n  const data = await fetchData(); \n  console.log(data); // Output: Data fetched \n } catch (error) { \n  console.log(error); \n } \n} \n\ngetData();",
+      "• async functions always return a promise. \n• await pauses the execution of the async function until the promise is resolved or rejected.",
+      "Summary: \n• A Promise represents the eventual result of an asynchronous operation. \n• Promises have three states: pending, fulfilled, or rejected. \n• You handle a promise using .then() for success, .catch() for errors, and .finally() for code that should run regardless of the result. \n• Chaining allows multiple asynchronous operations to be performed in sequence. \n• Promise.all(), Promise.race(), Promise.allSettled(), and Promise.any() offer advanced ways of handling multiple promises at once. \n• Async/await is a modern syntax that makes working with Promises cleaner and more readable."
+    ],
+    "highlightWords": [
+      "•",
+      "Key Concepts of Promises:",
+      "1. States of a Promise:",
+      "Pending:",
+      "Fulfilled:",
+      "Rejected:",
+      "2. Methods to Handle Promises:",
+      ".then():",
+      ".catch():",
+      ".finally():",
+      "Basic Example of a Promise:",
+      "Chaining Promises:",
+      "Example:",
+      "Error Handling in Promises:",
+      "1. Promise.all():",
+      "2. Promise.race():",
+      "3. Promise.allSettled():",
+      "4. Promise.any():",
+      "Async/Await (Built on Promises):",
+      "Example with Async/Await:",
+      "Summary:"
+    ],
+    "indices": [3,6,9,12,14,16,18,20]
   }
 ]
