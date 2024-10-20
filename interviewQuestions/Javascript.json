@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "title": "What are the different data types in JavaScript?",
+    "description": "Primitive types (e.g., string, number, boolean, undefined, null, symbol, bigint) \n\nNon-primitive types (e.g., object, array, function)",
+    "highlightWords": ["Primitive types", "Non-primitive types"]
+  },
+  {
+    "id": 2,
+    "title": "What is the difference between let, var, and const?",
+    "description": "• var is function-scoped, while let and const are block-scoped. \n\n• const defines a constant that cannot be reassigned, while let allows reassignment. \n\n• var variables are hoisted, meaning they can be used before they are declared (though they will be undefined), whereas let and const are not accessible before initialization.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 3,
+    "title": "What is hoisting in JavaScript?",
+    "description": "Hoisting is JavaScript’s default behavior of moving declarations to the top of the current scope (global or local).",
+    "highlightWords": [""]
+  },
+  {
+    "id": 4,
+    "title": "What is the difference between == and ===?",
+    "description": "== checks for value equality with type coercion, meaning it converts types if necessary. \n\n=== checks for both value and type equality without coercion.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 5,
+    "title": "What is a closure in JavaScript?",
+    "description": "A closure is a function that remembers the variables from its outer scope even after the outer function has finished executing.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 6,
+    "title": "What is the difference between function declarations and function expressions?",
+    "description": "A function declaration is hoisted and can be called before it is defined in the code. \n\nA function expression is not hoisted and is assigned to a variable, meaning it can only be used after the expression is assigned.",
+    "highlightWords": ["function declaration", "function expression"]
+  },
+  {
+    "id": 7,
+    "title": "What is an Immediately Invoked Function Expression (IIFE)?",
+    "description": [
+      "An IIFE is a function that is executed immediately after being defined. It looks like this:",
+      "(function() { \n // code here \n})();"
+    ],
+    "highlightWords": [""],
+    "indices": [1]
+  },
+  {
+    "id": 8,
+    "title": "What is prototypal inheritance in JavaScript?",
+    "description": "Prototypal inheritance is a feature in JavaScript where objects can inherit properties and methods from other objects. Every object in JavaScript has a prototype, which is another object it inherits from.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 9,
+    "title": "How do you clone an object in JavaScript?",
+    "description": [
+      "Using Object.assign() or the spread operator: \n",
+      "const obj = { a: 1 }; \nconst clone = Object.assign({}, obj) \nconst copy = { ...obj };"
+    ],
+    "highlightWords": [""],
+    "indices": [1]
+  },
+  {
+    "id": 10,
+    "title": "What is destructuring in JavaScript?",
+    "description": [
+      "Destructuring is a way to unpack values from arrays or properties from objects into distinct variables:\n",
+      "const { name, age } = person; // For objects  \nconst [first, second] = array; // For arrays  "
+    ],
+    "highlightWords": [""],
+    "indices": [1]
+  },
+  {
+    "id": 11,
+    "title": "What is the difference between synchronous and asynchronous programming in JavaScript?",
+    "description": "Synchronous operations block further execution until the current operation finishes, whereas asynchronous operations allow other code to run while waiting for the operation to complete.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 12,
+    "title": "What are Promises in JavaScript?",
+    "description": "A Promise is an object representing the eventual completion or failure of an asynchronous operation. It has three states: pending, fulfilled, and rejected.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 13,
+    "title": "What is async/await in JavaScript?",
+    "description": "async and await are syntax for handling asynchronous operations more easily than using Promises. Functions declared with async return a Promise, and await pauses execution until the Promise is resolved or rejected.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 14,
+    "title": "What is the event loop in JavaScript?",
+    "description": "The event loop is the mechanism that allows JavaScript to perform non-blocking, asynchronous operations. It handles execution of code, collecting and processing events, and executing queued tasks.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 15,
+    "title": "What is the difference between setTimeout and setInterval?",
+    "description": "setTimeout executes a function after a certain delay, while setInterval repeatedly executes a function at specified intervals until cleared.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 16,
+    "title": "What is the difference between call(), apply(), and bind() in JavaScript?",
+    "description": "call() invokes a function with a given this value and arguments passed individually. \n\napply() invokes a function with a given this value and arguments passed as an array. \n\nbind() returns a new function that, when invoked, has its this value set to a specific value and can take predefined arguments.",
+    "highlightWords": ["call()", "apply()", "bind()"],
+    "indices": [1, 3]
+  },
+  {
+    "id": 17,
+    "title": "What is the this keyword in JavaScript?",
+    "description": "this refers to the context in which a function is executed. In the global context, this refers to the global object (window in browsers), while in a method, this refers to the object the method belongs to.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 18,
+    "title": "What are arrow functions, and how are they different from regular functions?",
+    "description": "Arrow functions have a more concise syntax and do not bind their own this, arguments, or super. This means they inherit this from their enclosing lexical scope, making them useful for callbacks where this behavior is important.",
+    "highlightWords": [""]
+  },
+  {
+    "id": 19,
+    "title": "What is debouncing and throttling in JavaScript?",
+    "description": "Debouncing delays the execution of a function until after a certain period of inactivity. \n\nThrottling ensures a function is called at most once in a specified time period.",
+    "highlightWords": ["Debouncing", "Throttling"]
+  },
+  {
+    "id": 20,
+    "title": "What are modules in JavaScript?",
+    "description": "Modules allow JavaScript code to be organized into smaller, reusable files. Modern JavaScript supports ES6 modules, which use import and export statements to manage dependencies between files.",
+    "highlightWords": ["Debouncing", "Throttling"]
+  }
+]
