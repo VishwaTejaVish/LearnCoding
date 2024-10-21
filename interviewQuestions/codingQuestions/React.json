@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "title": "Create a Simple Counter App",
+    "description": [
+      "Question: Create a counter application that allows users to increment and decrement a counter. Add buttons for 'Increment' and 'Decrement,' and display the current value of the counter. \n\nSolution: This simple application uses the useState hook to manage the state of the counter.",
+      "import React, {useState} from 'react';\r\n\r\nfunction CounterApp() {\r\n  // Declare a state variable 'count' and set its initial value to 0\r\n  const [count, setCount] = useState(0);\r\n\r\n  return (\r\n    <div>\r\n      <h1>Counter: {count}</h1>\r\n      {/* Increment Button */}\r\n      <button onClick={() => setCount(count + 1)}>Increment</button> \r\n      {/* Decrement Button */}\r\n      <button onClick={() => setCount(count - 1)}>Decrement</button> \r\n    </div>\r\n  );\r\n}\r\n\r\nexport default CounterApp;",
+      "\nExplanation: \n\nState Management: useState(0) initializes the counter with 0. \n\nEvent Handling: Clicking the 'Increment' button increases the counter value, and the 'Decrement' button decreases it."
+    ],
+    "highlightWords": [
+      "Question:",
+      "solution",
+      "Explanation:",
+      "State Management:",
+      "Event Handling:"
+    ],
+    "indices": [1]
+  },
+  {
+    "id": 2,
+    "title": "To-Do List Application",
+    "description": [
+      "Question: Build a simple to-do list application where users can add new tasks, mark tasks as completed, and delete tasks. \n\nSolution:",
+      "import React, {useState} from 'react';\r\n\r\nfunction TodoApp() {\r\n  const [todos, setTodos] = useState([]); \/\/ Array of todo items\r\n  const [task, setTask] = useState(''); \/\/ Current input value\r\n\r\n  \/\/ Function to add a new task\r\n  const addTodo = () => {\r\n    if (task.trim() !== '') {\r\n      setTodos([...todos, {id: Date.now(), text: task, completed: false}]);\r\n      setTask(''); \/\/ Clear the input\r\n    }\r\n  };\r\n\r\n  \/\/ Function to mark a task as completed\r\n  const toggleCompletion = id => {\r\n    setTodos(\r\n      todos.map(todo =>\r\n        todo.id === id ? {...todo, completed: !todo.completed} : todo,\r\n      ),\r\n    );\r\n  };\r\n\r\n  \/\/ Function to delete a task\r\n  const deleteTodo = id => {\r\n    setTodos(todos.filter(todo => todo.id !== id));\r\n  };\r\n\r\n  return (\r\n    <div>\r\n      <h1>Todo List<\/h1>\r\n      <input\r\n        type=\"text\"\r\n        value={task}\r\n        onChange={e => setTask(e.target.value)}\r\n        placeholder=\"Enter a new task\"\r\n      \/>\r\n      <button onClick={addTodo}>Add Task<\/button>\r\n\r\n      <ul>\r\n        {todos.map(todo => (\r\n          <li\r\n            key={todo.id}\r\n            style={{textDecoration: todo.completed ? 'line-through' : 'none'}}>\r\n            {todo.text}\r\n            <button onClick={() => toggleCompletion(todo.id)}>\r\n              {todo.completed ? 'Undo' : 'Complete'}\r\n            <\/button>\r\n            <button onClick={() => deleteTodo(todo.id)}>Delete<\/button>\r\n          <\/li>\r\n        ))}\r\n      <\/ul>\r\n    <\/div>\r\n  );\r\n}\r\n\r\nexport default TodoApp;",
+      "\nExplanation: \n\nState Management: We use two state variables: todos to manage the list of tasks and task for the current input value. \n\nAdd Task: When the 'Add Task' button is clicked, the task is added to the todos array. \n\nMark as Completed: When the 'Complete' button is clicked, the task’s completed status is toggled. \n\nDelete Task: When the 'Delete' button is clicked, the task is removed from the todos array."
+    ],
+    "highlightWords": [
+      "Question:",
+      "solution",
+      "Explanation:",
+      "State Management:",
+      "Add Task:",
+      "Mark as Completed:",
+      "Delete Task:"
+    ],
+    "indices": [1]
+  },
+  {
+    "id": 3,
+    "title": "Searchable User List",
+    "description": [
+      "Question: Create a searchable list of users. The user should be able to type in a search box and filter users by name in real-time. \n\nSolution:",
+      "import React, {useState} from 'react';\r\n\r\nconst userList = [\r\n  {id: 1, name: 'Alice'},\r\n  {id: 2, name: 'Bob'},\r\n  {id: 3, name: 'Charlie'},\r\n  {id: 4, name: 'David'},\r\n  {id: 5, name: 'Eve'},\r\n];\r\n\r\nfunction UserSearchApp() {\r\n  const [searchTerm, setSearchTerm] = useState('');\r\n\r\n  \/\/ Filter users based on search term\r\n  const filteredUsers = userList.filter(user =>\r\n    user.name.toLowerCase().includes(searchTerm.toLowerCase()),\r\n  );\r\n\r\n  return (\r\n    <div>\r\n      <h1>User Search<\/h1>\r\n      <input\r\n        type=\"text\"\r\n        placeholder=\"Search users...\"\r\n        value={searchTerm}\r\n        onChange={e => setSearchTerm(e.target.value)}\r\n      \/>\r\n\r\n      <ul>\r\n        {filteredUsers.length > 0 ? (\r\n          filteredUsers.map(user => <li key={user.id}>{user.name}<\/li>)\r\n        ) : (\r\n          <li>No users found<\/li>\r\n        )}\r\n      <\/ul>\r\n    <\/div>\r\n  );\r\n}\r\n\r\nexport default UserSearchApp;",
+      "\nExplanation: \n\nState Management: The searchTerm state tracks what the user types in the search box. \n\nFiltering: We filter the userList array using filter() and includes(), converting both to lowercase to make the search case-insensitive. \n\nRendering: We display the filtered list of users or a 'No users found' message if no match exists."
+    ],
+    "highlightWords": [
+      "Question:",
+      "solution",
+      "Explanation:",
+      "State Management:",
+      "Filtering:",
+      "Rendering:"
+    ],
+    "indices": [1]
+  },
+  {
+    "id": 4,
+    "title": "Timer Application",
+    "description": [
+      "Question: Create a timer application where a user can start, stop, and reset a timer. The time should update every second when the timer is running. \n\nSolution:",
+      "import React, {useState, useEffect, useRef} from 'react';\r\n\r\nfunction TimerApp() {\r\n  const [time, setTime] = useState(0);\r\n  const [isRunning, setIsRunning] = useState(false);\r\n  const timerRef = useRef(null); \/\/ To store the timer reference\r\n\r\n  useEffect(() => {\r\n    if (isRunning) {\r\n      \/\/ Start the timer if isRunning is true\r\n      timerRef.current = setInterval(() => {\r\n        setTime(prevTime => prevTime + 1);\r\n      }, 1000);\r\n    } else {\r\n      clearInterval(timerRef.current); \/\/ Clear timer when paused\/stopped\r\n    }\r\n\r\n    return () => clearInterval(timerRef.current); \/\/ Cleanup on unmount\r\n  }, [isRunning]);\r\n\r\n  const startTimer = () => setIsRunning(true);\r\n  const stopTimer = () => setIsRunning(false);\r\n  const resetTimer = () => {\r\n    setIsRunning(false);\r\n    setTime(0);\r\n  };\r\n\r\n  return (\r\n    <div>\r\n      <h1>Timer: {time}s<\/h1>\r\n      <button onClick={startTimer}>Start<\/button>\r\n      <button onClick={stopTimer}>Stop<\/button>\r\n      <button onClick={resetTimer}>Reset<\/button>\r\n    <\/div>\r\n  );\r\n}\r\n\r\nexport default TimerApp;",
+      "\nExplanation: \n\nState Management: time stores the current timer value, and isRunning tracks whether the timer is running. \n\nuseEffect Hook: It starts the timer using setInterval when isRunning is true and clears the timer when it’s false or when the component is unmounted. \n\nuseRef: A ref is used to store the timer ID so it can be cleared when necessary."
+    ],
+    "highlightWords": [
+      "Question:",
+      "solution",
+      "Explanation:",
+      "State Management:",
+      "useEffect Hook:",
+      "useRef:"
+    ],
+    "indices": [1]
+  },
+  {
+    "id": 5,
+    "title": "Accordion Component",
+    "description": [
+      "Question: Create an accordion component where each section can be expanded or collapsed by clicking on it. \n\nSolution:",
+      "import React, { useState } from 'react';\r\n\r\nfunction Accordion({ items }) {\r\n  const [activeIndex, setActiveIndex] = useState(null);\r\n\r\n  const toggleAccordion = (index) => {\r\n    setActiveIndex(activeIndex === index ? null : index);\r\n  };\r\n\r\n  return (\r\n    <div>\r\n      {items.map((item, index) => (\r\n        <div key={index}>\r\n          <button onClick={() => toggleAccordion(index)}>\r\n            {item.title}\r\n          <\/button>\r\n          {activeIndex === index && <p>{item.content}<\/p>}\r\n        <\/div>\r\n      ))}\r\n    <\/div>\r\n  );\r\n}\r\n\r\nexport default function App() {\r\n  const items = [\r\n    { title: 'Section 1', content: 'Content for section 1' },\r\n    { title: 'Section 2', content: 'Content for section 2' },\r\n    { title: 'Section 3', content: 'Content for section 3' },\r\n  ];\r\n\r\n  return <Accordion items={items} \/>;\r\n}",
+      "\nExplanation: \n\nState Management: activeIndex tracks which accordion section is open. It sets null if none are open. \n\nToggling: Clicking the button changes the activeIndex and controls whether the content is shown or hidden."
+    ],
+    "highlightWords": [
+      "Question:",
+      "solution",
+      "Explanation:",
+      "State Management:",
+      "Toggling:"
+    ],
+    "indices": [1]
+  }
+]
