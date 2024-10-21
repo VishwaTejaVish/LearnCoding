@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "title": "Reverse a String",
+    "description": [
+      "function reverseString(str) {\r\n  return str.split('').reverse().join('');\r\n}",
+      "\nExplanation: \n\nsplit(''): Converts the string into an array of characters. \n\nreverse(): Reverses the array. \n\njoin(''): Joins the reversed array back into a string.",
+      "-----------------------------------------------",
+      "Follow-up: How can you reverse a string without using built-in functions?\n",
+      "function reverseString(str) {\r\n  let reversed = '';\r\n  for (let i = str.length - 1; i >= 0; i--) {\r\n    reversed += str[i];\r\n  }\r\n  return reversed;\r\n}",
+      "\nExplanation: This version uses a for loop to iterate backward through the string, building the reversed string character by character."
+    ],
+    "highlightWords": [
+      "Explanation:",
+      "split(''):",
+      "reverse():",
+      "join(''):",
+      "Follow-up:"
+    ],
+    "indices": [0, 4]
+  },
+  {
+    "id": 2,
+    "title": "Check for Palindrome",
+    "description": [
+      "function isPalindrome(str) {\r\n  const reversed = str.split('').reverse().join('');\r\n  return str === reversed;\r\n}",
+      "\nExplanation: \n\nA palindrome is a word that reads the same forward and backward. \n\nThis approach uses split(), reverse(), and join() to reverse the string, then checks if the reversed string equals the original string."
+    ],
+    "highlightWords": ["Explanation:", "split()", "reverse()", "join()"],
+    "indices": [0, 4]
+  },
+  {
+    "id": 3,
+    "title": "Find the Largest Number in an Array",
+    "description": [
+      "function findLargest(arr) {\r\n  return Math.max(...arr);\r\n}",
+      "\nExplanation: \n\nMath.max(): Finds the largest number from a list. \n\n...arr: The spread operator expands the array into individual elements.",
+      "-----------------------------------------------",
+      "Follow-up: Solve it without using Math.max().",
+      "function findLargest(arr) {\r\n  let max = arr[0];\r\n  for (let i = 1; i < arr.length; i++) {\r\n    if (arr[i] > max) {\r\n      max = arr[i];\r\n    }\r\n  }\r\n  return max;\r\n}",
+      "\nExplanation: This version iterates through the array and keeps track of the largest number found so far."
+    ],
+    "highlightWords": ["Explanation:", "Math.max():", "...arr:", "Follow-up:"],
+    "indices": [0, 4]
+  },
+  {
+    "id": 4,
+    "title": "FizzBuzz Problem",
+    "description": [
+      "Write a function that prints numbers from 1 to 100. For multiples of three, print 'Fizz' instead of the number, and for multiples of five, print 'Buzz'. For numbers divisible by both three and five, print 'FizzBuzz'.\n",
+      "function fizzBuzz() {\r\n  for (let i = 1; i <= 100; i++) {\r\n    if (i % 15 === 0) {\r\n      console.log('FizzBuzz');\r\n    } else if (i % 3 === 0) {\r\n      console.log('Fizz');\r\n    } else if (i % 5 === 0) {\r\n      console.log('Buzz');\r\n    } else {\r\n      console.log(i);\r\n    }\r\n  }\r\n}",
+      "\nExplanation: \n\nNumbers divisible by both 3 and 5 are divisible by 15, so we check i % 15 === 0 first. \n\nFor numbers divisible by 3, print 'Fizz', and for numbers divisible by 5, print 'Buzz'. \n\nOtherwise, print the number."
+    ],
+    "highlightWords": [],
+    "indices": [1]
+  },
+  {
+    "id": 5,
+    "title": "Remove Duplicates from an Array",
+    "description": [
+      "function removeDuplicates(arr) { \n return [...new Set(arr)]; }",
+      "\nfunction removeDuplicates(arr) {\r\n  return [...new Set(arr)];\r\n}\r\n",
+      "-----------------------------------------------",
+      "Follow-up: Remove duplicates without using Set.",
+      "function removeDuplicates(arr) {\r\n  let uniqueArr = [];\r\n  for (let i = 0; i < arr.length; i++) {\r\n    if (!uniqueArr.includes(arr[i])) {\r\n      uniqueArr.push(arr[i]);\r\n    }\r\n  }\r\n  return uniqueArr;\r\n}",
+      "\nExplanation: This version iterates through the array and only adds unique elements to the result."
+    ],
+    "highlightWords": ["Explanation:", "Set:", "Spread operator (...)", "Follow-up:"],
+    "indices": [0,4]
+  },
+  {
+    "id": 6,
+    "title": "Index of the First Non-Repeating Character",
+    "description": [
+      "function firstNonRepeatingChar(str) {\r\n  for (let i = 0; i < str.length; i++) {\r\n    if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {\r\n      return i;\r\n    }\r\n  }\r\n  return -1;\r\n}",
+      "\nExplanation: \n\nindexOf(): Returns the first occurrence of a character. \n\nlastIndexOf(): Returns the last occurrence of a character. \n\nIf both indexOf() and lastIndexOf() are the same for a character, it means the character is not repeated."
+    ],
+    "highlightWords": ["Explanation:", "indexOf():", "lastIndexOf():"],
+    "indices": [0,4]
+  },
+  {
+    "id": 7,
+    "title": "Sum of Two Numbers Equals Target",
+    "description": [
+      "function twoSum(nums, target) {\r\n  const map = {};\r\n  for (let i = 0; i < nums.length; i++) {\r\n    const complement = target - nums[i];\r\n    if (map.hasOwnProperty(complement)) {\r\n      return [map[complement], i];\r\n    }\r\n    map[nums[i]] = i;\r\n  }\r\n  return [];\r\n}",
+      "\nWe use a hash map (map) to store the difference between the target and the current element as the key, and the index as the value. \n\nFor each number, we check if its complement (i.e., the number needed to reach the target) already exists in the map. If it does, we return the indices."
+    ],
+    "highlightWords": ["Explanation:"],
+    "indices": [0]
+  },
+  {
+    "id": 8,
+    "title": "Flatten a Nested Array",
+    "description": [
+      "function flatten(arr) {\r\n  return arr.reduce(\r\n    (flat, toFlatten) =>\r\n      flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten),\r\n    [],\r\n  );\r\n}",
+      "\nExplanation: \n\nreduce(): Iterates over the array, accumulating results. \n\nIf an element is an array, recursively flatten it. Otherwise, append it to the result."
+    ],
+    "highlightWords": ["Explanation:","reduce():"],
+    "indices": [0,4]
+  },
+  {
+    "id": 9,
+    "title": "Deep Clone an Object",
+    "description": [
+      "function deepClone(obj) {\r\n  if (obj === null || typeof obj !== 'object') {\r\n    return obj;\r\n  }\r\n  if (Array.isArray(obj)) {\r\n    return obj.map(deepClone);\r\n  }\r\n  const newObj = {};\r\n  for (let key in obj) {\r\n    if (obj.hasOwnProperty(key)) {\r\n      newObj[key] = deepClone(obj[key]);\r\n    }\r\n  }\r\n  return newObj;\r\n}",
+      "\nExplanation: \n\nA deep clone creates a complete copy of an object, including nested objects and arrays. \n\nThis implementation checks if the value is an array or object, recursively cloning each value."
+    ],
+    "highlightWords": ["Explanation:"],
+    "indices": [0,4]
+  },
+  {
+    "id": 10,
+    "title": "Find the Longest Word in a Sentence",
+    "description": [
+      "function findLongestWord(sentence) {\r\n  const words = sentence.split(' ');\r\n  let longest = '';\r\n  for (let word of words) {\r\n    if (word.length > longest.length) {\r\n      longest = word;\r\n    }\r\n  }\r\n  return longest;\r\n}",
+      "\nExplanation: \nSplit the sentence into words, then iterate through the words, checking the length of each one to find the longest."
+    ],
+    "highlightWords": ["Explanation:"],
+    "indices": [0]
+  }
+]
