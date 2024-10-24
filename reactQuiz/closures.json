@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "question": "What is a closure in JavaScript (and React)?",
+    "options": [
+      "A function that is executed only once",
+      "A function that remembers the variables from the scope where it was created, even after that scope is gone",
+      "A function that closes over variables before they are initialized",
+      "A function that is immediately invoked after its declaration"
+    ],
+    "answer": "A function that remembers the variables from the scope where it was created, even after that scope is gone"
+  },
+  {
+    "id": 2,
+    "question": "In React, what common issue can arise when closures are used inside a useEffect hook?",
+    "options": [
+      "State variables become undefined",
+      "The closure captures stale state or props",
+      "The closure updates the state too frequently",
+      "Closures cause memory leaks in React components"
+    ],
+    "answer": "The closure captures stale state or props"
+  },
+  {
+    "id": 3,
+    "question": "How can you prevent closures from capturing stale state in a useEffect hook in React?",
+    "options": [
+      "By removing the dependency array",
+      "By using the useState hook without useEffect",
+      "By adding the necessary state or props as dependencies in the useEffect dependency array",
+      "By using only class components"
+    ],
+    "answer": "By adding the necessary state or props as dependencies in the useEffect dependency array"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is true about closures in React functional components?",
+    "options": [
+      "Closures are created only when useEffect is used",
+      "Closures allow functions to retain access to their lexical scope, including state and props",
+      "Closures only work with state variables, not with props",
+      "Closures are not used in React functional components"
+    ],
+    "answer": "Closures allow functions to retain access to their lexical scope, including state and props"
+  },
+  {
+    "id": 5,
+    "question": "Why does the following code in React potentially lead to stale state in the handleClick function?",
+    "code": "const [count, setCount] = useState(0);\r\n\r\nfunction handleClick() {\r\n  console.log(count);\r\n}\r\n\r\nuseEffect(() => {\r\n  const interval = setInterval(() => {\r\n    setCount(count + 1);\r\n  }, 1000);\r\n\r\n  return () => clearInterval(interval);\r\n}, []);",
+    "options": [
+      "count is incremented correctly because the state updates",
+      "handleClick captures the initial value of count due to closure, so it always logs 0",
+      "The handleClick function is outside the scope of useEffect, so it never updates",
+      "The setCount function is incorrect and does not change the state"
+    ],
+    "answer": "handleClick captures the initial value of count due to closure, so it always logs 0"
+  },
+  {
+    "id": 6,
+    "question": "How can you fix the stale closure problem in the following useEffect code?",
+    "code": "useEffect(() => {\r\n  const interval = setInterval(() => {\r\n    setCount(count + 1);\r\n  }, 1000);\r\n\r\n  return () => clearInterval(interval);\r\n}, []);",
+    "options": [
+      "Add count as a dependency in the useEffect dependency array",
+      "Use useMemo to optimize the state updates",
+      "Use useState instead of useEffect",
+      "Remove the dependency array altogether"
+    ],
+    "answer": "Add count as a dependency in the useEffect dependency array"
+  },
+  {
+    "id": 7,
+    "question": "Which hook in React can help avoid issues caused by closures when managing event listeners inside components?",
+    "options": ["useContext", "useRef", "useState", "useReducer"],
+    "answer": "useRef"
+  },
+  {
+    "id": 8,
+    "question": "Why does using useRef help in avoiding stale closure problems in event handlers?",
+    "options": [
+      "useRef triggers a re-render every time it updates",
+      "useRef preserves the same reference across renders without re-creating the function",
+      "useRef does not have access to the state or props",
+      "useRef updates state variables directly without re-rendering"
+    ],
+    "answer": "useRef preserves the same reference across renders without re-creating the function"
+  },
+  {
+    "id": 9,
+    "question": "In React, how do closures capture the value of state variables?",
+    "options": [
+      "Closures capture the current state value at the time the function is created",
+      "Closures always capture the most recent value of state after re-renders",
+      "Closures do not interact with state variables in React",
+      "Closures can only capture state values if useEffect is used"
+    ],
+    "answer": "Closures capture the current state value at the time the function is created"
+  },
+  {
+    "id": 10,
+    "question": "How can you ensure that an event handler has access to the most recent state in React functional components?",
+    "options": [
+      "By using useRef to hold the most recent state",
+      "By re-creating the event handler function inside useEffect",
+      "By adding the event handler inside the dependency array of useEffect",
+      "By using setState inside the event handler"
+    ],
+    "answer": "By using useRef to hold the most recent state"
+  },
+  {
+    "id": 11,
+    "question": "How can closures cause performance issues in React components?",
+    "options": [
+      "Closures can cause components to re-render more frequently than necessary",
+      "Closures cause event listeners to stop working",
+      "Closures do not interact well with React class components",
+      "Closures can lead to memory leaks when used with useState"
+    ],
+    "answer": "Closures can cause components to re-render more frequently than necessary"
+  },
+  {
+    "id": 12,
+    "question": "How does useCallback help in handling closures in React?",
+    "options": [
+      "useCallback avoids stale closures by memoizing the function and re-creating it only when dependencies change",
+      "useCallback forces the function to re-render every time the component renders",
+      "useCallback stores the function in localStorage for future use",
+      "useCallback only works with useEffect to manage closures"
+    ],
+    "answer": "useCallback avoids stale closures by memoizing the function and re-creating it only when dependencies change"
+  },
+  {
+    "id": 13,
+    "question": "What is the primary reason for using useCallback or useMemo with closures in React?",
+    "options": [
+      "To avoid unnecessary function re-creations during re-renders",
+      "To ensure closures capture the correct state",
+      "To ensure closures are not affected by the useEffect hook",
+      "To simplify the function signature for closures"
+    ],
+    "answer": "To avoid unnecessary function re-creations during re-renders"
+  },
+  {
+    "id": 14,
+    "question": "In React functional components, when would a closure cause unexpected behavior?",
+    "options": [
+      "When closures are created inside useRef",
+      "When closures capture stale state or props from an earlier render",
+      "When closures are used with useReducer",
+      "When closures are used with global variables"
+    ],
+    "answer": "When closures capture stale state or props from an earlier render"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following correctly describes the behavior of closures in a functional component?",
+    "options": [
+      "Closures always hold the most recent state of a variable",
+      "Closures capture the state of variables at the time the function is defined",
+      "Closures cannot access state variables",
+      "Closures are automatically garbage-collected and cannot lead to stale data"
+    ],
+    "answer": "Closures capture the state of variables at the time the function is defined"
+  }
+]
