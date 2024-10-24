@@ -6,6 +6,11 @@
   },
   {
     "id": 2,
+    "title": "Functions",
+    "url": "/javascriptQuiz/functions"
+  },
+  {
+    "id": 3,
     "title": "Promises",
     "url": "/javascriptQuiz/promises"
   }
