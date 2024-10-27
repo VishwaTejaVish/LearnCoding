@@ -1,0 +1,221 @@
+[
+  {
+    "id": 1,
+    "question": "What is the purpose of the useEffect hook in React?",
+    "options": [
+      "To manage component state",
+      "To add conditional rendering",
+      "To perform side effects in functional components",
+      "To handle routing"
+    ],
+    "answer": "To perform side effects in functional components"
+  },
+  {
+    "id": 2,
+    "question": "When does useEffect run by default?",
+    "options": [
+      "Only once when the component mounts",
+      "Every time the component re-renders",
+      "Only when the component unmounts",
+      "Never unless explicitly triggered"
+    ],
+    "answer": "Every time the component re-renders"
+  },
+  {
+    "id": 3,
+    "question": "What does the dependency array in useEffect control?",
+    "options": [
+      "The values returned from useEffect",
+      "When useEffect will be triggered",
+      "The initial state values",
+      "The re-render frequency of the component"
+    ],
+    "answer": "When useEffect will be triggered"
+  },
+  {
+    "id": 4,
+    "question": "If the dependency array in useEffect is empty, when does useEffect run?",
+    "options": [
+      "Every time the component re-renders",
+      "Only when the component mounts and unmounts",
+      "Only when the component unmounts",
+      "Never"
+    ],
+    "answer": "Only when the component mounts and unmounts"
+  },
+  {
+    "id": 5,
+    "question": "What happens if you don’t provide a dependency array to useEffect?",
+    "options": ["useEffect will never run",
+      "useEffect will run only on unmount",
+      "useEffect will run on every render",
+      "useEffect will throw an error"
+    ],
+    "answer": "useEffect will run on every render"
+  },
+  {
+    "id": 6,
+    "question": "What is the purpose of returning a function inside useEffect?",
+    "options": [
+      "To call another hook inside the effect",
+      "To define cleanup logic that runs on component unmount",
+      "To change the component’s state",
+      "To trigger a re-render"
+    ],
+    "answer": "To define cleanup logic that runs on component unmount"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is a common use case for useEffect?",
+    "options": [
+      "Updating the component’s CSS styles",
+      "Setting up subscriptions or event listeners",
+      "Directly modifying the component’s DOM",
+      "Defining the component’s props"
+    ],
+    "answer": "Setting up subscriptions or event listeners"
+  },
+  {
+    "id": 8,
+    "question": "In useEffect, what will happen if you specify a non-empty dependency array with multiple variables?",
+    "options": [
+      "useEffect will ignore all dependencies and run only once",
+      "useEffect will run only if all dependencies have changed",
+      "useEffect will run whenever any dependency in the array changes",
+      "useEffect will throw an error"
+    ],
+    "answer": "useEffect will run whenever any dependency in the array changes"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following would cause useEffect to run only on component mount?",
+    "options": [
+      "Providing no dependency array",
+      "Providing an empty dependency array []",
+      "Providing an array with all component props as dependencies",
+      "Calling useEffect inside a nested function"
+    ],
+    "answer": "Providing an empty dependency array []"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following statements is TRUE about useEffect cleanup functions?",
+    "options": [
+      "Cleanup functions run only on component mount",
+      "Cleanup functions run before the next effect if dependencies change",
+      "Cleanup functions are required for useEffect to work",
+      "Cleanup functions do not have access to the component’s state"
+    ],
+    "answer": "Cleanup functions run before the next effect if dependencies change"
+  },
+  {
+    "id": 11,
+    "question": "What happens if you use a state variable in useEffect without adding it to the dependency array?",
+    "options": [
+      "The effect may use stale values of the state variable",
+      "The state variable will automatically be added to the array",
+      "useEffect will throw an error",
+      "The component will not render"
+    ],
+    "answer": "The effect may use stale values of the state variable"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following can useEffect NOT be used for?",
+    "options": [
+      "Fetching data from an API",
+      "Manually updating the DOM",
+      "Setting up subscriptions",
+      "Changing a component’s state directly"
+    ],
+    "answer": "Changing a component’s state directly"
+  },
+  {
+    "id": 13,
+    "question": "Which of the following will cause useEffect to run every time count changes?",
+    "options": [
+      "useEffect(() => { ... }, []);",
+      "useEffect(() => { ... }, [count]);",
+      "useEffect(() => { ... }, [count, anotherState]);",
+      "useEffect(() => { ... });"
+    ],
+    "answer": "useEffect(() => { ... }, [count]);"
+  },
+  {
+    "id": 14,
+    "question": "What will happen if a useEffect dependency is an object that changes frequently?",
+    "options": [
+      "useEffect will run only once",
+      "useEffect will never run",
+      "useEffect will run on every render because objects are reference types",
+      "useEffect will only run if the object’s properties change"
+    ],
+    "answer": "useEffect will run on every render because objects are reference types"
+  },
+  {
+    "id": 15,
+    "question": "In which of the following cases will the cleanup function NOT run?",
+    "options": [
+      "When the component unmounts",
+      "When the dependency array is empty",
+      "When any dependency changes",
+      "When useEffect is called without a cleanup function"
+    ],
+    "answer": "When useEffect is called without a cleanup function"
+  },
+  {
+    "id": 16,
+    "question": "What will happen if you specify multiple useEffect hooks within a single component?",
+    "options": [
+      "Only the first useEffect hook will run",
+      "Only the last useEffect hook will run",
+      "All useEffect hooks will run in the order they appear",
+      "React will throw an error"
+    ],
+    "answer": "All useEffect hooks will run in the order they appear"
+  },
+  {
+    "id": 17,
+    "question": "What is a common reason for using the cleanup function inside useEffect?",
+    "options": [
+      "To set a new value in state",
+      "To perform actions after the component updates",
+      "To remove side effects like event listeners or intervals when the component unmounts",
+      "To delay re-rendering the component"
+    ],
+    "answer": "To remove side effects like event listeners or intervals when the component unmounts"
+  },
+  {
+    "id": 18,
+    "question": "What happens if you pass null or undefined as the dependency array in useEffect?",
+    "options": [
+      "useEffect will behave as though it has no dependencies, running on every render",
+      "useEffect will run only on mount and unmount",
+      "useEffect will throw an error",
+      "useEffect will ignore the dependencies and never run"
+    ],
+    "answer": "useEffect will behave as though it has no dependencies, running on every render"
+  },
+  {
+    "id": 19,
+    "question": "What will useEffect do if the component unmounts and remounts with a dependency array containing [variable]?",
+    "options": [
+      "It will re-run the effect only if variable changes",
+      "It will re-run the effect regardless of whether variable changes",
+      "It will ignore the previous dependencies",
+      "It will run the cleanup function and exit without re-running the effect"
+    ],
+    "answer": "It will re-run the effect regardless of whether variable changes"
+  },
+  {
+    "id": 20,
+    "question": "Why is it important to add all external dependencies (e.g., props, state) to useEffect's dependency array?",
+    "options": [
+      "To avoid unnecessary re-renders of the component",
+      "To prevent missing or stale data due to dependency changes",
+      "To allow useEffect to run only once",
+      "To reduce the bundle size of the component"
+    ],
+    "answer": "To prevent missing or stale data due to dependency changes"
+  }
+]
