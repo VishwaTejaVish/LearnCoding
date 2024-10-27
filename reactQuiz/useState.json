@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "question": "What does the useState hook in React do?",
+    "options": [
+      "It allows you to handle lifecycle methods",
+      "It creates a state variable and a function to update it",
+      "It adds context to a component",
+      "It manages side effects in functional components"
+    ],
+    "answer": "It creates a state variable and a function to update it"
+  },
+  {
+    "id": 2,
+    "question": "What does useState return?",
+    "options": [
+      "Only the current state value",
+      "A function to update the state",
+      "The initial state value and a render method",
+      "The current state value and a function to update it"
+    ],
+    "answer": "The current state value and a function to update it"
+  },
+  {
+    "id": 3,
+    "question": "How can you initialize a state variable using useState?",
+    "options": [
+      "By passing the initial value as an argument to useState",
+      "By setting a default value in the component props",
+      "By directly modifying the state object",
+      "By calling a custom hook within useState"
+    ],
+    "answer": "By passing the initial value as an argument to useState"
+  },
+  {
+    "id": 4,
+    "question": "What type of values can useState hold?",
+    "options": [
+      "Only numbers",
+      "Only strings",
+      "Any data type (e.g., objects, arrays, strings)",
+      "Only primitive types"
+    ],
+    "answer": "Any data type (e.g., objects, arrays, strings)"
+  },
+  {
+    "id": 5,
+    "question": "How is the state update function (returned by useState) typically named?",
+    "options": ["updateState", "set<StateVariableName>", "changeState", "update<StateVariableName>"],
+    "answer": "set<StateVariableName>"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is the correct way to use useState to initialize a count variable with a value of 0?",
+    "options": [
+      "const [count] = useState(0);",
+      "const count = useState(0);",
+      "const [count, setCount] = useState(0);",
+      "const [count, updateCount] = useState(0);"
+    ],
+    "answer": "const [count, setCount] = useState(0);"
+  },
+  {
+    "id": 7,
+    "question": "When is the initial state value provided to useState evaluated?",
+    "options": [
+      "Every time the component renders",
+      "Only the first time the component renders",
+      "Every time the state updates",
+      "Only when useEffect is called"
+    ],
+    "answer": "Only the first time the component renders"
+  },
+  {
+    "id": 8,
+    "question": "If you need the initial state value to be computed, which approach should you use with useState?",
+    "options": [
+      "Pass the value directly",
+      "Use a function that returns the initial state",
+      "Use a string instead of a number",
+      "Use a conditional expression"
+    ],
+    "answer": "Use a function that returns the initial state"
+  },
+  {
+    "id": 9,
+    "question": "What will happen if you try to update the state variable with the same value as its current state?",
+    "options": [
+      "The component will re-render",
+      "The component will not re-render",
+      "It will throw an error",
+      "It will reset the component state to its initial value"
+    ],
+    "answer": "The component will not re-render"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following statements is TRUE about useState in React?",
+    "options": [
+      "useState can be called conditionally",
+      "useState cannot accept objects as an initial state",
+      "useState calls should always be at the top level of a component",
+      "useState must be used with class components only"
+    ],
+    "answer": "useState calls should always be at the top level of a component"
+  },
+  {
+    "id": 11,
+    "question": "What does React do when a state update function (like setState) is called?",
+    "options": [
+      "It immediately re-renders the component",
+      "It schedules the update and re-renders on the next render cycle",
+      "It blocks further updates until this one completes",
+      "It directly modifies the component’s DOM elements"
+    ],
+    "answer": "It schedules the update and re-renders on the next render cycle"
+  },
+  {
+    "id": 12,
+    "question": "How do you update a state variable that is an object without overwriting other properties in useState?",
+    "options": [
+      "Use Object.assign() to merge new values",
+      "Directly update the object",
+      "Use the spread operator (...) with setState",
+      "Re-initialize the state variable"
+    ],
+    "answer": "Use the spread operator (...) with setState"
+  },
+  {
+    "id": 13,
+    "question": "What is the result of calling setState in useState hook with a function?",
+    "options": [
+      "The state will be set to the return value of the function",
+      "It will throw an error",
+      "The function will not execute",
+      "It will return the current state without any changes"
+    ],
+    "answer": "The state will be set to the return value of the function"
+  },
+  {
+    "id": 14,
+    "question": "What’s a common pattern for updating a state variable in useState that depends on the previous state?",
+    "options": [
+      "Use the currentState + newValue syntax",
+      "Call setState with a callback function that receives the previous state",
+      "Use a separate function for state updates",
+      "Override the state directly with new values"
+    ],
+    "answer": "Call setState with a callback function that receives the previous state"
+  },
+  {
+    "id": 15,
+    "question": "What will happen if useState is called multiple times within a single component?",
+    "options": [
+      "Only the first useState call will work",
+      "Each useState call will create a unique state variable",
+      "It will throw an error",
+      "All state variables will point to the same value"
+    ],
+    "answer": "Each useState call will create a unique state variable"
+  },
+  {
+    "id": 16,
+    "question": "If you have a useState hook set up as const [count, setCount] = useState(0);, which of the following correctly increments count by 1?",
+    "options": [
+      "setCount(count++)",
+      "setCount(count + 1)",
+      "setCount = count + 1",
+      "count + 1"
+    ],
+    "answer": "setCount(count + 1)"
+  },
+  {
+    "id": 17,
+    "question": "Can useState be used to manage complex state structures such as arrays or nested objects?",
+    "options": [
+      "No, useState only works with primitive values",
+      "Yes, but you need to update the state immutably",
+      "Yes, but you must use a library to handle it",
+      "No, complex state should use Redux instead"
+    ],
+    "answer": "Yes, but you need to update the state immutably"
+  },
+  {
+    "id": 18,
+    "question": "What will console.log(count); print if setCount(count + 1) is called and then console.log(count) is executed immediately after it?",
+    "options": [
+      "The updated count value",
+      "The initial count value incremented by 1",
+      "The initial count value",
+      "It will throw an error"
+    ],
+    "answer": "The initial count value",
+    "explanation":"due to asynchronous state updates"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is TRUE about the state update function (e.g., setCount) in useState?",
+    "options": [
+      "It can be called multiple times in the same render",
+      "It immediately updates the DOM",
+      "It directly mutates the state",
+      "It always runs synchronously"
+    ],
+    "answer": "It can be called multiple times in the same render"
+  },
+  {
+    "id": 20,
+    "question": "Why do we need to use functional updates (passing a function to setState) in useState?",
+    "options": [
+      "To ensure state updates only in class components",
+      "To handle complex asynchronous updates relying on previous state values",
+      "To avoid re-renders of the component",
+      "Functional updates are required when using the useEffect hook"
+    ],
+    "answer": "To handle complex asynchronous updates relying on previous state values"
+  }
+]
