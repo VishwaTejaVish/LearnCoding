@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "question": "What is a slice in Redux Toolkit?",
+    "options": [
+      "A function that updates the Redux store",
+      "A part of the Redux state and logic related to a specific feature",
+      "The main reducer function of the Redux store",
+      "A function that creates asynchronous actions"
+    ],
+    "answer": "A part of the Redux state and logic related to a specific feature"
+  },
+  {
+    "id": 2,
+    "question": "Which Redux Toolkit function is used to create a slice?",
+    "options": ["createStore", "createReducer", "createAction", "createSlice"],
+    "answer": "createSlice"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is NOT typically included in a Redux slice?",
+    "options": [
+      "Reducers",
+      "Initial state",
+      "Action creators",
+      "Component props"
+    ],
+    "answer": "Component props"
+  },
+  {
+    "id": 4,
+    "question": "What does the reducers field in a slice definition specify?",
+    "options": [
+      "Action creators for the slice",
+      "Reducer functions that modify the slice’s state",
+      "Initial state for the Redux store",
+      "Middleware for handling asynchronous actions"
+    ],
+    "answer": "Reducer functions that modify the slice’s state"
+  },
+  {
+    "id": 5,
+    "question": "What is automatically generated when using createSlice for each reducer defined in reducers?",
+    "options": ["Thunks", "Action creators", "Selectors", "Middlewares"],
+    "answer": "Action creators"
+  },
+  {
+    "id": 6,
+    "question": "How can you access the action creators from a slice created with createSlice?",
+    "options": [
+      "Directly call the reducers",
+      "Use slice.actions",
+      "Use dispatch directly",
+      "Use slice.reducer"
+    ],
+    "answer": "Use slice.actions"
+  },
+  {
+    "id": 7,
+    "question": "What is the default export when using createSlice in Redux Toolkit?",
+    "options": [
+      "The entire Redux store",
+      "The slice's state",
+      "The slice's reducer function",
+      "By using <Route path='/' component={DefaultComponent}>"
+    ],
+    "answer": "The slice's action creators"
+  },
+  {
+    "id": 8,
+    "question": "What is the primary purpose of the extraReducers field in a slice?",
+    "options": [
+      "To add middleware to the slice",
+      "To handle actions outside of the slice that affect its state",
+      "To specify initial state for the slice",
+      "To define synchronous actions only"
+    ],
+    "answer": "To handle actions outside of the slice that affect its state"
+  },
+  {
+    "id": 9,
+    "question": "How do you integrate a slice reducer into the Redux store?",
+    "options": [
+      "Directly add the reducer to the createSlice function",
+      "Pass the slice reducer to configureStore under the reducer field",
+      "Add the reducer to the extraReducers field",
+      "Use the createReducer function"
+    ],
+    "answer": "Pass the slice reducer to configureStore under the reducer field"
+  },
+  {
+    "id": 10,
+    "question": "What does createSlice return?",
+    "options": [
+      "Only the reducer function",
+      "The slice reducer and the Redux store",
+      "An object containing the slice reducer, action creators, and slice name",
+      "Only the initial state"
+    ],
+    "answer": "An object containing the slice reducer, action creators, and slice name"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is TRUE about the reducers created in a slice?",
+    "options": [
+      "Reducers must always return a new state object",
+      "Reducers in createSlice are allowed to 'mutate' the state directly due to Immer",
+      "Both components are rendered",
+      "The last route defined is rendered"
+    ],
+    "answer": "Reducers in createSlice are allowed to 'mutate' the state directly due to Immer"
+  },
+  {
+    "id": 12,
+    "question": "What is Immer in the context of Redux Toolkit slices?",
+    "options": [
+      "A tool that creates async actions",
+      "A library used in Redux Toolkit to manage immutability automatically",
+      "A debugging tool for Redux",
+      "A function that replaces createSlice"
+    ],
+    "answer": "A library used in Redux Toolkit to manage immutability automatically"
+  },
+  {
+    "id": 13,
+    "question": "In Redux Toolkit, how can you handle asynchronous actions within a slice?",
+    "options": [
+      "By defining async actions directly in reducers",
+      "By using extraReducers and Redux Thunks",
+      "By calling async functions directly in configureStore",
+      "By setting an async property in the slice"
+    ],
+    "answer": "By using extraReducers and Redux Thunks"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following statements is TRUE about extraReducers?",
+    "options": [
+      "extraReducers can only handle synchronous actions",
+      "extraReducers is used to handle actions defined outside of the slice",
+      "extraReducers defines initial state",
+      "extraReducers modifies state directly without action types"
+    ],
+    "answer": "extraReducers is used to handle actions defined outside of the slice"
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of builder in the extraReducers field when using Redux Toolkit?",
+    "options": [
+      "It builds a new Redux store",
+      "It allows chaining multiple cases for actions in extraReducers",
+      "It creates reducers within reducers",
+      "It is used to directly modify the initial state"
+    ],
+    "answer": "It allows chaining multiple cases for actions in extraReducers"
+  },
+  {
+    "id": 16,
+    "question": "How can you define initial state for a slice in Redux Toolkit?",
+    "options": [
+      "By using useState inside reducers",
+      "By setting the initialState property in createSlice",
+      "It creates reducers within reducers",
+      "It is used to directly modify the initial state"
+    ],
+    "answer": "By setting the initialState property in createSlice"
+  },
+  {
+    "id": 17,
+    "question": "What is the purpose of createAsyncThunk in Redux Toolkit?",
+    "options": [
+      "To create synchronous actions for a slice",
+      "To create asynchronous actions that can be handled in extraReducers",
+      "To create the main reducer function for a slice",
+      "To handle state immutably"
+    ],
+    "answer": "To create asynchronous actions that can be handled in extraReducers"
+  },
+  {
+    "id": 18,
+    "question": "How can you get access to a specific slice’s state in a React component?",
+    "options": [
+      "Use useEffect",
+      "Use useSelector and specify the slice’s name in state.<sliceName>",
+      "Use useNavigate",
+      "Use useContext for the slice"
+    ],
+    "answer": "Use useSelector and specify the slice’s name in state.<sliceName>"
+  },
+  {
+    "id": 19,
+    "question": "What does createSlice use internally to allow writing “mutating” logic in reducers?",
+    "options": [
+      "Thunks",
+      "Proxies and Immer",
+      "Plain JavaScript objects",
+      "React Hooks"
+    ],
+    "answer": "Proxies and Immer"
+  },
+  {
+    "id": 20,
+    "question": "How would you define an action that resets the entire slice’s state back to its initial state?",
+    "options": [
+      "Use state = initialState directly in a reducer",
+      "Define an action in extraReducers to reset the state",
+      "Pass an empty object to state",
+      "Use a separate reset action in reducers that returns initialState"
+    ],
+    "answer": "Use a separate reset action in reducers that returns initialState"
+  }
+]
