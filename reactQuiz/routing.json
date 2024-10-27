@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "question": "Which package is commonly used for client-side routing in React?",
+    "options": [
+      "react-redux",
+      "react-router-dom",
+      "react-navigation",
+      "react-router-native"
+    ],
+    "answer": "react-router-dom"
+  },
+  {
+    "id": 2,
+    "question": "What is the purpose of the <BrowserRouter> component in React Router?",
+    "options": [
+      "It provides the browser’s native history API to keep the UI in sync with the URL",
+      "It renders different components based on the URL",
+      "It ensures that the routes are accessible via the server",
+      "It manages the application's state"
+    ],
+    "answer": "It provides the browser’s native history API to keep the UI in sync with the URL"
+  },
+  {
+    "id": 3,
+    "question": "Which component is used to define a route that renders a component based on the current URL path?",
+    "options": ["<Route>", "<Link>", "<Switch>", "<Navigate>"],
+    "answer": "<Route>"
+  },
+  {
+    "id": 4,
+    "question": "In React Router v6, what is the replacement for the <Switch> component?",
+    "options": ["<Routes>", "<RouteGroup>", "<Redirect>", "<Navigate>"],
+    "answer": "<Routes>"
+  },
+  {
+    "id": 5,
+    "question": "Which hook allows you to programmatically navigate to a different route in React Router v6?",
+    "options": [
+      "useParams()",
+      "useNavigate()",
+      "useHistory()",
+      "useLocation()"
+    ],
+    "answer": "useNavigate()"
+  },
+  {
+    "id": 6,
+    "question": "What is the purpose of the useParams() hook in React Router?",
+    "options": [
+      "It retrieves query parameters from the URL",
+      "It fetches the location object of the current route",
+      "It provides access to dynamic route parameters (e.g., /user/:id)",
+      "It triggers a navigation action"
+    ],
+    "answer": "It provides access to dynamic route parameters (e.g., /user/:id)"
+  },
+  {
+    "id": 7,
+    "question": "How do you define a default route in React Router that renders if no other routes match?",
+    "options": [
+      "By setting the exact prop to true",
+      "By using the <Redirect> component",
+      "By using a catch-all route like <Route path='*'>",
+      "By using <Route path='/' component={DefaultComponent}>"
+    ],
+    "answer": "By using a catch-all route like <Route path='*'>"
+  },
+  {
+    "id": 8,
+    "question": "Which component would you use to create navigation links in React Router that do not reload the page?",
+    "options": [
+      "<a>",
+      "<NavLink>",
+      "<button>",
+      "<Redirect>"
+    ],
+    "answer": "<NavLink>"
+  },
+  {
+    "id": 9,
+    "question": "In React Router v6, how do you implement redirection to another route?",
+    "options": [
+      "<Redirect to='/new-path' />",
+      "history.push('/new-path')",
+      "<Navigate to='/new-path' />",
+      "useParams('/new-path')"
+    ],
+    "answer": "<Navigate to='/new-path' />"
+  },
+  {
+    "id": 10,
+    "question": "What does the element prop do in React Router v6?",
+    "options": [
+      "It allows you to pass HTML elements to the route",
+      "It renders a specific component or element when the route matches",
+      "It specifies the parent route for a child route",
+      "It defines a fallback element for failed routes"
+    ],
+    "answer": "It renders a specific component or element when the route matches"
+  },
+  {
+    "id": 11,
+    "question": "What happens if two routes with the same path are defined in React Router?",
+    "options": [
+      "Only the first one is rendered",
+      "An error is thrown",
+      "Both components are rendered",
+      "The last route defined is rendered"
+    ],
+    "answer": "Only the first one is rendered"
+  },
+  {
+    "id": 12,
+    "question": "How can you ensure that a route is matched exactly in React Router?",
+    "options": [
+      "Use the exact prop on the <Route> component",
+      "Use the strict prop on the <Route> component",
+      "Use useNavigate()",
+      "Match the URL manuallys"
+    ],
+    "explanation":"This applies to React Router v5. In v6, routes are matched exactly by default",
+    "answer": "Use the exact prop on the <Route> component"
+  },
+  {
+    "id": 13,
+    "question": "Which hook provides information about the current URL path in React Router?",
+    "options": [
+      "useParams()",
+      "useLocation()",
+      "useHistory()",
+      "useState()"
+    ],
+    "answer": "useLocation()"
+  },
+  {
+    "id": 14,
+    "question": "In React Router v6, how do you implement nested routes?",
+    "options": [
+      "By using a children prop inside the <Route> component",
+      "By defining child <Route> components within a parent <Route>",
+      "By wrapping the child route in a <Switch> component",
+      "By adding a path prop to the child route"
+    ],
+    "answer": "By defining child <Route> components within a parent <Route>"
+  },
+  {
+    "id": 15,
+    "question": "Which component in React Router allows you to navigate to a route by clicking a link?",
+    "options": [
+      "<button>",
+      "<a>",
+      "<Link>",
+      "<Navigate>"
+    ],
+    "answer": "<Link>"
+  },
+  {
+    "id": 16,
+    "question": "How can you access query parameters in a component using React Router?",
+    "options": [
+      "Using useParams()",
+      "Using useNavigate()",
+      "Using useLocation() and parsing location.search",
+      "Using the useQuery() hook"
+    ],
+    "answer": "Using useLocation() and parsing location.search"
+  },
+  {
+    "id": 17,
+    "question": "How do you redirect to another route after a form submission in React Router v6?",
+    "options": [
+      "Use useNavigate() and call navigate('/path') after form submission",
+      "Use useParams() and call navigate('/path')",
+      "Use useHistory() and call push('/path')",
+      "Use useLocation() and set location.href"
+    ],
+    "answer": "Use useNavigate() and call navigate('/path') after form submission"
+  },
+  {
+    "id": 18,
+    "question": "What is the correct syntax for handling dynamic routes in React Router?",
+    "options": [
+      "<Route path='/user:id' element={<User />} />",
+      "<Route path='/user/:id' element={<User />} />",
+      "<Route path='/user-id' element={<User />} />",
+      "<Route path='/user_id' element={<User />} />"
+    ],
+    "answer": "<Route path='/user/:id' element={<User />} />"
+  }
+]
