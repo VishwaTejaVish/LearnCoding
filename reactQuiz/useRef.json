@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main purpose of the useRef hook in React?",
+    "options": [
+      "To manage component state",
+      "To add conditional rendering",
+      "To perform side effects in functional components",
+      "To handle routing"
+    ],
+    "answer": "To perform side effects in functional components"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following statements is TRUE about useRef?",
+    "options": [
+      "Updating a useRef variable causes a re-render",
+      "useRef can only hold DOM elements",
+      "useRef values persist across component re-renders",
+      "useRef is used to replace all state variables"
+    ],
+    "answer": "useRef values persist across component re-renders"
+  },
+  {
+    "id": 3,
+    "question": "How do you access the value stored in a useRef variable?",
+    "options": ["ref.value", "ref.getValue()", "ref.current", "ref.state"],
+    "answer": "ref.current"
+  },
+  {
+    "id": 4,
+    "question": "What will happen if you update the value of a useRef variable in a component??",
+    "options": [
+      "It will trigger a re-render",
+      "It will only affect future renders",
+      "It will update the value immediately without triggering a re-render",
+      "It will reset the component's state"
+    ],
+    "answer": "It will update the value immediately without triggering a re-render"
+  },
+  {
+    "id": 5,
+    "question": "What is a common use case for useRef in functional components?",
+    "options": [
+      "Storing global state variables",
+      "Creating a subscription to an event",
+      "Managing focus or accessing DOM elements directly",
+      "Triggering updates on component props"
+    ],
+    "answer": "Managing focus or accessing DOM elements directly"
+  },
+  {
+    "id": 6,
+    "question": "When useRef is used without a parameter, what is the initial value of ref.current?",
+    "options": [
+      "null",
+      "undefined",
+      "0",
+      "false"
+    ],
+    "answer": "null"
+  },
+  {
+    "id": 7,
+    "question": "If const myRef = useRef(0); is declared, how would you update the myRef value to 5?",
+    "options": [
+      "myRef = 5",
+      "myRef.current = 5",
+      "myRef.value = 5",
+      "setMyRef(5)"
+    ],
+    "answer": "myRef.current = 5"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following will trigger a re-render in React?",
+    "options": [
+      "Updating a value in useRef",
+      "Updating a value in useState",
+      "Modifying the useRef dependency array",
+      "Modifying the useRef directly in the DOM"
+    ],
+    "answer": "Updating a value in useState"
+  },
+  {
+    "id": 9,
+    "question": "In what scenario would useRef be preferable over useState?",
+    "options": [
+      "When you need a variable to trigger a component re-render",
+      "When you need to store a value that doesn’t need to trigger a re-render",
+      "When you want to bind props to a variable",
+      "When you want to create computed values for rendering"
+    ],
+    "answer": "When you need to store a value that doesn’t need to trigger a re-render"
+  },
+  {
+    "id": 10,
+    "question": "How does useRef differ from useState?",
+    "options": [
+      "useRef does not persist values across renders, while useState does",
+      "useRef is synchronous, while useState is asynchronous",
+      "useRef is mutable and does not trigger re-renders, while useState is immutable and triggers re-renders",
+      "useRef works only with primitive values, while useState works with complex data"
+    ],
+    "answer": "useRef is mutable and does not trigger re-renders, while useState is immutable and triggers re-renders"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is NOT a valid use case for useRef?",
+    "options": [
+      "Storing a timeout ID across renders",
+      "Accessing a child DOM element",
+      "Triggering a re-render on state change",
+      "Storing a previous value for comparison"
+    ],
+    "answer": "Triggering a re-render on state change"
+  },
+  {
+    "id": 12,
+    "question": "What will happen if a useRef variable is updated in a component function?",
+    "options": [
+      "The component will re-render immediately",
+      "The component will not re-render, but ref.current will have the updated value",
+      "The component will throw an error",
+      "The useRef variable will reset after each re-render"
+    ],
+    "answer": "The component will not re-render, but ref.current will have the updated value"
+  },
+  {
+    "id": 13,
+    "question": "How can useRef be used with an effect to access the previous render’s state or prop values?",
+    "options": [
+      "By passing it as a dependency in useEffect",
+      "By directly setting ref.current to the value inside useEffect",
+      "By returning it in the dependency array",
+      "By setting it as the default value in useRef"
+    ],
+    "answer": "By directly setting ref.current to the value inside useEffect"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following describes why useRef is commonly used for storing DOM elements?",
+    "options": [
+      "useRef resets the component on re-render",
+      "useRef is immutable",
+      "useRef maintains the same reference between renders",
+      "useRef throws errors if used outside a DOM element"
+    ],
+    "answer": "useRef maintains the same reference between renders"
+  },
+  {
+    "id": 15,
+    "question": "How does useRef behave when used to store the current value of an input element?",
+    "options": [
+      "It automatically binds the input’s value",
+      "It keeps a persistent reference to the input element without re-renders",
+      "It triggers a re-render every time the input value changes",
+      "It throws an error if used outside a form"
+    ],
+    "answer": "It keeps a persistent reference to the input element without re-renders"
+  }
+]
