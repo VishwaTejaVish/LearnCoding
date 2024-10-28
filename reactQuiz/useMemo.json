@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary purpose of the useMemo hook in React?",
+    "options": [
+      "To memoize functions that don’t change",
+      "To store values that update with every render",
+      "To optimize performance by memoizing expensive calculations",
+      "To manage side effects in functional components"
+    ],
+    "answer": "To optimize performance by memoizing expensive calculations"
+  },
+  {
+    "id": 2,
+    "question": "What does useMemo return?",
+    "options": [
+      "A new component",
+      "A memoized version of the function",
+      "A ref object",
+      "A memoized value based on dependencies"
+    ],
+    "answer": "A memoized value based on dependencies"
+  },
+  {
+    "id": 3,
+    "question": "When does useMemo recompute its value?",
+    "options": [
+      "On every render",
+      "Only when its dependencies change",
+      "Only on component mount and unmount",
+      "Every time the component re-renders"
+    ],
+    "answer": "Only when its dependencies change"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is a common use case for useMemo?",
+    "options": [
+      "Triggering side effects",
+      "Storing a mutable reference",
+      "Caching the result of a complex calculation to avoid re-computation",
+      "Handling component lifecycle events"
+    ],
+    "answer": "Caching the result of a complex calculation to avoid re-computation"
+  },
+  {
+    "id": 5,
+    "question": "What will happen if useMemo is called without a dependency array?",
+    "options": [
+      "It will behave as though it has no dependencies and run on every render",
+      "It will memoize the result indefinitely",
+      "It will throw an error",
+      "It will only run once and ignore future renders"
+    ],
+    "answer": "It will behave as though it has no dependencies and run on every render"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is TRUE about the dependency array in useMemo?",
+    "options": [
+      "It causes useMemo to ignore updates",
+      "It determines when useMemo recalculates its value",
+      "It must always contain only primitive values",
+      "It should be omitted for useMemo to work"
+    ],
+    "answer": "It determines when useMemo recalculates its value"
+  },
+  {
+    "id": 7,
+    "question": "If useMemo is given an empty dependency array, when will it recompute the value?",
+    "options": [
+      "Every time the component re-renders",
+      "Only when the component mounts",
+      "Only when the component unmounts",
+      "When props change"
+    ],
+    "answer": "Only when the component mounts"
+  },
+  {
+    "id": 8,
+    "question": "What will happen if you pass a function without invoking it as the first argument to useMemo?",
+    "options": [
+      "useMemo will throw an error",
+      "useMemo will not memoize the value correctly",
+      "useMemo will directly store the function as a value",
+      "The function will be executed immediately"
+    ],
+    "answer": "useMemo will directly store the function as a value"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following could lead to stale values when using useMemo?",
+    "options": [
+      "Forgetting to include a dependency",
+      "Including all state and props as dependencies",
+      "Using useEffect instead of useMemo",
+      "Passing a primitive dependency"
+    ],
+    "answer": "Forgetting to include a dependency"
+  },
+  {
+    "id": 10,
+    "question": "When would using useMemo NOT improve performance?",
+    "options": [
+      "When used for simple, non-intensive calculations",
+      "When used with complex calculations",
+      "When the component re-renders frequently",
+      "When the dependencies change infrequently"
+    ],
+    "answer": "When used for simple, non-intensive calculations"
+  },
+  {
+    "id": 11,
+    "question": "What will useMemo return if you provide no dependencies and no initial value?",
+    "options": [
+      "undefined",
+      "null",
+      "An empty object",
+      "An error"
+    ],
+    "answer": "undefined"
+  },
+  {
+    "id": 12,
+    "question": "What would cause useMemo to re-run every render regardless of dependencies?",
+    "options": [
+      "Providing an empty dependency array",
+      "Omitting the dependency array",
+      "Providing a reference dependency",
+      "Passing a function as a dependency"
+    ],
+    "answer": "Omitting the dependency array"
+  },
+  {
+    "id": 13,
+    "question": "Which of the following best describes how useMemo behaves?",
+    "options": [
+      "It acts like useState for storing state",
+      "It is a function that runs on component unmount",
+      "It memoizes a value and only recalculates when dependencies change",
+      "It only runs when the component re-renders"
+    ],
+    "answer": "It memoizes a value and only recalculates when dependencies change"
+  },
+  {
+    "id": 14,
+    "question": "What does useMemo do if the dependencies haven't changed?",
+    "options": [
+      "It recomputes the value anyway",
+      "It skips recomputing and returns the cached value",
+      "It forces the component to re-render",
+      "It clears all memoized values"
+    ],
+    "answer": "It skips recomputing and returns the cached value"
+  },
+  {
+    "id": 15,
+    "question": "When should you use useMemo in a component?",
+    "options": [
+      "To avoid re-rendering the component",
+      "To store event listeners for the component",
+      "When a function or value is expensive to compute and doesn’t need to update frequently",
+      "For all state variables"
+    ],
+    "answer": "When a function or value is expensive to compute and doesn’t need to update frequently"
+  },
+  {
+    "id": 16,
+    "question": "If const memoizedValue = useMemo(() => computeExpensiveValue(), [prop]);, when will computeExpensiveValue be executed?",
+    "options": [
+      "On every render",
+      "Only when prop changes",
+      "Only when the component unmounts",
+      "Only when prop is undefined"
+    ],
+    "answer": "Only when prop changes"
+  },
+  {
+    "id": 17,
+    "question": "What type of value does useMemo store?",
+    "options": [
+      "Only primitive values",
+      "Only functions",
+      "Any value, including objects and arrays",
+      "Only DOM elements"
+    ],
+    "answer": "Any value, including objects and arrays"
+  },
+  {
+    "id": 18,
+    "question": "What type of value does useMemo store?",
+    "options": [
+      "Memoizing the result of an expensive calculation",
+      "Memoizing static values that never change",
+      "Reducing unnecessary re-renders caused by complex calculations",
+      "Using it to memoize a simple value that updates frequently"
+    ],
+    "answer": "Reducing unnecessary re-renders caused by complex calculations"
+  }
+]
