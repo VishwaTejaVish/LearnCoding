@@ -16,16 +16,41 @@
   },
   {
     "id": 4,
+    "title": "useState",
+    "url": "/reactQuiz/useState"
+  },
+  {
+    "id": 5,
+    "title": "useEffect",
+    "url": "/reactQuiz/useEffect"
+  },
+  {
+    "id": 6,
+    "title": "useRef",
+    "url": "/reactQuiz/useRef"
+  },
+  {
+    "id": 7,
+    "title": "useMemo",
+    "url": "/reactQuiz/useMemo"
+  },
+  {
+    "id": 8,
+    "title": "useCallback",
+    "url": "/reactQuiz/useCallback"
+  },
+  {
+    "id": 9,
     "title": "Closures",
     "url": "/reactQuiz/closures"
   },
   {
-    "id": 5,
+    "id": 10,
     "title": "Routing",
     "url": "/reactQuiz/routing"
   },
   {
-    "id": 6,
+    "id": 11,
     "title": "Redux Slices",
     "url": "/reactQuiz/reduxSlices"
   }
