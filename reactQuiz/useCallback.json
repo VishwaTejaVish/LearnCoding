@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main purpose of the useCallback hook in React?",
+    "options": [
+      "To optimize component re-renders by memoizing functions",
+      "To store a mutable reference that persists across renders",
+      "To create a memoized value for complex calculations",
+      "To manage component lifecycle methods"
+    ],
+    "answer": "To optimize component re-renders by memoizing functions"
+  },
+  {
+    "id": 2,
+    "question": "What does useCallback return?",
+    "options": [
+      "A new componenA memoized value",
+      "A reference to a mutable object",
+      "A memoized callback function",
+      "A component instance"
+    ],
+    "answer": "A memoized callback function"
+  },
+  {
+    "id": 3,
+    "question": "When does useCallback re-create the memoized function?",
+    "options": [
+      "On every render",
+      "Only when its dependencies change",
+      "Only on component mount and unmount",
+      "Every time the component re-renders"
+    ],
+    "answer": "Only when its dependencies change"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is a common use case for useCallback?",
+    "options": [
+      "Memoizing the result of a complex calculation",
+      "Creating side effects",
+      "Passing stable functions as props to prevent child component re-renders",
+      "Storing non-reactive values across renders"
+    ],
+    "answer": "Passing stable functions as props to prevent child component re-renders"
+  },
+  {
+    "id": 5,
+    "question": "What will happen if useCallback is called without a dependency array?",
+    "options": [
+      "The function will be re-created on every render",
+      "The function will be memoized indefinitely",
+      "useCallback will throw an error",
+      "useCallback will ignore the function"
+    ],
+    "answer": "The function will be re-created on every render"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is TRUE about useCallback’s dependency array?",
+    "options": [
+      "It is optional and has no effect on useCallback",
+      "It determines when the function should be re-created",
+      "It must always contain only primitive values",
+      "It should be empty to work correctly"
+    ],
+    "answer": "It determines when the function should be re-created"
+  },
+  {
+    "id": 7,
+    "question": "If useCallback is given an empty dependency array, when will it recompute the value?",
+    "options": [
+      "Every time the component re-renders",
+      "Only when the component mounts",
+      "Only when the component unmounts",
+      "When props change"
+    ],
+    "answer": "Only when the component mounts"
+  },
+  {
+    "id": 8,
+    "question": "What would cause useCallback to re-create a function every render?",
+    "options": [
+      "Omitting the dependency array",
+      "Passing only one dependency",
+      "Passing an empty dependency array",
+      "Using an arrow function"
+    ],
+    "answer": "Omitting the dependency array"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following is NOT a good use case for useCallback?",
+    "options": [
+      "Memoizing a simple function that doesn’t depend on state or props and is lightweight",
+      "Passing functions as props to prevent unnecessary re-renders in child components",
+      "Storing a value that does not need to trigger re-renders",
+      "Both A and C"
+    ],
+    "answer": "Both A and C"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following scenarios might cause stale closures when using useCallback?",
+    "options": [
+      "Not including state dependencies in the dependency array",
+      "Including too many dependencies",
+      "Passing the function as a prop",
+      "Only using it on mount"
+    ],
+    "answer": "Not including state dependencies in the dependency array"
+  },
+  {
+    "id": 11,
+    "question": "Which statement about useCallback is FALSE?",
+    "options": [
+      "useCallback can prevent unnecessary re-renders of child components",
+      "useCallback creates a new function reference each time it is called",
+      "useCallback returns the same function instance if dependencies haven’t changed",
+      "useCallback is often used when passing functions to deeply nested components"
+    ],
+    "answer": "useCallback creates a new function reference each time it is called"
+  },
+  {
+    "id": 12,
+    "question": "What will happen if a function wrapped in useCallback has a dependency that changes frequently?",
+    "options": [
+      "The function will re-render the component each time",
+      "The function will be re-created each time the dependency changes",
+      "The function will be memoized forever",
+      "The component will not re-render"
+    ],
+    "answer": "The function will be re-created each time the dependency changes"
+  },
+  {
+    "id": 13,
+    "question": "What does useCallback return if the dependencies have not changed?",
+    "options": [
+      "A new function instance",
+      "The original function",
+      "An updated function instance",
+      "An empty object"
+    ],
+    "answer": "The original function"
+  },
+  {
+    "id": 14,
+    "question": "What should you include in the dependency array of useCallback?",
+    "options": [
+      "Only static variables",
+      "Only functions",
+      "All variables used inside the callback that may change",
+      "Only primitive values"
+    ],
+    "answer": "All variables used inside the callback that may change"
+  },
+  {
+    "id": 15,
+    "question": "When const memoizedCallback = useCallback(() => doSomething(value), [value]); is used, when will doSomething execute?",
+    "options": [
+      "Every time the component re-renders",
+      "Only when value changes",
+      "Only on component mount",
+      "Every time the callback is passed to a child component"
+    ],
+    "answer": "Only when value changes"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following is TRUE about using useCallback with props?",
+    "options": [
+      "Passing a useCallback function as a prop can prevent child re-renders if the function does not change",
+      "useCallback will always prevent re-renders in child components",
+      "Passing props in the dependency array causes useCallback to fail",
+      "useCallback can only be used with state, not props"
+    ],
+    "answer": "Passing a useCallback function as a prop can prevent child re-renders if the function does not change"
+  }
+]
