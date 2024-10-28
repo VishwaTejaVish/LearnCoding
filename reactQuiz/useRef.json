@@ -29,7 +29,7 @@
   },
   {
     "id": 4,
-    "question": "What will happen if you update the value of a useRef variable in a component??",
+    "question": "What will happen if you update the value of a useRef variable in a component?",
     "options": [
       "It will trigger a re-render",
       "It will only affect future renders",
