@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1,
+    "question": "How do you create an object in JavaScript?",
+    "options": [
+      "const obj = \"key: value\";",
+      "const obj = {key: \"value\"};",
+      "const obj = (key: \"value\");",
+      "const obj = key: \"value\";"
+    ],
+    "answer": "const obj = {key: \"value\"};"
+  },
+  {
+    "id": 2,
+    "question": "How can you access the name property of the following object?",
+    "code":"const person = { name: \"John\", age: 30 };",
+    "options": [
+      "person[name]",
+      "person.name",
+      "person->name",
+      "person::name"
+    ],
+    "answer": "person.name"
+  },
+  {
+    "id": 3,
+    "question": "What is the output of the following code?",
+    "code":"const car = { brand: \"xyc\" };\r\nconsole.log(car[\"brand\"]);",
+    "options": [
+      "xyc",
+      "car",
+      "undefined",
+      "brand"
+    ],
+    "answer": "xyc"
+  },
+  {
+    "id": 4,
+    "question": "How can you add a new property color with the value \"red\" to an existing object car?",
+    "options": [
+      "car.add(\"color\", \"red\");",
+      "car.color = \"red\";",
+      "car[\"color\"] = \"red\";",
+      "Both b and c"
+    ],
+    "answer": "Both b and c"
+  },
+  {
+    "id": 5,
+    "question": "What will be the output of the following code?",
+    "code":"const obj = { x: 10, y: 20 };\r\nconsole.log(\"z\" in obj);",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "ReferenceError"
+    ],
+    "answer": "false"
+  },
+  {
+    "id": 6,
+    "question": "Which method converts an object into a string format in JavaScript?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "Object.toString()",
+      "objectToString()"
+    ],
+    "answer": "JSON.stringify()"
+  },
+  {
+    "id": 7,
+    "question": "What will be the output of the following code?",
+    "code":"const obj = { a: 1, b: 2 };\r\ndelete obj.a;\r\nconsole.log(obj);",
+    "options": [
+      "{ a: 1, b: 2 }",
+      "{ b: 2 }",
+      "{ a: null, b: 2 }",
+      "{}"
+    ],
+    "answer": "{ b: 2 }"
+  },
+  {
+    "id": 8,
+    "question": "What is the output of the following code?",
+    "code":"const obj = { name: \"Alice\" };\r\nconsole.log(Object.keys(obj));",
+    "options": [
+      "[\"name\"]",
+      "[\"Alice\"]",
+      "[\"name\", \"Alice\"]",
+      "[\"obj\"]"
+    ],
+    "answer": "[\"name\"]"
+  },
+  {
+    "id": 9,
+    "question": "Which method returns an array of a given object’s own property values?",
+    "options": [
+      "Object.keys()",
+      "Object.values()",
+      "Object.entries()",
+      "Object.toArray()"
+    ],
+    "answer": "Object.values()"
+  },
+  {
+    "id": 10,
+    "question": "What will the following code output?",
+    "code":"const person = { name: \"John\", age: 30 };\r\nconsole.log(Object.entries(person));",
+    "options": [
+      "[\"name\", \"age\"]",
+      "[[\"name\", \"John\"], [\"age\", 30]]",
+      "[\"John\", 30]",
+      "[\"person\"]"
+    ],
+    "answer": "[[\"name\", \"John\"], [\"age\", 30]]"
+  },
+  {
+    "id": 11,
+    "question": "How can you check if an object has a property named status?",
+    "options": [
+      "object.status === true",
+      "status in object",
+      "object.hasOwnProperty(\"status\")",
+      "Both b and c"
+    ],
+    "answer": "Both b and c"
+  },
+  {
+    "id": 12,
+    "question": "What will the following code output?",
+    "code":"const obj1 = { a: 10 };\r\nconst obj2 = obj1;\r\nobj2.a = 20;\r\nconsole.log(obj1.a);",
+    "options": [
+      "10",
+      "20",
+      "undefined",
+      "ReferenceError"
+    ],
+    "answer": "20",
+    "explanation":"obj1 and obj2 reference the same object in memory."
+  },
+  {
+    "id": 13,
+    "question": "Which method can be used to merge properties of multiple objects into one?",
+    "options": [
+      "Object.merge()",
+      "Object.assign()",
+      "Object.concat()",
+      "Object.add()"
+    ],
+    "answer": "Object.assign()"
+  },
+  {
+    "id": 14,
+    "question": "What is the output of the following code?",
+    "code":"const obj = { a: 1, b: 2 };\r\nObject.freeze(obj);\r\nobj.a = 3;\r\nconsole.log(obj.a);",
+    "options": [
+      "1",
+      "3",
+      "undefined",
+      "TypeError"
+    ],
+    "answer": "1",
+    "explanation":"Object.freeze() prevents modifications to existing properties."
+  },
+  {
+    "id": 15,
+    "question": "What does Object.seal() do?",
+    "options": [
+      "Prevents adding new properties but allows modifying existing ones",
+      "Prevents any changes to the object",
+      "Allows adding and removing properties but not modifying them",
+      "Creates a copy of the object"
+    ],
+    "answer": "Prevents adding new properties but allows modifying existing ones"
+  },
+  {
+    "id": 16,
+    "question": "What will be the output of the following code?",
+    "code":"const person = { name: \"Alice\" };\r\nObject.defineProperty(person, \"age\", { value: 25, writable: false });\r\nperson.age = 30;\r\nconsole.log(person.age);",
+    "options": [
+      "30",
+      "25",
+      "undefined",
+      "TypeError"
+    ],
+    "answer": "25",
+    "explanation":"writable: false makes the property read-only."
+  },
+  {
+    "id": 17,
+    "question": "How do you create a new object with a specified prototype in JavaScript?",
+    "options": [
+      "Object.new()",
+      "Object.create()",
+      "Object.prototype()",
+      "Object.prototype()"
+    ],
+    "answer": "Object.create()"
+  },
+  {
+    "id": 18,
+    "question": "What will the following code output?",
+    "code":"const car = {\r\n  brand: \"xyc\",\r\n  getBrand: function() {\r\n    return this.brand;\r\n  }\r\n};\r\nconsole.log(car.getBrand());",
+    "options": [
+      "xyc",
+      "undefined",
+      "ReferenceError",
+      "null"
+    ],
+    "answer": "xyc"
+  },
+  {
+    "id": 19,
+    "question": "What is the output of the following code?",
+    "code":"const obj = { x: 5 };\r\nobj.y = obj;\r\nconsole.log(obj);",
+    "options": [
+      "{ x: 5, y: { x: 5, y: { ... } } }",
+      "{ x: 5, y: undefined }",
+      "{ x: 5, y: 5 }",
+      "ReferenceError"
+    ],
+    "answer": "{ x: 5, y: { x: 5, y: { ... } } }",
+    "explanation":"This creates a circular reference where y points to the object itself."
+  },
+  {
+    "id": 20,
+    "question": "What is this in the context of an object method?",
+    "options": [
+      "Refers to the global object",
+      "Refers to the object calling the method",
+      "Refers to the previous object created",
+      "Refers to an empty object"
+    ],
+    "answer": "Refers to the object calling the method"
+  },
+  {
+    "id": 21,
+    "question": "What will the following code output?",
+    "code":"const obj = { a: 1, b: 2 };\r\nconsole.log(Object.getOwnPropertyNames(obj));",
+    "options": [
+      "[\"a\"]",
+      "[\"b\"]",
+      "[\"a\", \"b\"]",
+      "[\"obj\"]"
+    ],
+    "answer": "[\"a\", \"b\"]"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following methods makes all properties of an object non-configurable?",
+    "options": [
+      "Object.seal()",
+      "Object.freeze()",
+      "Object.preventExtensions()",
+      "Object.freeze()"
+    ],
+    "answer": "Object.freeze()"
+  }
+]
