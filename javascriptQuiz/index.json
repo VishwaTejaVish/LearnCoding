@@ -11,16 +11,21 @@
   },
   {
     "id": 3,
+    "title": "Objects",
+    "url": "/javascriptQuiz/objects"
+  },
+  {
+    "id": 4,
     "title": "Functions",
     "url": "/javascriptQuiz/functions"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Promises",
     "url": "/javascriptQuiz/promises"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Hoisting",
     "url": "/javascriptQuiz/hoisting"
   }
