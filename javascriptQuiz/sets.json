@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "question": "What is a Set in JavaScript?",
+    "options": [
+      "A collection of key-value pairs",
+      "A collection of unique values",
+      "A collection of indexed values",
+      "An array-like structure"
+    ],
+    "answer": "A collection of unique values"
+  },
+  {
+    "id": 2,
+    "question": "How do you create a Set in JavaScript?",
+    "options": [
+      "var mySet = {};",
+      "var mySet = new Set();",
+      "var mySet = [];",
+      "var mySet = Set();"
+    ],
+    "answer": "var mySet = new Set();"
+  },
+  {
+    "id": 3,
+    "question": "let mySet = new Set();\r\nmySet.add(1);\r\nmySet.add(1);\r\nconsole.log(mySet.size);",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "undefined"
+    ],
+    "answer": "1",
+    "explanation":"Sets only store unique values, so adding 1 twice only results in a single entry."
+  },
+  {
+    "id": 4,
+    "question": "How can you check if a value exists in a Set?",
+    "options": [
+      "mySet.contains(value);",
+      "mySet.has(value);",
+      "mySet.exists(value);",
+      "mySet.indexOf(value);"
+    ],
+    "answer": "mySet.has(value);"
+  },
+  {
+    "id": 5,
+    "question": "What is the output of the following code?",
+    "code":"let mySet = new Set([1, 2, 3]);\r\nmySet.delete(2);\r\nconsole.log(mySet.has(2));",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "2"
+    ],
+    "answer": "false"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following methods adds a new element to a Set?",
+    "options": [
+      "add()",
+      "insert()",
+      "append()",
+      "push()"
+    ],
+    "answer": "add()"
+  },
+  {
+    "id": 7,
+    "question": "What will the following code output?",
+    "code":"let mySet = new Set([1, 2, 3]);\r\nconsole.log([...mySet]);",
+    "options": [
+      "[Set { 1, 2, 3 }]",
+      "[1, 2, 3]",
+      "{ 1, 2, 3 }",
+      "Set [1, 2, 3]"
+    ],
+    "answer": "[1, 2, 3]"
+  },
+  {
+    "id": 8,
+    "question": "What will the following code output?",
+    "code":"let mySet = new Set();\r\nmySet.add(\"apple\").add(\"banana\");\r\nconsole.log(mySet.size);",
+    "options": [
+      "1",
+      "2",
+      "undefined",
+      "error"
+    ],
+    "answer": "2"
+  },
+  {
+    "id": 9,
+    "question": " How can you clear all elements in a Set?",
+    "options": [
+      "mySet.clearAll();",
+      "mySet.removeAll();",
+      "mySet.clear();",
+      "mySet.deleteAll();"
+    ],
+    "answer": "mySet.clear();"
+  },
+  {
+    "id": 10,
+    "question": "What will be the output of the following code?",
+    "code":"let mySet = new Set([\"a\", \"b\", \"c\"]);\r\nmySet.add(\"a\");\r\nconsole.log(mySet.size);",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "undefined"
+    ],
+    "answer": "3",
+    "explanation":"Sets only store unique values, so adding \"a\" again does not increase the size."
+  },
+  {
+    "id": 11,
+    "question": "Which method can be used to iterate over elements in a Set?",
+    "options": [
+      "forEach()",
+      "map()",
+      "filter()",
+      "all of the above"
+    ],
+    "answer": "forEach()"
+  },
+  {
+    "id": 12,
+    "question": "What will the following code output?",
+    "code":"let mySet = new Set([1, 2, 3, 4, 5]);\r\nfor (let value of mySet) {\r\n  if (value > 3) break;\r\n  console.log(value);\r\n}",
+    "options": [
+      "4",
+      "1 2 3",
+      "1 2 3 4",
+      "5"
+    ],
+    "answer": "1 2 3"
+  },
+  {
+    "id": 13,
+    "question": "What will happen if you try to add duplicate objects to a Set?",
+    "code":"let mySet = new Set();\r\nmySet.add({a: 1});\r\nmySet.add({a: 1});\r\nconsole.log(mySet.size);",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "undefined"
+    ],
+    "answer": "2"
+  },
+  {
+    "id": 14,
+    "question": "What will the following code output?",
+    "code":"let mySet = new Set();\r\nmySet.add(5).add(\"5\");\r\nconsole.log(mySet.size);",
+    "options": [
+      "1",
+      "2",
+      "undefined",
+      "5"
+    ],
+    "answer": "2",
+    "explanation":"5 and \"5\" are considered different values because one is a number and the other is a string."
+  },
+  {
+    "id": 15,
+    "question": "Which of the following statements is true about Sets in JavaScript?",
+    "options": [
+      "Sets allow duplicate values",
+      "Sets do not allow duplicate values",
+      "Sets automatically sort values",
+      "Sets only accept strings and numbers"
+    ],
+    "answer": "Sets do not allow duplicate values"
+  },
+  {
+    "id": 16,
+    "question": "How can you convert a Set to an Array in JavaScript?",
+    "options": [
+      "Array.from(mySet);",
+      "[...mySet];",
+      "mySet.toArray();",
+      "Both a and b"
+    ],
+    "answer": "Both a and b"
+  },
+  {
+    "id": 17,
+    "question": "What will be the output of the following code?",
+    "code":"let mySet = new Set([\"apple\", \"banana\", \"apple\"]);\r\nconsole.log(mySet.size);",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "undefined"
+    ],
+    "answer": "2"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following statements about Sets is incorrect?",
+    "options": [
+      "Sets maintain the insertion order of elements",
+      "Sets store unique values only",
+      "Sets allow accessing elements by index",
+      "Sets can hold any data type"
+    ],
+    "answer": "Sets allow accessing elements by index"
+  },
+  {
+    "id": 19,
+    "question": "What does the delete() method do in a Set?",
+    "options": [
+      "Removes a specified element from a Set",
+      "Clears the entire Set",
+      "Removes the last element in a Set",
+      "Throws an error if the element does not exist"
+    ],
+    "answer": "Removes a specified element from a Set"
+  },
+  {
+    "id": 20,
+    "question": "What will be the output of the following code?",
+    "code":"let setA = new Set([1, 2, 3]);\r\nlet setB = new Set(setA);\r\nconsole.log(setB.size);",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "undefined"
+    ],
+    "answer": "3"
+  }
+]
