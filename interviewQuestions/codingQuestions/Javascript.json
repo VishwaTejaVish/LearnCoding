@@ -59,14 +59,13 @@
     "title": "Remove Duplicates from an Array",
     "description": [
       "function removeDuplicates(arr) { \n return [...new Set(arr)]; }",
-      "\nfunction removeDuplicates(arr) {\r\n  return [...new Set(arr)];\r\n}\r\n",
-      "-----------------------------------------------",
+      "\nExplanation: \nSet: A JavaScript object that only stores unique values. \nSpread operator (...) converts the set back into an array.",
       "Follow-up: Remove duplicates without using Set.",
       "function removeDuplicates(arr) {\r\n  let uniqueArr = [];\r\n  for (let i = 0; i < arr.length; i++) {\r\n    if (!uniqueArr.includes(arr[i])) {\r\n      uniqueArr.push(arr[i]);\r\n    }\r\n  }\r\n  return uniqueArr;\r\n}",
       "\nExplanation: This version iterates through the array and only adds unique elements to the result."
     ],
     "highlightWords": ["Explanation:", "Set:", "Spread operator (...)", "Follow-up:"],
-    "indices": [0,4]
+    "indices": [0,3]
   },
   {
     "id": 6,
