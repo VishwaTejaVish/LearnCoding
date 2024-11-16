@@ -2,7 +2,6 @@
     {
       "id": 1,
       "title":"HTML",
-      "img": "../assets/html.png",
       "topics": "htmlTopics"
     },
     {
@@ -13,13 +12,16 @@
     {
       "id": 3,
       "title":"Javascript",
-      "img": "../assets/js.png",
       "topics": "javascriptTopics"
     },
     {
       "id": 4,
       "title":"React JS",
-      "img": "../assets/react.png",
       "topics": "reactTopics"
+    },
+    {
+      "id": 5,
+      "title":"TypeScript",
+      "topics": "typescriptTopics"
     }
 ]
