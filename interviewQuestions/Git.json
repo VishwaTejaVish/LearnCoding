@@ -2,7 +2,8 @@
   {
     "id": 1,
     "title": "What is Git?",
-    "description": "Git is a version control system that keeps track of changes in your codebase. It is distributed, meaning each developer has a full copy of the project history, which enhances collaboration and prevents data loss. Git is widely used in software development to maintain code integrity while supporting branching, merging, and collaboration."
+    "description": "Git is a version control system that keeps track of changes in your codebase. It is distributed, meaning each developer has a full copy of the project history, which enhances collaboration and prevents data loss. Git is widely used in software development to maintain code integrity while supporting branching, merging, and collaboration.",
+    "highlightWords":[]
   },
   {
     "id": 2,
@@ -13,17 +14,20 @@
   {
     "id": 3,
     "title": "What is a Git repository?",
-    "description": "A Git repository stores the code, its complete change history, and the necessary metadata for managing a project with Git. It can be local (on your machine) or remote (on a Git hosting platform like GitHub)."
+    "description": "A Git repository stores the code, its complete change history, and the necessary metadata for managing a project with Git. It can be local (on your machine) or remote (on a Git hosting platform like GitHub).",
+    "highlightWords":[]
   },
   {
     "id": 4,
     "title": "How do you initialize a new Git repository?",
-    "description": "Running git init sets up a new Git repository in your project directory by creating a .git folder, where Git stores all the metadata and history."
+    "description": "Running git init sets up a new Git repository in your project directory by creating a .git folder, where Git stores all the metadata and history.",
+    "highlightWords":[]
   },
   {
     "id": 5,
     "title": "How can you check the status of your Git repository?",
-    "description": "The git status command displays the state of your working directory and staging area, showing which files are modified, staged, or untracked."
+    "description": "The git status command displays the state of your working directory and staging area, showing which files are modified, staged, or untracked.",
+    "highlightWords":[]
   },
   {
     "id": 6,
@@ -34,12 +38,14 @@
   {
     "id": 7,
     "title": "How do you create and switch to a new branch?",
-    "description": "The command git checkout -b <branch-name> creates and switches to a new branch. Alternatively, git switch -c <branch-name> achieves the same with a more modern syntax."
+    "description": "The command git checkout -b <branch-name> creates and switches to a new branch. Alternatively, git switch -c <branch-name> achieves the same with a more modern syntax.",
+    "highlightWords":[]
   },
   {
     "id": 8,
     "title": "How do you resolve merge conflicts in Git?",
-    "description": "Identify conflicts using git status.\n\nOpen conflicting files and manually resolve the conflicts.\n\nStage the resolved files using git add.\n\nComplete the merge with git commit."
+    "description": "Identify conflicts using git status.\n\nOpen conflicting files and manually resolve the conflicts.\n\nStage the resolved files using git add.\n\nComplete the merge with git commit.",
+    "highlightWords":[]
   },
   {
     "id": 9,
@@ -50,7 +56,8 @@
   {
     "id": 10,
     "title": "What is a detached HEAD in Git?",
-    "description": "A detached HEAD occurs when Git points to a specific commit rather than a branch. This can happen if you check out a commit by its hash instead of a branch. Changes made in this state won't be associated with any branch unless explicitly attached."
+    "description": "A detached HEAD occurs when Git points to a specific commit rather than a branch. This can happen if you check out a commit by its hash instead of a branch. Changes made in this state won't be associated with any branch unless explicitly attached.",
+    "highlightWords":[]
   },
   {
     "id": 11,
@@ -61,7 +68,8 @@
   {
     "id": 12,
     "title": "How do you undo the last commit without losing the changes?",
-    "description": "Use git reset --soft HEAD~1. This moves the commit to the staging area, preserving changes in your working directory."
+    "description": "Use git reset --soft HEAD~1. This moves the commit to the staging area, preserving changes in your working directory.",
+    "highlightWords":[]
   },
   {
     "id": 13,
@@ -72,11 +80,13 @@
   {
     "id": 14,
     "title": "How do you clone a repository and work on a specific branch?",
-    "description": "1. Clone the repository: git clone <repo-url>.\n\n2. Switch to the branch: git checkout <branch-name> or git switch <branch-name>."  
+    "description": "1. Clone the repository: git clone <repo-url>.\n\n2. Switch to the branch: git checkout <branch-name> or git switch <branch-name>.",
+    "highlightWords":[]
   },
   {
     "id": 15,
     "title": "How do you check the commit history for a specific file?",
-    "description": "Use git log -- <file>. This command filters the commit history to show only changes related to the specified file."  
+    "description": "Use git log -- <file>. This command filters the commit history to show only changes related to the specified file.",
+    "highlightWords":[]  
   }
 ]
