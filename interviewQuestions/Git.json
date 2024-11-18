@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "What is Git?",
+    "description": "Git is a version control system that keeps track of changes in your codebase. It is distributed, meaning each developer has a full copy of the project history, which enhances collaboration and prevents data loss. Git is widely used in software development to maintain code integrity while supporting branching, merging, and collaboration."
+  },
+  {
+    "id": 2,
+    "title": "What is the difference between git pull and git fetch?",
+    "description": "git fetch only downloads changes from the remote repository to your local repository but doesn’t modify your working directory. It allows you to review the changes before integrating them.\n\ngit pull is a combination of git fetch and git merge, downloading the changes and merging them into your current branch in one step.",
+    "highlightWords": ["git fetch", "git pull"]
+  },
+  {
+    "id": 3,
+    "title": "What is a Git repository?",
+    "description": "A Git repository stores the code, its complete change history, and the necessary metadata for managing a project with Git. It can be local (on your machine) or remote (on a Git hosting platform like GitHub)."
+  },
+  {
+    "id": 4,
+    "title": "How do you initialize a new Git repository?",
+    "description": "Running git init sets up a new Git repository in your project directory by creating a .git folder, where Git stores all the metadata and history."
+  },
+  {
+    "id": 5,
+    "title": "How can you check the status of your Git repository?",
+    "description": "The git status command displays the state of your working directory and staging area, showing which files are modified, staged, or untracked."
+  },
+  {
+    "id": 6,
+    "title": "What is the difference between a branch and a tag?",
+    "description": "Branch: A branch is a movable pointer that allows developers to work on different versions of the project simultaneously. For example, a branch might be used for a new feature or a bug fix. \n\n Tag: A tag is an immutable reference to a specific commit, typically used to mark release versions like v1.0.0.",
+    "highlightWords": ["Branch:", "Tag:"]
+  },
+  {
+    "id": 7,
+    "title": "How do you create and switch to a new branch?",
+    "description": "The command git checkout -b <branch-name> creates and switches to a new branch. Alternatively, git switch -c <branch-name> achieves the same with a more modern syntax."
+  },
+  {
+    "id": 8,
+    "title": "How do you resolve merge conflicts in Git?",
+    "description": "Identify conflicts using git status.\n\nOpen conflicting files and manually resolve the conflicts.\n\nStage the resolved files using git add.\n\nComplete the merge with git commit."
+  },
+  {
+    "id": 9,
+    "title": "Explain the difference between git reset, git revert, and git checkout.",
+    "description": "git reset: Rewinds history to a previous commit and optionally updates the staging and working areas. Use it cautiously as it can erase commits.\n\ngit revert: Creates a new commit that undoes changes made by a previous commit without modifying the history.\n\ngit checkout: Used to switch branches or restore files to a previous state.",
+    "highlightWords": ["git reset:", "git revert:", "git checkout:"]
+  },
+  {
+    "id": 10,
+    "title": "What is a detached HEAD in Git?",
+    "description": "A detached HEAD occurs when Git points to a specific commit rather than a branch. This can happen if you check out a commit by its hash instead of a branch. Changes made in this state won't be associated with any branch unless explicitly attached."
+  },
+  {
+    "id": 11,
+    "title": "What is the difference between git stash and git stash pop?",
+    "description": "git stash: Saves changes from your working directory temporarily, cleaning it up without committing.\n\ngit stash pop: Applies the most recent stash and removes it from the stash list.",
+    "highlightWords":["git stash:","git stash pop:"]
+  },
+  {
+    "id": 12,
+    "title": "How do you undo the last commit without losing the changes?",
+    "description": "Use git reset --soft HEAD~1. This moves the commit to the staging area, preserving changes in your working directory."
+  },
+  {
+    "id": 13,
+    "title": "What is the difference between origin and upstream in Git?",
+    "description": "origin: Refers to your fork or clone's default remote repository.\n\nupstream: Refers to the original repository from which the fork was created.",
+    "highlightWords":["origin:","upstream:"]
+  },
+  {
+    "id": 14,
+    "title": "How do you clone a repository and work on a specific branch?",
+    "description": "1. Clone the repository: git clone <repo-url>.\n\n2. Switch to the branch: git checkout <branch-name> or git switch <branch-name>."  
+  },
+  {
+    "id": 15,
+    "title": "How do you check the commit history for a specific file?",
+    "description": "Use git log -- <file>. This command filters the commit history to show only changes related to the specified file."  
+  }
+]
