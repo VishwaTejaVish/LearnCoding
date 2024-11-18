@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "What is Git?",
+    "options": [
+      "A version control system",
+      "A programming language",
+      "A text editor",
+      "An operating system"
+    ],
+    "answer": "A version control system"
+  },
+  {
+    "id": 2,
+    "question": "Which command initializes a new Git repository?",
+    "options": ["git start", "git init", "git create", "git begin"],
+    "answer": "git init"
+  },
+  {
+    "id": 3,
+    "question": "What does the git clone command do?",
+    "options": [
+      "Initializes a new repository",
+      "Creates a copy of an existing repository",
+      "Deletes an existing repository",
+      "Stages changes for commit"
+    ],
+    "answer": "Creates a copy of an existing repository"
+  },
+  {
+    "id": 4,
+    "question": "Which command is used to view the commit history?",
+    "options": ["git log", "git history", "git commits", "git show"],
+    "answer": "git log"
+  },
+  {
+    "id": 5,
+    "question": "What does the command git status display?",
+    "options": [
+      "The current branch",
+      "Changes staged for commit",
+      "Files that are not tracked or modified",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "id": 6,
+    "question": "Which command is used to stage changes for the next commit?",
+    "options": ["git add", "git stage", "git commit", "git push"],
+    "answer": "git add"
+  },
+  {
+    "id": 7,
+    "question": "What does git checkout do?",
+    "options": [
+      "Switches branches or restores files",
+      "Creates a new branch",
+      "Deletes a branch",
+      "Commits changes"
+    ],
+    "answer": "Switches branches or restores files"
+  },
+  {
+    "id": 8,
+    "question": "How do you create a new branch in Git?",
+    "options": [
+      "git branch [branch_name]",
+      "git new branch",
+      "git checkout -b [branch_name]",
+      "Both a and c"
+    ],
+    "answer": "Both a and c"
+  },
+  {
+    "id": 9,
+    "question": "What does the command git pull do?",
+    "options": [
+      "Updates the local repository with changes from the remote repository",
+      "Pushes local commits to the remote repository",
+      "Deletes the remote branch",
+      "Merges two branches locally"
+    ],
+    "answer": "Updates the local repository with changes from the remote repository"
+  },
+  {
+    "id": 10,
+    "question": "What does the HEAD in Git represent?",
+    "options": ["The latest commit in the repository", "The currently checked-out branch", "The root of the repository", "A remote branch"],
+    "answer": "The currently checked-out branch"
+  }
+]
