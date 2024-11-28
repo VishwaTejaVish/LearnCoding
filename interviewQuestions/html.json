@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "title": "5. What are semantic HTML tags? Why are they important?",
+    "title": "What are semantic HTML tags? Why are they important?",
     "description": "Semantic HTML tags define the purpose of the content, making it more meaningful for browsers, search engines, and developers. \n\nExamples of Semantic Tags: \n<header>: Defines the page or section header. \n<footer>: Defines the footer of the document or section. \n<article>: Represents self-contained content. \n<section>: Groups related content.\n\nImportance: \n• Improves accessibility for assistive technologies (e.g., screen readers). \n• Boosts SEO by providing clear context for search engines.",
     "highlightWords": [
       "Examples of Semantic Tags:",
@@ -37,7 +37,7 @@
   },
   {
     "id": 6,
-    "title": "6. How do you include multimedia in an HTML page?",
+    "title": "How do you include multimedia in an HTML page?",
     "description": [
       "Use <img>, <audio>, and <video> tags to include images, audio, and video files.",
       "Image:",
