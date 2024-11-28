@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "What is HTML, and why is it used?",
+    "description": "HTML stands for HyperText Markup Language. \n\nIt is the standard language used to create web pages and applications.\n\nIt defines the structure of web content using tags, which are enclosed in angle brackets.\n\nHTML allows integration of text, images, videos, and links to create interactive and visually appealing web pages.",
+    "highlightWords": []
+  },
+  {
+    "id": 2,
+    "title": "What are HTML tags, and how do they work?",
+    "description": "HTML tags are predefined keywords used to structure and format the content on a webpage. \n\nTags usually come in pairs: an opening tag (e.g., <p>) and a closing tag (e.g., </p>). \n\nSome tags are self-closing (e.g., <img />, <input />).",
+    "highlightWords": ["git fetch", "git pull"]
+  },
+  {
+    "id": 3,
+    "title": "What is the difference between <div> and <span>?",
+    "description": "<div>: <div> is a block-level element used for grouping larger sections of content. It takes up the full width available by default and starts on a new line. \n\n<span>: <span> is an inline element used for styling or grouping smaller pieces of content within a line of text. It does not start on a new line and only takes up as much width as needed.",
+    "highlightWords": ["<div>:", "<span>:"]
+  },
+  {
+    "id": 4,
+    "title": "What is the purpose of the <!DOCTYPE> declaration?",
+    "description": "It defines the document type and version of HTML being used. \n\nHelps browsers render the page correctly by using the right rendering mode (standards vs. quirks). \n\nWhy Important: \nWithout <!DOCTYPE>, browsers might interpret your document in quirks mode, leading to inconsistent rendering.",
+    "highlightWords": ["Why Important:"]
+  },
+  {
+    "id": 5,
+    "title": "5. What are semantic HTML tags? Why are they important?",
+    "description": "Semantic HTML tags define the purpose of the content, making it more meaningful for browsers, search engines, and developers. \n\nExamples of Semantic Tags: \n<header>: Defines the page or section header. \n<footer>: Defines the footer of the document or section. \n<article>: Represents self-contained content. \n<section>: Groups related content.\n\nImportance: \n• Improves accessibility for assistive technologies (e.g., screen readers). \n• Boosts SEO by providing clear context for search engines.",
+    "highlightWords": [
+      "Examples of Semantic Tags:",
+      "<header>:",
+      "<footer>:",
+      "<article>:",
+      "<section>:"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "6. How do you include multimedia in an HTML page?",
+    "description": [
+      "Use <img>, <audio>, and <video> tags to include images, audio, and video files.",
+      "Image:",
+      "<img src=\"image.jpg\" alt=\"A beautiful scene\" width=\"500\" height=\"300\" />",
+      "Audio:",
+      "<audio controls>\r\n  <source src=\"audio.mp3\" type=\"audio/mpeg\">\r\n  Your browser does not support the audio element.\r\n</audio>",
+      "Video:",
+      "<video controls width=\"600\">\r\n  <source src=\"video.mp4\" type=\"video/mp4\">\r\n  Your browser does not support the video tag.\r\n</video>"
+    ],
+    "highlightWords": ["Examples:", "Image:", "Audio:", "Video:"],
+    "indices": [2, 4, 6]
+  },
+  {
+    "id": 7,
+    "title": "What is the purpose of the <meta> tag?",
+    "description": [
+      "The <meta> tag provides metadata (data about the document) to the browser and search engines.",
+      "Examples:",
+      "1. Character encoding:",
+      "<meta charset=\"UTF-8\">",
+      "2. Viewport settings (for responsive design):",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "3. SEO description:",
+      "<meta name=\"description\" content=\"Learn HTML basics and advanced concepts.\">"
+    ],
+    "highlightWords": [
+      "Examples:",
+      "1. Character encoding:",
+      "2. Viewport settings (for responsive design):",
+      "3. SEO description:"
+    ],
+    "indices": [3, 5, 7]
+  }
+]
