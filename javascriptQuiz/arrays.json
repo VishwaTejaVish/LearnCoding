@@ -111,7 +111,7 @@
       "filter()",
       "map()"
     ],
-    "answer": "every()"
+    "answer": "some()"
   },
   {
     "id": 11,
@@ -232,7 +232,6 @@
   {
     "id": 21,
     "question": "What is the purpose of the find() method?",
-    "code":"const arr = [1, 2, 3];\r\narr.push(4);\r\nconsole.log(arr.pop());",
     "options": [
       "To find the last element that meets a condition",
       "To find the first element that meets a condition",
