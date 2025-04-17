@@ -2,7 +2,7 @@
   {
     "id": 1,
     "question": "What is the output of:",
-    "code":"console.log("Hello".length);
+    "code":"console.log(\"Hello\".length);",
     "options": [
       "4",
       "5",
@@ -25,7 +25,7 @@
   {
     "id": 3,
     "question": "What does the following return?",
-    "code":"JavaScript".charAt(4);",
+    "code":"JavaScript\".charAt(4);\",
     "options": [
       "S",
       "a",
@@ -48,7 +48,7 @@
   {
     "id": 5,
     "question": "What will this return?",
-    "code":""hello world".includes("WORLD");",
+    "code":"hello world\".includes(\"WORLD\");",
     "options": [
       "true",
       "false",
@@ -60,7 +60,7 @@
   {
     "id": 6,
     "question": "What is the result of:",
-    "code":"abc".repeat(3);"
+    "code":"\"abc\".repeat(3);\",
     "options": [
       "abc3",
       "aaabbbccc",
