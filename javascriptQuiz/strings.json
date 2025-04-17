@@ -94,7 +94,7 @@
   {
     "id": 9,
     "question": "What will the following code output?",
-    "code":"let str = "\"JavaScript\".charAt(4);",
+    "code":"\"JavaScript\".charAt(4);",
     "options": [
       "S",
       "s",
