@@ -94,7 +94,7 @@
   {
     "id": 9,
     "question": "What will the following code output?",
-    "code":"let str = "JavaScript\";\\r\\nconsole.log(str[4]);",
+    "code":"let str = "JavaScript\\\";\\\\r\\\\nconsole.log(str[4]);",
     "options": [
       "S",
       "s",
@@ -165,7 +165,7 @@
       "L"
     ],
     "answer": "E",
-    "explanation":""HELLO" → charAt(1) is E."
+    "explanation":"\"HELLO\" \u2192 charAt(1) is E."
   },
   {
     "id": 15,
