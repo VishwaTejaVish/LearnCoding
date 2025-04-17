@@ -31,11 +31,16 @@
   },
   {
     "id": 7,
+    "title": "Closures",
+    "url": "/javascriptQuiz/closures"
+  },
+  {
+    "id": 8,
     "title": "Promises",
     "url": "/javascriptQuiz/promises"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Hoisting",
     "url": "/javascriptQuiz/hoisting"
   }
