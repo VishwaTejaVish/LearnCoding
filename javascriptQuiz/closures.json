@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A function that returns another function",
+      "A function having access to the parent scope, even after the parent function has closed",
+      "A way to bind data with a function",
+      "Both B and C"
+    ],
+    "answer": "Both B and C"
+  },
+  {
+    "id": 2,
+    "question": "What will the following code output?",
+    "code":"function outer() {\r\n  let count = 0;\r\n  return function inner() {\r\n    count++;\r\n    console.log(count);\r\n  };\r\n}\r\n\r\nconst counter = outer();\r\ncounter();\r\ncounter();",
+    "options": [
+      "1 and 1",
+      "1 and 2",
+      "2 and 3",
+      "undefined and undefined"
+    ],
+    "answer": "1 and 2"
+  },
+  {
+    "id": 3,
+    "question": "Closures can help in which of the following scenarios?",
+    "options": [
+      "Data hiding / Encapsulation",
+      "Implementing private variables",
+      "Memoization",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "id": 4,
+    "question": "What will the following code log to the console?",
+    "code":"for (var i = 0; i < 3; i++) {\r\n  setTimeout(function() {\r\n    console.log(i);\r\n  }, 100);\r\n}",
+    "options": [
+      "0, 1, 2",
+      "3, 3, 3",
+      "0, 0, 0",
+      "undefined, undefined, undefined"
+    ],
+    "answer": "3, 3, 3",
+    "explanation":"Because var is function-scoped, not block-scoped."
+  },
+  {
+    "id": 5,
+    "question": "What will the following code output?",
+    "code":"function makeCounter() {\r\n  let count = 0;\r\n  return {\r\n    increment: function() {\r\n      count++;\r\n      return count;\r\n    },\r\n    decrement: function() {\r\n      count--;\r\n      return count;\r\n    }\r\n  };\r\n}\r\n\r\nconst counter = makeCounter();\r\nconsole.log(counter.increment());\r\nconsole.log(counter.decrement());",
+    "options": [
+      "1, 0",
+      "1, 1",
+      "0, -1",
+      "error"
+    ],
+    "answer": "1, 0",
+    "explanation":"Closure maintains count even after makeCounter has executed."
+  },
+  {
+    "id": 6,
+    "question": "What is the main benefit of using closures for creating private variables?",
+    "code":"\"abc\".repeat(3);\"",
+    "options": [
+      "They improve performance",
+      "They allow variables to persist in global scope",
+      "They protect variables from being accessed or modified directly from outside",
+      "They reduce memory usage"
+    ],
+    "answer": "They protect variables from being accessed or modified directly from outside"
+  },
+  {
+    "id": 7,
+    "question": "What will be the result of this code?",
+    "code":"function secretHolder(secret) {\r\n  return {\r\n    getSecret: function() {\r\n      return secret;\r\n    },\r\n    setSecret: function(newSecret) {\r\n      secret = newSecret;\r\n    }\r\n  };\r\n}\r\n\r\nconst holder = secretHolder('abc');\r\nholder.setSecret('xyz');\r\nconsole.log(holder.getSecret());",
+    "options": [
+      "abc",
+      "undefined",
+      "xyz",
+      "Error"
+    ],
+    "answer": "xyz",
+    "explanation":"Closure retains access to the secret variable and allows updates."
+  },
+  {
+    "id": 8,
+    "question": "Which of the following statements about closures is FALSE?",
+    "options": [
+      "Closures can access outer function variables even after outer function returns",
+      "Each call to a closure creates a new lexical scope",
+      "Closures are garbage collected immediately after the outer function returns",
+      "Closures are commonly used for data encapsulation"
+    ],
+    "answer": "Closures are garbage collected immediately after the outer function returns",
+    "explanation":"False — closures persist as long as they are referenced."
+  },
+  {
+    "id": 9,
+    "question": "Predict the output:",
+    "code":"function multiplyBy(n) {\r\n  return function(x) {\r\n    return x * n;\r\n  };\r\n}\r\n\r\nconst double = multiplyBy(2);\r\nconsole.log(double(5));",
+    "options": [
+      "2",
+      "10",
+      "25",
+      "undefined"
+    ],
+    "answer": "10",
+    "explanation":"Closure retains n = 2, and double(5) returns 5 * 2."
+  }
+]
