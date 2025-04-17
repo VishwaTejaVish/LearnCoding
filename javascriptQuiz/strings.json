@@ -131,7 +131,7 @@
   {
     "id": 12,
     "question": "What will this print?",
-    "code":"let a = \"foo\";\r\nlet b = new String(\"foo\");\r\nconsole.log(a == b);\r\nconsole.log(a === b);"
+    "code":"let a = \"foo\";\r\nlet b = new String(\"foo\");\r\nconsole.log(a == b);\r\nconsole.log(a === b);",
     "options": [
       "true true",
       "false false",
